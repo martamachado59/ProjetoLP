@@ -96,20 +96,20 @@ float ler_custo_restante (){
 
 /******CALCULOS******/
 
-float cal_mao_obra(int quantidade, float mao_obra,char calcado){
+float cal_mao_obra(int quantidade,char calcado){
     if(calcado == SANDALIA)
     {
-        mao_obra==4;
+        int mao_obra=4;
         return quantidade * mao_obra;
     }
     else if(calcado == BOTAS)
     {
-        mao_obra==6;
+        int mao_obra=6;
         return quantidade * mao_obra;
     }
     else if(calcado == SAPATOS)
     {
-        mao_obra==5;
+        int mao_obra=5;
         return quantidade * mao_obra;
     }   
 }
@@ -138,7 +138,7 @@ int main(int argc, char** argv) {
         scanf(" %s",&pais);
         calcado=ler_tipo_calcado();
         quantidade=ler_quantidade();
-        mao_obra='cal_mao_obra()';
+        mao_obra=cal_mao_obra(quantidade,calcado);
         
         //Mostrar Valores ao cliente
         printf("\n O seu código cliente é:%d",cod_cliente);
