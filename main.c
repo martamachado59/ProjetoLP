@@ -18,6 +18,7 @@
 #define BOTAS 'b'
 #define SAPATOS 'sap'
 
+
 /**** LER VALORES ****/
 char ler_tipo_utilizador(){
     char tipo_utilizador;
