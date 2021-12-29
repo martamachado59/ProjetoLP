@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=projeto
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/projeto
+CND_ARTIFACT_NAME_Debug=projeto_lp
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/projeto_lp
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=projeto.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/projeto.tar
+CND_PACKAGE_NAME_Debug=projetolp.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/projetolp.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=projeto
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/projeto
+CND_ARTIFACT_NAME_Release=projeto_lp
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/projeto_lp
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=projeto.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/projeto.tar
+CND_PACKAGE_NAME_Release=projetolp.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/projetolp.tar
 #
 # include compiler specific variables
 #
