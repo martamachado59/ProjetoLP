@@ -4,6 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>article_struct.h</itemPath>
+      <itemPath>client_struct.h</itemPath>
+      <itemPath>input.h</itemPath>
+      <itemPath>order_struct.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,7 +16,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>article_struct.c</itemPath>
+      <itemPath>client_struct.c</itemPath>
+      <itemPath>input.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>order.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -39,7 +47,23 @@
           <standard>10</standard>
         </cTool>
       </compileType>
+      <item path="article_struct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="article_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="client_struct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="client_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="input.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="order.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="order_struct.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -63,7 +87,23 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="article_struct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="article_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="client_struct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="client_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="input.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="order.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="order_struct.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

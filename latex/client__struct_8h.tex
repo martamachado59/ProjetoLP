@@ -1,0 +1,260 @@
+\hypertarget{client__struct_8h}{}\doxysection{client\+\_\+struct.\+h File Reference}
+\label{client__struct_8h}\index{client\_struct.h@{client\_struct.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cliente}{Cliente}}
+\item 
+struct \mbox{\hyperlink{struct_clientes}{Clientes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a13146edd55a2b9f6b3151f1a91c38170}{CLIENTSTRUCT\+\_\+H}}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a0cf5c23bdf46ca7f4778aea7da2bc548}{MAX\+\_\+\+CLIENTES}}~50
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_aaf0c11244777b8dde7b6833b18af60d1}{ERRO\+\_\+\+CLIENTE\+\_\+\+NAO\+\_\+\+EXISTE}}~\char`\"{}O cliente não existe na lista.\char`\"{}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a17d1cfa48ecf37a2a28b9e0e8b9dc6e1}{ERRO\+\_\+\+LISTA\+\_\+\+VAZIA}}~\char`\"{}A lista de cliente está vazia.\char`\"{}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a65d3b21c5bfbd8ac97abd329e5a56ead}{ERRO\+\_\+\+LISTA\+\_\+\+CHEIA}}~\char`\"{}A lista de cliente está cheia.\char`\"{}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_ab112b7752fa3ccf2d0f7fbcc52cb1439}{ERRO\+\_\+\+CLIENTE\+\_\+\+EXISTE}}~\char`\"{}O número de cliente já se encontra atribuído.\char`\"{}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_aa7497b2ad3c08c7768f409ca10b7764c}{MAX\+\_\+\+NOME\+\_\+\+CLIENTE}}~50
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a24821793d3512d829e8a08de0058b4ac}{MSG\+\_\+\+OBTER\+\_\+\+NOME}}~\char`\"{}Insira o nome do cliente\+: \char`\"{}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a302620ea0edcac33622925b502fa01fe}{MIN\+\_\+\+NIF}}~000000001
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a3e74ee334b9255a077dc7238eb74edae}{MAX\+\_\+\+NIF}}~999999999
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a1d382c293dd113b7e7cff41fdb5f7ae3}{OBTER\+\_\+\+NIF}}~\char`\"{}Insira o NIF\+: \char`\"{}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a027e514e2a81b2c406c76982be780e4a}{MAX\+\_\+\+PAIS\+\_\+\+CLIENTE}}~50
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a610ec952fd16f258adf94fdbcdfb2d39}{MSG\+\_\+\+OBTER\+\_\+\+PAIS}}~\char`\"{}Insira o nome do pais\+: \char`\"{}
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}{MIN\+\_\+\+NUM\+\_\+\+CLIENTE}}~0
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}{MAX\+\_\+\+NUM\+\_\+\+CLIENTE}}~1000
+\item 
+\#define \mbox{\hyperlink{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}{MSG\+\_\+\+OBTER\+\_\+\+NUM\+\_\+\+CLIENTE}}~\char`\"{}Insira um número de cliente \mbox{[}0-\/1000\mbox{]}\+: \char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{client__struct_8h_a43b67bec8f5df6eb44dc705e6397fb94}{inserir\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\item 
+int \mbox{\hyperlink{client__struct_8h_a5651c71cfc50aa8138d81ec2c66d22c2}{procurar\+Cliente}} (\mbox{\hyperlink{struct_clientes}{Clientes}} cliente, int cod\+\_\+cliente)
+\item 
+void \mbox{\hyperlink{client__struct_8h_af4d6f851bb2ea2ad04e459ea9505ce14}{atualizar\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\item 
+void \mbox{\hyperlink{client__struct_8h_a1eba25f7ae992ca97172a4660fa8424a}{remover\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\item 
+void \mbox{\hyperlink{client__struct_8h_aa1ac7b4e1389f28381daad2966f01a1f}{listar\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} clientes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{client__struct_8h_a13146edd55a2b9f6b3151f1a91c38170}\label{client__struct_8h_a13146edd55a2b9f6b3151f1a91c38170}} 
+\index{client\_struct.h@{client\_struct.h}!CLIENTSTRUCT\_H@{CLIENTSTRUCT\_H}}
+\index{CLIENTSTRUCT\_H@{CLIENTSTRUCT\_H}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{CLIENTSTRUCT\_H}{CLIENTSTRUCT\_H}}
+{\footnotesize\ttfamily \#define CLIENTSTRUCT\+\_\+H}
+
+\mbox{\Hypertarget{client__struct_8h_ab112b7752fa3ccf2d0f7fbcc52cb1439}\label{client__struct_8h_ab112b7752fa3ccf2d0f7fbcc52cb1439}} 
+\index{client\_struct.h@{client\_struct.h}!ERRO\_CLIENTE\_EXISTE@{ERRO\_CLIENTE\_EXISTE}}
+\index{ERRO\_CLIENTE\_EXISTE@{ERRO\_CLIENTE\_EXISTE}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{ERRO\_CLIENTE\_EXISTE}{ERRO\_CLIENTE\_EXISTE}}
+{\footnotesize\ttfamily \#define ERRO\+\_\+\+CLIENTE\+\_\+\+EXISTE~\char`\"{}O número de cliente já se encontra atribuído.\char`\"{}}
+
+\mbox{\Hypertarget{client__struct_8h_aaf0c11244777b8dde7b6833b18af60d1}\label{client__struct_8h_aaf0c11244777b8dde7b6833b18af60d1}} 
+\index{client\_struct.h@{client\_struct.h}!ERRO\_CLIENTE\_NAO\_EXISTE@{ERRO\_CLIENTE\_NAO\_EXISTE}}
+\index{ERRO\_CLIENTE\_NAO\_EXISTE@{ERRO\_CLIENTE\_NAO\_EXISTE}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{ERRO\_CLIENTE\_NAO\_EXISTE}{ERRO\_CLIENTE\_NAO\_EXISTE}}
+{\footnotesize\ttfamily \#define ERRO\+\_\+\+CLIENTE\+\_\+\+NAO\+\_\+\+EXISTE~\char`\"{}O cliente não existe na lista.\char`\"{}}
+
+\mbox{\Hypertarget{client__struct_8h_a65d3b21c5bfbd8ac97abd329e5a56ead}\label{client__struct_8h_a65d3b21c5bfbd8ac97abd329e5a56ead}} 
+\index{client\_struct.h@{client\_struct.h}!ERRO\_LISTA\_CHEIA@{ERRO\_LISTA\_CHEIA}}
+\index{ERRO\_LISTA\_CHEIA@{ERRO\_LISTA\_CHEIA}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{ERRO\_LISTA\_CHEIA}{ERRO\_LISTA\_CHEIA}}
+{\footnotesize\ttfamily \#define ERRO\+\_\+\+LISTA\+\_\+\+CHEIA~\char`\"{}A lista de cliente está cheia.\char`\"{}}
+
+\mbox{\Hypertarget{client__struct_8h_a17d1cfa48ecf37a2a28b9e0e8b9dc6e1}\label{client__struct_8h_a17d1cfa48ecf37a2a28b9e0e8b9dc6e1}} 
+\index{client\_struct.h@{client\_struct.h}!ERRO\_LISTA\_VAZIA@{ERRO\_LISTA\_VAZIA}}
+\index{ERRO\_LISTA\_VAZIA@{ERRO\_LISTA\_VAZIA}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{ERRO\_LISTA\_VAZIA}{ERRO\_LISTA\_VAZIA}}
+{\footnotesize\ttfamily \#define ERRO\+\_\+\+LISTA\+\_\+\+VAZIA~\char`\"{}A lista de cliente está vazia.\char`\"{}}
+
+\mbox{\Hypertarget{client__struct_8h_a0cf5c23bdf46ca7f4778aea7da2bc548}\label{client__struct_8h_a0cf5c23bdf46ca7f4778aea7da2bc548}} 
+\index{client\_struct.h@{client\_struct.h}!MAX\_CLIENTES@{MAX\_CLIENTES}}
+\index{MAX\_CLIENTES@{MAX\_CLIENTES}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_CLIENTES}{MAX\_CLIENTES}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+CLIENTES~50}
+
+\mbox{\Hypertarget{client__struct_8h_a3e74ee334b9255a077dc7238eb74edae}\label{client__struct_8h_a3e74ee334b9255a077dc7238eb74edae}} 
+\index{client\_struct.h@{client\_struct.h}!MAX\_NIF@{MAX\_NIF}}
+\index{MAX\_NIF@{MAX\_NIF}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_NIF}{MAX\_NIF}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+NIF~999999999}
+
+\mbox{\Hypertarget{client__struct_8h_aa7497b2ad3c08c7768f409ca10b7764c}\label{client__struct_8h_aa7497b2ad3c08c7768f409ca10b7764c}} 
+\index{client\_struct.h@{client\_struct.h}!MAX\_NOME\_CLIENTE@{MAX\_NOME\_CLIENTE}}
+\index{MAX\_NOME\_CLIENTE@{MAX\_NOME\_CLIENTE}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_NOME\_CLIENTE}{MAX\_NOME\_CLIENTE}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+NOME\+\_\+\+CLIENTE~50}
+
+\mbox{\Hypertarget{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}\label{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}} 
+\index{client\_struct.h@{client\_struct.h}!MAX\_NUM\_CLIENTE@{MAX\_NUM\_CLIENTE}}
+\index{MAX\_NUM\_CLIENTE@{MAX\_NUM\_CLIENTE}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_NUM\_CLIENTE}{MAX\_NUM\_CLIENTE}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+NUM\+\_\+\+CLIENTE~1000}
+
+\mbox{\Hypertarget{client__struct_8h_a027e514e2a81b2c406c76982be780e4a}\label{client__struct_8h_a027e514e2a81b2c406c76982be780e4a}} 
+\index{client\_struct.h@{client\_struct.h}!MAX\_PAIS\_CLIENTE@{MAX\_PAIS\_CLIENTE}}
+\index{MAX\_PAIS\_CLIENTE@{MAX\_PAIS\_CLIENTE}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_PAIS\_CLIENTE}{MAX\_PAIS\_CLIENTE}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+PAIS\+\_\+\+CLIENTE~50}
+
+\mbox{\Hypertarget{client__struct_8h_a302620ea0edcac33622925b502fa01fe}\label{client__struct_8h_a302620ea0edcac33622925b502fa01fe}} 
+\index{client\_struct.h@{client\_struct.h}!MIN\_NIF@{MIN\_NIF}}
+\index{MIN\_NIF@{MIN\_NIF}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_NIF}{MIN\_NIF}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+NIF~000000001}
+
+\mbox{\Hypertarget{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}\label{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}} 
+\index{client\_struct.h@{client\_struct.h}!MIN\_NUM\_CLIENTE@{MIN\_NUM\_CLIENTE}}
+\index{MIN\_NUM\_CLIENTE@{MIN\_NUM\_CLIENTE}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_NUM\_CLIENTE}{MIN\_NUM\_CLIENTE}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+NUM\+\_\+\+CLIENTE~0}
+
+\mbox{\Hypertarget{client__struct_8h_a24821793d3512d829e8a08de0058b4ac}\label{client__struct_8h_a24821793d3512d829e8a08de0058b4ac}} 
+\index{client\_struct.h@{client\_struct.h}!MSG\_OBTER\_NOME@{MSG\_OBTER\_NOME}}
+\index{MSG\_OBTER\_NOME@{MSG\_OBTER\_NOME}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_NOME}{MSG\_OBTER\_NOME}}
+{\footnotesize\ttfamily \#define MSG\+\_\+\+OBTER\+\_\+\+NOME~\char`\"{}Insira o nome do cliente\+: \char`\"{}}
+
+\mbox{\Hypertarget{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}\label{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}} 
+\index{client\_struct.h@{client\_struct.h}!MSG\_OBTER\_NUM\_CLIENTE@{MSG\_OBTER\_NUM\_CLIENTE}}
+\index{MSG\_OBTER\_NUM\_CLIENTE@{MSG\_OBTER\_NUM\_CLIENTE}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_NUM\_CLIENTE}{MSG\_OBTER\_NUM\_CLIENTE}}
+{\footnotesize\ttfamily \#define MSG\+\_\+\+OBTER\+\_\+\+NUM\+\_\+\+CLIENTE~\char`\"{}Insira um número de cliente \mbox{[}0-\/1000\mbox{]}\+: \char`\"{}}
+
+\mbox{\Hypertarget{client__struct_8h_a610ec952fd16f258adf94fdbcdfb2d39}\label{client__struct_8h_a610ec952fd16f258adf94fdbcdfb2d39}} 
+\index{client\_struct.h@{client\_struct.h}!MSG\_OBTER\_PAIS@{MSG\_OBTER\_PAIS}}
+\index{MSG\_OBTER\_PAIS@{MSG\_OBTER\_PAIS}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_PAIS}{MSG\_OBTER\_PAIS}}
+{\footnotesize\ttfamily \#define MSG\+\_\+\+OBTER\+\_\+\+PAIS~\char`\"{}Insira o nome do pais\+: \char`\"{}}
+
+\mbox{\Hypertarget{client__struct_8h_a1d382c293dd113b7e7cff41fdb5f7ae3}\label{client__struct_8h_a1d382c293dd113b7e7cff41fdb5f7ae3}} 
+\index{client\_struct.h@{client\_struct.h}!OBTER\_NIF@{OBTER\_NIF}}
+\index{OBTER\_NIF@{OBTER\_NIF}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{OBTER\_NIF}{OBTER\_NIF}}
+{\footnotesize\ttfamily \#define OBTER\+\_\+\+NIF~\char`\"{}Insira o NIF\+: \char`\"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{client__struct_8h_af4d6f851bb2ea2ad04e459ea9505ce14}\label{client__struct_8h_af4d6f851bb2ea2ad04e459ea9505ce14}} 
+\index{client\_struct.h@{client\_struct.h}!atualizarClientes@{atualizarClientes}}
+\index{atualizarClientes@{atualizarClientes}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{atualizarClientes()}{atualizarClientes()}}
+{\footnotesize\ttfamily void atualizar\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                            \{}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} numero = \mbox{\hyperlink{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}{procurarCliente}}(*clientes,}
+\DoxyCodeLine{41             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}{MIN\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}{MAX\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}{MSG\_OBTER\_NUM\_CLIENTE}}));}
+\DoxyCodeLine{42     \textcolor{keywordflow}{if} (numero != -\/1) \{}
+\DoxyCodeLine{43         \mbox{\hyperlink{client__struct_8c_a6c1539fd01b0880ee804e841fdc17f7b}{atualizarCliente}}(\&(*clientes).clientes[numero]);}
+\DoxyCodeLine{44     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{45         puts(\mbox{\hyperlink{client__struct_8h_aaf0c11244777b8dde7b6833b18af60d1}{ERRO\_CLIENTE\_NAO\_EXISTE}});}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8h_a43b67bec8f5df6eb44dc705e6397fb94}\label{client__struct_8h_a43b67bec8f5df6eb44dc705e6397fb94}} 
+\index{client\_struct.h@{client\_struct.h}!inserirClientes@{inserirClientes}}
+\index{inserirClientes@{inserirClientes}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{inserirClientes()}{inserirClientes()}}
+{\footnotesize\ttfamily int inserir\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                         \{}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} cod\_cliente = \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}{MIN\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}{MAX\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}{MSG\_OBTER\_NUM\_CLIENTE}});}
+\DoxyCodeLine{27     \textcolor{keywordflow}{if} (\mbox{\hyperlink{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}{procurarCliente}}(*clientes, cod\_cliente) == -\/1) \{}
+\DoxyCodeLine{28         clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_abe09348e3333bdf8681ae2c2b7f410c1}{cod\_cliente}} = cod\_cliente;}
+\DoxyCodeLine{29         \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{lerString}}(clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_a8b1a10d4f4ad1cbd1fd66f20a288fdcb}{nome}}, \mbox{\hyperlink{client__struct_8h_aa7497b2ad3c08c7768f409ca10b7764c}{MAX\_NOME\_CLIENTE}}, \mbox{\hyperlink{article__struct_8h_a24821793d3512d829e8a08de0058b4ac}{MSG\_OBTER\_NOME}});}
+\DoxyCodeLine{30         clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_abb000fc03fa9343f9b59e5a27a30404a}{nif}} =}
+\DoxyCodeLine{31                 \mbox{\hyperlink{input_8c_a694e9552dbdb11eb6ef36e9752241595}{obterLong}}(\mbox{\hyperlink{client__struct_8h_a302620ea0edcac33622925b502fa01fe}{MIN\_NIF}}, \mbox{\hyperlink{client__struct_8h_a3e74ee334b9255a077dc7238eb74edae}{MAX\_NIF}}, \mbox{\hyperlink{client__struct_8h_a1d382c293dd113b7e7cff41fdb5f7ae3}{OBTER\_NIF}});}
+\DoxyCodeLine{32         \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{lerString}}(clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_aca70a10e004a1487c360daa2e73ac415}{pais}}, \mbox{\hyperlink{client__struct_8h_a027e514e2a81b2c406c76982be780e4a}{MAX\_PAIS\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_a610ec952fd16f258adf94fdbcdfb2d39}{MSG\_OBTER\_PAIS}});}
+\DoxyCodeLine{33         clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_a059190954dabaceb1653fc0ca8a76495}{apagado}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}++;}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8h_aa1ac7b4e1389f28381daad2966f01a1f}\label{client__struct_8h_aa1ac7b4e1389f28381daad2966f01a1f}} 
+\index{client\_struct.h@{client\_struct.h}!listarClientes@{listarClientes}}
+\index{listarClientes@{listarClientes}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{listarClientes()}{listarClientes()}}
+{\footnotesize\ttfamily void listar\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}}}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                        \{}
+\DoxyCodeLine{67     \textcolor{keywordflow}{if} (clientes.\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}} > 0) \{}
+\DoxyCodeLine{68         \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{69         \textcolor{keywordflow}{for} (i = 0; i < clientes.\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}; i++) \{}
+\DoxyCodeLine{70             \mbox{\hyperlink{client__struct_8c_a26dc126dac89e6d6f7822bcd9119400a}{imprimirCliente}}(clientes.\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[i]);}
+\DoxyCodeLine{71         \}}
+\DoxyCodeLine{72     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{73         puts(\mbox{\hyperlink{article__struct_8h_a17d1cfa48ecf37a2a28b9e0e8b9dc6e1}{ERRO\_LISTA\_VAZIA}});}
+\DoxyCodeLine{74     \}}
+\DoxyCodeLine{75 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8h_a5651c71cfc50aa8138d81ec2c66d22c2}\label{client__struct_8h_a5651c71cfc50aa8138d81ec2c66d22c2}} 
+\index{client\_struct.h@{client\_struct.h}!procurarCliente@{procurarCliente}}
+\index{procurarCliente@{procurarCliente}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{procurarCliente()}{procurarCliente()}}
+{\footnotesize\ttfamily int procurar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}}}]{cliente,  }\item[{int}]{cod\+\_\+cliente }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                                        \{}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{17     \textcolor{keywordflow}{for} (i = 0; i < cliente.\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}; i++) \{}
+\DoxyCodeLine{18         \textcolor{keywordflow}{if} (cliente.\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[i].\mbox{\hyperlink{struct_cliente_abe09348e3333bdf8681ae2c2b7f410c1}{cod\_cliente}} == cod\_cliente) \{}
+\DoxyCodeLine{19             \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{20         \}}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8h_a1eba25f7ae992ca97172a4660fa8424a}\label{client__struct_8h_a1eba25f7ae992ca97172a4660fa8424a}} 
+\index{client\_struct.h@{client\_struct.h}!removerClientes@{removerClientes}}
+\index{removerClientes@{removerClientes}!client\_struct.h@{client\_struct.h}}
+\doxysubsubsection{\texorpdfstring{removerClientes()}{removerClientes()}}
+{\footnotesize\ttfamily void remover\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                          \{}
+\DoxyCodeLine{57     \textcolor{keywordtype}{int} numero = \mbox{\hyperlink{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}{procurarCliente}}(*clientes,}
+\DoxyCodeLine{58             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}{MIN\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}{MAX\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}{MSG\_OBTER\_NUM\_CLIENTE}}));}
+\DoxyCodeLine{59     \textcolor{keywordflow}{if} (numero != -\/1) \{}
+\DoxyCodeLine{60         (*clientes).clientes[numero].apagado = \textcolor{keyword}{true};}
+\DoxyCodeLine{61     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{62         puts(\mbox{\hyperlink{client__struct_8h_aaf0c11244777b8dde7b6833b18af60d1}{ERRO\_CLIENTE\_NAO\_EXISTE}});}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64 \}}
+
+\end{DoxyCode}

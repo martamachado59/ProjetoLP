@@ -3,15 +3,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/main.c to edit this template
  */
 
-/* 
+/**
+ * @file main.c
+ * @brief Doxygen
+ * @return 
+ */
+/*
  * File:   main.c
- * Author: marta
- *
+ * Author: Marta Machado
+ * Author: Mara Leite
  * Created on 23 de dezembro de 2021, 00:20
  */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "input.h"
+#include "order_struct.h"
+
 #define CLIENTE 'c'
 #define ADMINISTRADOR 'a'
 #define SANDALIA 's'
@@ -20,81 +28,85 @@
 
 
 /**** LER VALORES ****/
-char ler_tipo_utilizador(){
+
+char ler_tipo_utilizador() {
     char tipo_utilizador;
-    
-    do{
-        printf(" Insira o tipo de utilizador ( a-administrador, c-cliente): ");
+
+    do {
+        printf("Insira o tipo de utilizador ( a-administrador, c-cliente): ");
         scanf("%c", &tipo_utilizador);
-    }while (tipo_utilizador != ADMINISTRADOR && tipo_utilizador != CLIENTE);
-    
+    } while (tipo_utilizador != ADMINISTRADOR && tipo_utilizador != CLIENTE);
+
     return tipo_utilizador;
 }
-
+/*
 int ler_nif() {
     int nif;
 
     do {
         printf("Insira o seu nif: \n");
         scanf(" %d", &nif);
-    } while (nif <= 99999999 || nif >= 999999999);    
+    } while (nif <= 99999999 || nif >= 999999999);
 
     return nif;
 }
+
 char ler_tipo_calcado() {
     char calcado;
-    
+
     do {
         printf("Insira o tipo de calçado (s-sandalia,b-botas,sap-sapatos): ");
-        scanf(" %c",&calcado);   
+        scanf(" %c", &calcado);
     } while (calcado != SANDALIA && calcado != BOTAS && calcado != SAPATOS);
-    
+
     return calcado;
 }
-int ler_quantidade(){
+
+int ler_quantidade() {
     int num;
-    
-    do{
-       printf("Insira a quantidade de pares de sapatos: ");
-        scanf(" %d",&num); 
-    }while (num < 0 || num >= 1000);
-    
+
+    do {
+        printf("Insira a quantidade de pares de sapatos: ");
+        scanf(" %d", &num);
+    } while (num < 0 || num >= 1000);
+
     return num;
 }
 
-float ler_mao_obra(){
-    float preco_mao_obra;   
+float ler_mao_obra() {
+    float preco_mao_obra;
     do {
-        printf ("Insira o preço de mão obra: ");
-        scanf ("%f", &preco_mao_obra);
-    } while (preco_mao_obra <=0);
-    
+        printf("Insira o preço de mão obra: ");
+        scanf("%f", &preco_mao_obra);
+    } while (preco_mao_obra <= 0);
+
     return preco_mao_obra;
 }
 
-float ler_margem (){
+float ler_margem() {
     float valor_margem;
-    
-    do{
+
+    do {
         printf("Insira o valor da margem de lucro: ");
         scanf("%f", &valor_margem);
-    } while (valor_margem <=0.0 || valor_margem >=1.0 );
-    
+    } while (valor_margem <= 0.0 || valor_margem >= 1.0);
+
     return valor_margem;
 }
 
-float ler_custo_restante (){
+float ler_custo_restante() {
     float valor_custo_restante;
-    
-    do{
+
+    do {
         printf("Insira o valor do custo restante: ");
         scanf("%f", &valor_custo_restante);
-    }while (valor_custo_restante <=0);
-    
+    } while (valor_custo_restante <= 0);
+
     return valor_custo_restante;
 }
 
 /******CALCULOS******/
+<<<<<<< Updated upstream
 
 float cal_mao_obra(int quantidade,char calcado){
     if(calcado == SANDALIA)
@@ -110,23 +122,33 @@ float cal_mao_obra(int quantidade,char calcado){
     else if(calcado == SAPATOS)
     {
         int mao_obra=5;
+=======
+/*
+float cal_mao_obra(int quantidade, char calcado) {
+    if (calcado == SANDALIA) {
+        int mao_obra = 4;
         return quantidade * mao_obra;
-    }   
+    } else if (calcado == BOTAS) {
+        int mao_obra = 6;
+        return quantidade * mao_obra;
+    } else if (calcado == SAPATOS) {
+        int mao_obra = 5;
+>>>>>>> Stashed changes
+        return quantidade * mao_obra;
+    }
 }
+ */
 
 int main(int argc, char** argv) {
-    /*float tamanho_sapatos[15]={0.65,0.7,0.75,0.8,0.85,0.9,0.95,1,1.05,1.10,1.15,1.20,1.25,1.30,1.35};
-    float tamanho_botas[15]={0.7,0.75,0.8,0.85,0.9,0.95,1,1.05,1.10,1.15,1.20,1.25,1.30,1.35,1.40};
-    float tamanho_sandalias[15]={0.8,0.825,0.850,0.875,0.9,0.925,0.950,0.975,1,1.025,1.050,1.075,1.1,1.125,1.150};*/
-    
-    float mao_obra,margem,restante;
-    int nif,quantidade,cod_cliente;
-    char nome[60], pais[40], tipo_utilizador,calcado;
+    int op;
+    char tipo_utilizador;
     
     tipo_utilizador=ler_tipo_utilizador();
     
-    //CLIENTE
+    /********MENU*******/
+        //CLIENTE
     if(tipo_utilizador == CLIENTE)
+<<<<<<< Updated upstream
     {
         //TENTAR POR AUTOMATICO O CODIGO
         printf("Insira o seu código cliente: \n");
@@ -139,26 +161,67 @@ int main(int argc, char** argv) {
         calcado=ler_tipo_calcado();
         quantidade=ler_quantidade();
         mao_obra=cal_mao_obra(quantidade,calcado);
+=======
+      {
+>>>>>>> Stashed changes
         
-        //Mostrar Valores ao cliente
-        printf("\n O seu código cliente é:%d",cod_cliente);
-        printf("\n O seu nif é:%d",nif);
-        printf("\n O cliente:%s",nome);
-        printf("\n País:%s",pais);
-        printf("\n O número de pares é:%d",quantidade);
-        printf("\n O calçado escolhido é:%c",calcado);
-        printf("\n O valor de mão de obra é:%.2f",mao_obra);
-    }   
- /**************************************/   
-    //ADMINISTRADOR
-    
-    //Mudar preços
-    if(tipo_utilizador == ADMINISTRADOR)
-    {
-        mao_obra=ler_mao_obra();
-        margem=ler_margem();
-        restante=ler_custo_restante();
-    }
+      }
+        //ADMINISTRADOR
+    else if(tipo_utilizador == ADMINISTRADOR)
+      {
+        /****ADM-CLIENTES****/
+        printf("Escolha uma das opções:\n"
+                "1-Inserir cliente\n"
+                "2-Atualizar cliente\n"
+                "3-Listar clientes\n"
+                "4-Imprimir Cliente\n"
+                "5-Remover Cliente\n"
+                "Indique a sua opção:");
+        scanf("%d",&op);
+         Clientes clientes = {.contador = 0};
+        switch(op){
+           
+            case 0:
+            break;
+            
+            case 1:
+                inserirClientes(&clientes);
+                break;
+            
+            case 2:
+                atualizarClientes(&clientes);
+                break;
+            
+            case 3:
+                listarClientes(clientes);
+                break;
+            
+            case 4:
+                imprimirCliente(clientes.clientes[0]);
+                break;
+            
+            case 5:
+                removerClientes(&clientes);
+                break;
+            
+            default:
+            printf("\nOpcão invalida.");
+      }
+       
+        /****ADM-ARTIGOS****/
+     //   Artigos artigos = {.contador = 0};
+     //   inserirArtigos(&artigos);
+     //   imprimirArtigo(artigos.artigos[0]);
+        
+        /****ADM-PREÇOS****/
+     //   Precos precos = {.contador = 0};
+     //   inserirPrecos(&precos);
+     //   imprimirPreco(precos.precos[0]);
+        
+        /****ADM-ENCOMENDAS****/
+     //   Encomenda encomenda = {.contador = 0, .precoEncomenda = 0};
+     //   inserirArtigoEncomenda(&encomenda, &clientes.clientes[0], &artigos.artigos[0], &precos);
+     //   listarArtigosEncomenda(&encomenda);
+      }
     return (EXIT_SUCCESS);
 }
-

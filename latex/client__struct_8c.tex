@@ -1,0 +1,156 @@
+\hypertarget{client__struct_8c}{}\doxysection{client\+\_\+struct.\+c File Reference}
+\label{client__struct_8c}\index{client\_struct.c@{client\_struct.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}client\+\_\+struct.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{client__struct_8c_a26dc126dac89e6d6f7822bcd9119400a}{imprimir\+Cliente}} (\mbox{\hyperlink{struct_cliente}{Cliente}} cliente)
+\item 
+int \mbox{\hyperlink{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}{procurar\+Cliente}} (\mbox{\hyperlink{struct_clientes}{Clientes}} cliente, int cod\+\_\+cliente)
+\item 
+int \mbox{\hyperlink{client__struct_8c_a43b67bec8f5df6eb44dc705e6397fb94}{inserir\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\item 
+void \mbox{\hyperlink{client__struct_8c_af4d6f851bb2ea2ad04e459ea9505ce14}{atualizar\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\item 
+void \mbox{\hyperlink{client__struct_8c_a6c1539fd01b0880ee804e841fdc17f7b}{atualizar\+Cliente}} (\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente)
+\item 
+void \mbox{\hyperlink{client__struct_8c_a1eba25f7ae992ca97172a4660fa8424a}{remover\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\item 
+void \mbox{\hyperlink{client__struct_8c_aa1ac7b4e1389f28381daad2966f01a1f}{listar\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} clientes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{client__struct_8c_a6c1539fd01b0880ee804e841fdc17f7b}\label{client__struct_8c_a6c1539fd01b0880ee804e841fdc17f7b}} 
+\index{client\_struct.c@{client\_struct.c}!atualizarCliente@{atualizarCliente}}
+\index{atualizarCliente@{atualizarCliente}!client\_struct.c@{client\_struct.c}}
+\doxysubsubsection{\texorpdfstring{atualizarCliente()}{atualizarCliente()}}
+{\footnotesize\ttfamily void atualizar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                         \{}
+\DoxyCodeLine{50     \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{lerString}}((*cliente).nome, \mbox{\hyperlink{client__struct_8h_aa7497b2ad3c08c7768f409ca10b7764c}{MAX\_NOME\_CLIENTE}}, \mbox{\hyperlink{article__struct_8h_a24821793d3512d829e8a08de0058b4ac}{MSG\_OBTER\_NOME}});}
+\DoxyCodeLine{51     (*cliente).nif =}
+\DoxyCodeLine{52             \mbox{\hyperlink{input_8c_a694e9552dbdb11eb6ef36e9752241595}{obterLong}}(\mbox{\hyperlink{client__struct_8h_a302620ea0edcac33622925b502fa01fe}{MIN\_NIF}}, \mbox{\hyperlink{client__struct_8h_a3e74ee334b9255a077dc7238eb74edae}{MAX\_NIF}}, \mbox{\hyperlink{client__struct_8h_a1d382c293dd113b7e7cff41fdb5f7ae3}{OBTER\_NIF}});}
+\DoxyCodeLine{53     \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{lerString}}((*cliente).pais, \mbox{\hyperlink{client__struct_8h_a027e514e2a81b2c406c76982be780e4a}{MAX\_PAIS\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_a610ec952fd16f258adf94fdbcdfb2d39}{MSG\_OBTER\_PAIS}});}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8c_af4d6f851bb2ea2ad04e459ea9505ce14}\label{client__struct_8c_af4d6f851bb2ea2ad04e459ea9505ce14}} 
+\index{client\_struct.c@{client\_struct.c}!atualizarClientes@{atualizarClientes}}
+\index{atualizarClientes@{atualizarClientes}!client\_struct.c@{client\_struct.c}}
+\doxysubsubsection{\texorpdfstring{atualizarClientes()}{atualizarClientes()}}
+{\footnotesize\ttfamily void atualizar\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                            \{}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} numero = \mbox{\hyperlink{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}{procurarCliente}}(*clientes,}
+\DoxyCodeLine{41             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}{MIN\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}{MAX\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}{MSG\_OBTER\_NUM\_CLIENTE}}));}
+\DoxyCodeLine{42     \textcolor{keywordflow}{if} (numero != -\/1) \{}
+\DoxyCodeLine{43         \mbox{\hyperlink{client__struct_8c_a6c1539fd01b0880ee804e841fdc17f7b}{atualizarCliente}}(\&(*clientes).clientes[numero]);}
+\DoxyCodeLine{44     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{45         puts(\mbox{\hyperlink{client__struct_8h_aaf0c11244777b8dde7b6833b18af60d1}{ERRO\_CLIENTE\_NAO\_EXISTE}});}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8c_a26dc126dac89e6d6f7822bcd9119400a}\label{client__struct_8c_a26dc126dac89e6d6f7822bcd9119400a}} 
+\index{client\_struct.c@{client\_struct.c}!imprimirCliente@{imprimirCliente}}
+\index{imprimirCliente@{imprimirCliente}!client\_struct.c@{client\_struct.c}}
+\doxysubsubsection{\texorpdfstring{imprimirCliente()}{imprimirCliente()}}
+{\footnotesize\ttfamily void imprimir\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cliente}{Cliente}}}]{cliente }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                                       \{}
+\DoxyCodeLine{11     printf(\textcolor{stringliteral}{"{}\(\backslash\)n\%d \%s \%ld \%s \%d"{}}, cliente.\mbox{\hyperlink{struct_cliente_abe09348e3333bdf8681ae2c2b7f410c1}{cod\_cliente}}, cliente.\mbox{\hyperlink{struct_cliente_a8b1a10d4f4ad1cbd1fd66f20a288fdcb}{nome}}, cliente.\mbox{\hyperlink{struct_cliente_abb000fc03fa9343f9b59e5a27a30404a}{nif}},}
+\DoxyCodeLine{12             cliente.\mbox{\hyperlink{struct_cliente_aca70a10e004a1487c360daa2e73ac415}{pais}}, cliente.\mbox{\hyperlink{struct_cliente_a059190954dabaceb1653fc0ca8a76495}{apagado}});}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8c_a43b67bec8f5df6eb44dc705e6397fb94}\label{client__struct_8c_a43b67bec8f5df6eb44dc705e6397fb94}} 
+\index{client\_struct.c@{client\_struct.c}!inserirClientes@{inserirClientes}}
+\index{inserirClientes@{inserirClientes}!client\_struct.c@{client\_struct.c}}
+\doxysubsubsection{\texorpdfstring{inserirClientes()}{inserirClientes()}}
+{\footnotesize\ttfamily int inserir\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                         \{}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} cod\_cliente = \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}{MIN\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}{MAX\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}{MSG\_OBTER\_NUM\_CLIENTE}});}
+\DoxyCodeLine{27     \textcolor{keywordflow}{if} (\mbox{\hyperlink{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}{procurarCliente}}(*clientes, cod\_cliente) == -\/1) \{}
+\DoxyCodeLine{28         clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_abe09348e3333bdf8681ae2c2b7f410c1}{cod\_cliente}} = cod\_cliente;}
+\DoxyCodeLine{29         \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{lerString}}(clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_a8b1a10d4f4ad1cbd1fd66f20a288fdcb}{nome}}, \mbox{\hyperlink{client__struct_8h_aa7497b2ad3c08c7768f409ca10b7764c}{MAX\_NOME\_CLIENTE}}, \mbox{\hyperlink{article__struct_8h_a24821793d3512d829e8a08de0058b4ac}{MSG\_OBTER\_NOME}});}
+\DoxyCodeLine{30         clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_abb000fc03fa9343f9b59e5a27a30404a}{nif}} =}
+\DoxyCodeLine{31                 \mbox{\hyperlink{input_8c_a694e9552dbdb11eb6ef36e9752241595}{obterLong}}(\mbox{\hyperlink{client__struct_8h_a302620ea0edcac33622925b502fa01fe}{MIN\_NIF}}, \mbox{\hyperlink{client__struct_8h_a3e74ee334b9255a077dc7238eb74edae}{MAX\_NIF}}, \mbox{\hyperlink{client__struct_8h_a1d382c293dd113b7e7cff41fdb5f7ae3}{OBTER\_NIF}});}
+\DoxyCodeLine{32         \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{lerString}}(clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_aca70a10e004a1487c360daa2e73ac415}{pais}}, \mbox{\hyperlink{client__struct_8h_a027e514e2a81b2c406c76982be780e4a}{MAX\_PAIS\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_a610ec952fd16f258adf94fdbcdfb2d39}{MSG\_OBTER\_PAIS}});}
+\DoxyCodeLine{33         clientes-\/>\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}].\mbox{\hyperlink{struct_cliente_a059190954dabaceb1653fc0ca8a76495}{apagado}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} clientes-\/>\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}++;}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8c_aa1ac7b4e1389f28381daad2966f01a1f}\label{client__struct_8c_aa1ac7b4e1389f28381daad2966f01a1f}} 
+\index{client\_struct.c@{client\_struct.c}!listarClientes@{listarClientes}}
+\index{listarClientes@{listarClientes}!client\_struct.c@{client\_struct.c}}
+\doxysubsubsection{\texorpdfstring{listarClientes()}{listarClientes()}}
+{\footnotesize\ttfamily void listar\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}}}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                        \{}
+\DoxyCodeLine{67     \textcolor{keywordflow}{if} (clientes.\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}} > 0) \{}
+\DoxyCodeLine{68         \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{69         \textcolor{keywordflow}{for} (i = 0; i < clientes.\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}; i++) \{}
+\DoxyCodeLine{70             \mbox{\hyperlink{client__struct_8c_a26dc126dac89e6d6f7822bcd9119400a}{imprimirCliente}}(clientes.\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[i]);}
+\DoxyCodeLine{71         \}}
+\DoxyCodeLine{72     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{73         puts(\mbox{\hyperlink{article__struct_8h_a17d1cfa48ecf37a2a28b9e0e8b9dc6e1}{ERRO\_LISTA\_VAZIA}});}
+\DoxyCodeLine{74     \}}
+\DoxyCodeLine{75 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}\label{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}} 
+\index{client\_struct.c@{client\_struct.c}!procurarCliente@{procurarCliente}}
+\index{procurarCliente@{procurarCliente}!client\_struct.c@{client\_struct.c}}
+\doxysubsubsection{\texorpdfstring{procurarCliente()}{procurarCliente()}}
+{\footnotesize\ttfamily int procurar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}}}]{cliente,  }\item[{int}]{cod\+\_\+cliente }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                                        \{}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{17     \textcolor{keywordflow}{for} (i = 0; i < cliente.\mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}}; i++) \{}
+\DoxyCodeLine{18         \textcolor{keywordflow}{if} (cliente.\mbox{\hyperlink{struct_clientes_a74177aa22ee7dca97ff03a748c733a1a}{clientes}}[i].\mbox{\hyperlink{struct_cliente_abe09348e3333bdf8681ae2c2b7f410c1}{cod\_cliente}} == cod\_cliente) \{}
+\DoxyCodeLine{19             \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{20         \}}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{client__struct_8c_a1eba25f7ae992ca97172a4660fa8424a}\label{client__struct_8c_a1eba25f7ae992ca97172a4660fa8424a}} 
+\index{client\_struct.c@{client\_struct.c}!removerClientes@{removerClientes}}
+\index{removerClientes@{removerClientes}!client\_struct.c@{client\_struct.c}}
+\doxysubsubsection{\texorpdfstring{removerClientes()}{removerClientes()}}
+{\footnotesize\ttfamily void remover\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                          \{}
+\DoxyCodeLine{57     \textcolor{keywordtype}{int} numero = \mbox{\hyperlink{client__struct_8c_a5651c71cfc50aa8138d81ec2c66d22c2}{procurarCliente}}(*clientes,}
+\DoxyCodeLine{58             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{client__struct_8h_a04ebc52791fcb14454d2ac35b818a4ea}{MIN\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab3d232456dd499c0d4f655ffa5ca6db4}{MAX\_NUM\_CLIENTE}}, \mbox{\hyperlink{client__struct_8h_ab76431b6b015fa2f606c6d44f6518481}{MSG\_OBTER\_NUM\_CLIENTE}}));}
+\DoxyCodeLine{59     \textcolor{keywordflow}{if} (numero != -\/1) \{}
+\DoxyCodeLine{60         (*clientes).clientes[numero].apagado = \textcolor{keyword}{true};}
+\DoxyCodeLine{61     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{62         puts(\mbox{\hyperlink{client__struct_8h_aaf0c11244777b8dde7b6833b18af60d1}{ERRO\_CLIENTE\_NAO\_EXISTE}});}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64 \}}
+
+\end{DoxyCode}

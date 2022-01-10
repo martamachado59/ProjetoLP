@@ -35,7 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/article_struct.o \
+	${OBJECTDIR}/client_struct.o \
+	${OBJECTDIR}/input.o \
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/order.o
 
 
 # C Compiler Flags
@@ -61,11 +65,34 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projeto_lp.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projeto_lp ${OBJECTFILES} ${LDLIBSOPTIONS}
+<<<<<<< Updated upstream
+=======
+
+${OBJECTDIR}/article_struct.o: article_struct.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/article_struct.o article_struct.c
+
+${OBJECTDIR}/client_struct.o: client_struct.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/client_struct.o client_struct.c
+
+${OBJECTDIR}/input.o: input.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/input.o input.c
+>>>>>>> Stashed changes
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/order.o: order.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/order.o order.c
 
 # Subprojects
 .build-subprojects:

@@ -1,0 +1,59 @@
+\hypertarget{client__struct_8h_source}{}\doxysection{client\+\_\+struct.\+h}
+\mbox{\hyperlink{client__struct_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt to change this license}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template}}
+\DoxyCodeLine{4 \textcolor{comment}{ */}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{comment}{/* }}
+\DoxyCodeLine{7 \textcolor{comment}{ * File:   clientStruct.h}}
+\DoxyCodeLine{8 \textcolor{comment}{ * Author: marta}}
+\DoxyCodeLine{9 \textcolor{comment}{ *}}
+\DoxyCodeLine{10 \textcolor{comment}{ * Created on 2 de janeiro de 2022, 16:25}}
+\DoxyCodeLine{11 \textcolor{comment}{ */}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define CLIENTSTRUCT\_H}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define MAX\_CLIENTES 50}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define ERRO\_CLIENTE\_NAO\_EXISTE "{}O cliente não existe na lista."{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define ERRO\_LISTA\_VAZIA "{}A lista de cliente está vazia."{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define ERRO\_LISTA\_CHEIA "{}A lista de cliente está cheia."{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define ERRO\_CLIENTE\_EXISTE "{}O número de cliente já se encontra atribuído."{}}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define MAX\_NOME\_CLIENTE 50}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define MSG\_OBTER\_NOME "{}Insira o nome do cliente: "{}}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define MIN\_NIF 000000001}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define MAX\_NIF 999999999}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define OBTER\_NIF "{}Insira o NIF: "{}}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define MAX\_PAIS\_CLIENTE 50}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define MSG\_OBTER\_PAIS "{}Insira o nome do pais: "{}}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define MIN\_NUM\_CLIENTE 0}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define MAX\_NUM\_CLIENTE 1000}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define MSG\_OBTER\_NUM\_CLIENTE "{}Insira um número de cliente [0-\/1000]: "{}}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_cliente_abe09348e3333bdf8681ae2c2b7f410c1}{cod\_cliente}};}
+\DoxyCodeLine{39     \textcolor{keywordtype}{char} nome[\mbox{\hyperlink{client__struct_8h_aa7497b2ad3c08c7768f409ca10b7764c}{MAX\_NOME\_CLIENTE}}];}
+\DoxyCodeLine{40     \textcolor{keywordtype}{long} \mbox{\hyperlink{struct_cliente_abb000fc03fa9343f9b59e5a27a30404a}{nif}};}
+\DoxyCodeLine{41     \textcolor{keywordtype}{char} pais[\mbox{\hyperlink{client__struct_8h_a027e514e2a81b2c406c76982be780e4a}{MAX\_PAIS\_CLIENTE}}];}
+\DoxyCodeLine{42     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_cliente_a059190954dabaceb1653fc0ca8a76495}{apagado}};}
+\DoxyCodeLine{43 \} \mbox{\hyperlink{struct_cliente}{Cliente}};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{46     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_clientes_af4c0f604be175500a011c5a4a8860e17}{contador}};}
+\DoxyCodeLine{47     \mbox{\hyperlink{struct_cliente}{Cliente}} clientes[\mbox{\hyperlink{client__struct_8h_a0cf5c23bdf46ca7f4778aea7da2bc548}{MAX\_CLIENTES}}];}
+\DoxyCodeLine{48 \} \mbox{\hyperlink{struct_clientes}{Clientes}};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keywordtype}{int} \mbox{\hyperlink{client__struct_8h_a43b67bec8f5df6eb44dc705e6397fb94}{inserirClientes}}(\mbox{\hyperlink{struct_clientes}{Clientes}} *clientes);}
+\DoxyCodeLine{51 \textcolor{keywordtype}{int} \mbox{\hyperlink{client__struct_8h_a5651c71cfc50aa8138d81ec2c66d22c2}{procurarCliente}}(\mbox{\hyperlink{struct_clientes}{Clientes}} cliente, \textcolor{keywordtype}{int} cod\_cliente);}
+\DoxyCodeLine{52 \textcolor{keywordtype}{void} \mbox{\hyperlink{client__struct_8h_af4d6f851bb2ea2ad04e459ea9505ce14}{atualizarClientes}}(\mbox{\hyperlink{struct_clientes}{Clientes}} *clientes);}
+\DoxyCodeLine{53 \textcolor{keywordtype}{void} \mbox{\hyperlink{client__struct_8h_a1eba25f7ae992ca97172a4660fa8424a}{removerClientes}}(\mbox{\hyperlink{struct_clientes}{Clientes}} *clientes);}
+\DoxyCodeLine{54 \textcolor{keywordtype}{void} \mbox{\hyperlink{client__struct_8h_aa1ac7b4e1389f28381daad2966f01a1f}{listarClientes}}(\mbox{\hyperlink{struct_clientes}{Clientes}} clientes);}
+
+\end{DoxyCode}

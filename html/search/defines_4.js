@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['max_5fartigos_0',['MAX_ARTIGOS',['../article__struct_8h.html#ae72dca21a28f06aef5ec63a6abcfb426',1,'article_struct.h']]],
+  ['max_5fclientes_1',['MAX_CLIENTES',['../client__struct_8h.html#a0cf5c23bdf46ca7f4778aea7da2bc548',1,'client_struct.h']]],
+  ['max_5fnif_2',['MAX_NIF',['../client__struct_8h.html#a3e74ee334b9255a077dc7238eb74edae',1,'client_struct.h']]],
+  ['max_5fnome_5fartigo_3',['MAX_NOME_ARTIGO',['../article__struct_8h.html#a5471af55eb7acc8381d374d65194a083',1,'article_struct.h']]],
+  ['max_5fnome_5fcliente_4',['MAX_NOME_CLIENTE',['../client__struct_8h.html#aa7497b2ad3c08c7768f409ca10b7764c',1,'client_struct.h']]],
+  ['max_5fnum_5fartigo_5',['MAX_NUM_ARTIGO',['../article__struct_8h.html#a5ef8388b95e3c853a1d3759ffb8c6524',1,'article_struct.h']]],
+  ['max_5fnum_5fcliente_6',['MAX_NUM_CLIENTE',['../client__struct_8h.html#ab3d232456dd499c0d4f655ffa5ca6db4',1,'client_struct.h']]],
+  ['max_5fpais_5fcliente_7',['MAX_PAIS_CLIENTE',['../client__struct_8h.html#a027e514e2a81b2c406c76982be780e4a',1,'client_struct.h']]],
+  ['max_5ftam_8',['MAX_TAM',['../article__struct_8h.html#a22f04193987fe8741199b66fb25e9d91',1,'article_struct.h']]],
+  ['max_5ftipo_9',['MAX_TIPO',['../article__struct_8h.html#ab65eb4cb4e4631ad72ed5e9579bc9e5d',1,'article_struct.h']]],
+  ['min_5fnif_10',['MIN_NIF',['../client__struct_8h.html#a302620ea0edcac33622925b502fa01fe',1,'client_struct.h']]],
+  ['min_5fnum_5fartigo_11',['MIN_NUM_ARTIGO',['../article__struct_8h.html#a7a80f91120ad2b868a1c5d1ab8e2364a',1,'article_struct.h']]],
+  ['min_5fnum_5fcliente_12',['MIN_NUM_CLIENTE',['../client__struct_8h.html#a04ebc52791fcb14454d2ac35b818a4ea',1,'client_struct.h']]],
+  ['min_5ftam_13',['MIN_TAM',['../article__struct_8h.html#acfccd4d6e028c86fe0558f7f54c77316',1,'article_struct.h']]],
+  ['min_5ftipo_14',['MIN_TIPO',['../article__struct_8h.html#ac3273650642b0e8047c9ee0d562c7d18',1,'article_struct.h']]],
+  ['msg_5fobter_5fnome_15',['MSG_OBTER_NOME',['../article__struct_8h.html#a24821793d3512d829e8a08de0058b4ac',1,'MSG_OBTER_NOME():&#160;article_struct.h'],['../client__struct_8h.html#a24821793d3512d829e8a08de0058b4ac',1,'MSG_OBTER_NOME():&#160;client_struct.h']]],
+  ['msg_5fobter_5fnum_5fartigo_16',['MSG_OBTER_NUM_ARTIGO',['../article__struct_8h.html#a4dcd4b0f62c520fdf5fdaceca160feb1',1,'article_struct.h']]],
+  ['msg_5fobter_5fnum_5fcliente_17',['MSG_OBTER_NUM_CLIENTE',['../client__struct_8h.html#ab76431b6b015fa2f606c6d44f6518481',1,'client_struct.h']]],
+  ['msg_5fobter_5fpais_18',['MSG_OBTER_PAIS',['../client__struct_8h.html#a610ec952fd16f258adf94fdbcdfb2d39',1,'client_struct.h']]]
+];

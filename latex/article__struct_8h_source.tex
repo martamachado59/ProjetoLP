@@ -1,0 +1,61 @@
+\hypertarget{article__struct_8h_source}{}\doxysection{article\+\_\+struct.\+h}
+\mbox{\hyperlink{article__struct_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt to change this license}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template}}
+\DoxyCodeLine{4 \textcolor{comment}{ */}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{comment}{/* }}
+\DoxyCodeLine{7 \textcolor{comment}{ * File:   article\_struct.h}}
+\DoxyCodeLine{8 \textcolor{comment}{ * Author: marta}}
+\DoxyCodeLine{9 \textcolor{comment}{ *}}
+\DoxyCodeLine{10 \textcolor{comment}{ * Created on 2 de janeiro de 2022, 18:53}}
+\DoxyCodeLine{11 \textcolor{comment}{ */}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define MAX\_ARTIGOS 50}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define ERRO\_ARTIGO\_NAO\_EXISTE "{}O artigo não existe na lista."{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define ERRO\_LISTA\_VAZIA "{}A lista de artigos está vazia."{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define ERRO\_LISTA\_CHEIA "{}A lista de artigos está cheia."{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define ERRO\_ARTIGO\_EXISTE "{}O número de artigo já se encontra atribuído."{}}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define MAX\_NOME\_ARTIGO 50}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define MSG\_OBTER\_NOME "{}Insira o nome do artigo: "{}}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define MIN\_NUM\_ARTIGO 0}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define MAX\_NUM\_ARTIGO 1000}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define MSG\_OBTER\_NUM\_ARTIGO "{}Insira um número de artigo [0-\/1000]: "{}}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define MIN\_TAM 34}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define MAX\_TAM 48}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define OBTER\_TAM\_MIN "{}Insira o tamanho minimo: "{}}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define OBTER\_TAM\_MAX "{}Insira o tamanho maximo: "{}}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define MIN\_TIPO 1}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define MAX\_TIPO 3}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define OBTER\_TIPO "{}Insira o tipo: "{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{enum} \mbox{\hyperlink{article__struct_8h_a030a181134e163cb2a9e98e83810bb54}{tipo}} \{}
+\DoxyCodeLine{36     \mbox{\hyperlink{article__struct_8h_a030a181134e163cb2a9e98e83810bb54ae820147b39af6a65ece8d4c7284c27c9}{Bota}}, \mbox{\hyperlink{article__struct_8h_a030a181134e163cb2a9e98e83810bb54aba15492f395bb0e8529d239b5e76d582}{Sapato}}, \mbox{\hyperlink{article__struct_8h_a030a181134e163cb2a9e98e83810bb54af61fb10035c8b2bbac8e0c23e1bd7699}{Sandalia}}}
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_artigo_a72bce9d92f3c65c4f0e3fced58d7376d}{cod\_artigo}};}
+\DoxyCodeLine{41     \textcolor{keywordtype}{char} nome[\mbox{\hyperlink{article__struct_8h_a5471af55eb7acc8381d374d65194a083}{MAX\_NOME\_ARTIGO}}];}
+\DoxyCodeLine{42     \textcolor{keyword}{enum} \mbox{\hyperlink{article__struct_8h_a030a181134e163cb2a9e98e83810bb54}{tipo}} \mbox{\hyperlink{struct_artigo_a41c4b6b7b00363db229a8055f5f056c7}{tipo\_artigo}};}
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_artigo_ac5fd3db779ffcd78880f0d1736352760}{tam\_min}};}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_artigo_a22540be4fa18de17c6978d834f17d038}{tam\_max}};}
+\DoxyCodeLine{45 \} \mbox{\hyperlink{struct_artigo}{Artigo}};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{48     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}};}
+\DoxyCodeLine{49     \mbox{\hyperlink{struct_artigo}{Artigo}} artigos[\mbox{\hyperlink{article__struct_8h_ae72dca21a28f06aef5ec63a6abcfb426}{MAX\_ARTIGOS}}];}
+\DoxyCodeLine{50 \} \mbox{\hyperlink{struct_artigos}{Artigos}};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{keywordtype}{int} \mbox{\hyperlink{article__struct_8h_a389b47186221cc0c2e7c08d114154241}{inserirArtigos}}(\mbox{\hyperlink{struct_artigos}{Artigos}} *artigos);}
+\DoxyCodeLine{53 \textcolor{keywordtype}{int} \mbox{\hyperlink{article__struct_8h_a54edc77421a09d1625536d4d2aaca5eb}{procurarArtigo}}(\mbox{\hyperlink{struct_artigos}{Artigos}} artigos, \textcolor{keywordtype}{int} cod\_artigo);}
+\DoxyCodeLine{54 \textcolor{keywordtype}{void} \mbox{\hyperlink{article__struct_8h_a789a64fc5e828a8d13d921418a19a29a}{atualizarArtigos}}(\mbox{\hyperlink{struct_artigos}{Artigos}} *artigos);}
+\DoxyCodeLine{55 \textcolor{keywordtype}{void} \mbox{\hyperlink{article__struct_8h_a2cbac06c178ea039aebea341a3186ad6}{removerArtigos}}(\mbox{\hyperlink{struct_artigos}{Artigos}} *artigos);}
+\DoxyCodeLine{56 \textcolor{keywordtype}{void} \mbox{\hyperlink{article__struct_8h_af41182f3570d8d996b43fab91370e640}{listarArtigos}}(\mbox{\hyperlink{struct_artigos}{Artigos}} artigos);}
+
+\end{DoxyCode}

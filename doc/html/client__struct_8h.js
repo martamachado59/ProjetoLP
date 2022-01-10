@@ -1,0 +1,26 @@
+var client__struct_8h =
+[
+    [ "Cliente", "struct_cliente.html", "struct_cliente" ],
+    [ "Clientes", "struct_clientes.html", "struct_clientes" ],
+    [ "CLIENTSTRUCT_H", "client__struct_8h.html#a13146edd55a2b9f6b3151f1a91c38170", null ],
+    [ "ERRO_CLIENTE_EXISTE", "client__struct_8h.html#ab112b7752fa3ccf2d0f7fbcc52cb1439", null ],
+    [ "ERRO_CLIENTE_NAO_EXISTE", "client__struct_8h.html#aaf0c11244777b8dde7b6833b18af60d1", null ],
+    [ "ERRO_LISTA_CHEIA", "client__struct_8h.html#a65d3b21c5bfbd8ac97abd329e5a56ead", null ],
+    [ "ERRO_LISTA_VAZIA", "client__struct_8h.html#a17d1cfa48ecf37a2a28b9e0e8b9dc6e1", null ],
+    [ "MAX_CLIENTES", "client__struct_8h.html#a0cf5c23bdf46ca7f4778aea7da2bc548", null ],
+    [ "MAX_NIF", "client__struct_8h.html#a3e74ee334b9255a077dc7238eb74edae", null ],
+    [ "MAX_NOME_CLIENTE", "client__struct_8h.html#aa7497b2ad3c08c7768f409ca10b7764c", null ],
+    [ "MAX_NUM_CLIENTE", "client__struct_8h.html#ab3d232456dd499c0d4f655ffa5ca6db4", null ],
+    [ "MAX_PAIS_CLIENTE", "client__struct_8h.html#a027e514e2a81b2c406c76982be780e4a", null ],
+    [ "MIN_NIF", "client__struct_8h.html#a302620ea0edcac33622925b502fa01fe", null ],
+    [ "MIN_NUM_CLIENTE", "client__struct_8h.html#a04ebc52791fcb14454d2ac35b818a4ea", null ],
+    [ "MSG_OBTER_NOME", "client__struct_8h.html#a24821793d3512d829e8a08de0058b4ac", null ],
+    [ "MSG_OBTER_NUM_CLIENTE", "client__struct_8h.html#ab76431b6b015fa2f606c6d44f6518481", null ],
+    [ "MSG_OBTER_PAIS", "client__struct_8h.html#a610ec952fd16f258adf94fdbcdfb2d39", null ],
+    [ "OBTER_NIF", "client__struct_8h.html#a1d382c293dd113b7e7cff41fdb5f7ae3", null ],
+    [ "atualizarClientes", "client__struct_8h.html#af4d6f851bb2ea2ad04e459ea9505ce14", null ],
+    [ "inserirClientes", "client__struct_8h.html#a43b67bec8f5df6eb44dc705e6397fb94", null ],
+    [ "listarClientes", "client__struct_8h.html#aa1ac7b4e1389f28381daad2966f01a1f", null ],
+    [ "procurarCliente", "client__struct_8h.html#a5651c71cfc50aa8138d81ec2c66d22c2", null ],
+    [ "removerClientes", "client__struct_8h.html#a1eba25f7ae992ca97172a4660fa8424a", null ]
+];

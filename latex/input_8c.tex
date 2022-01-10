@@ -1,0 +1,174 @@
+\hypertarget{input_8c}{}\doxysection{input.\+c File Reference}
+\label{input_8c}\index{input.c@{input.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{input_8c_a7dac90953bf2709d6153d7503fe3c77e}{VALOR\+\_\+\+INVALIDO}}~\char`\"{}O valor inserido é inválido.\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{clean\+Input\+Buffer}} ()
+\item 
+int \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obter\+Int}} (int min\+Valor, int max\+Valor, char $\ast$msg)
+\item 
+long \mbox{\hyperlink{input_8c_a694e9552dbdb11eb6ef36e9752241595}{obter\+Long}} (long min\+Valor, long max\+Valor, char $\ast$msg)
+\item 
+float \mbox{\hyperlink{input_8c_acf0457ff431a6ac3c752715e778b566e}{obter\+Float}} (float min\+Valor, float max\+Valor, char $\ast$msg)
+\item 
+double \mbox{\hyperlink{input_8c_a21f2b70641e75f55e2bd11550fedd899}{obter\+Double}} (double min\+Valor, double max\+Valor, char $\ast$msg)
+\item 
+char \mbox{\hyperlink{input_8c_ae15b6840f5e86d21d0d01c31b5d25cc0}{obter\+Char}} (char $\ast$msg)
+\item 
+void \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{ler\+String}} (char $\ast$string, unsigned int tamanho, char $\ast$msg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{input_8c_a7dac90953bf2709d6153d7503fe3c77e}\label{input_8c_a7dac90953bf2709d6153d7503fe3c77e}} 
+\index{input.c@{input.c}!VALOR\_INVALIDO@{VALOR\_INVALIDO}}
+\index{VALOR\_INVALIDO@{VALOR\_INVALIDO}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{VALOR\_INVALIDO}{VALOR\_INVALIDO}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+INVALIDO~\char`\"{}O valor inserido é inválido.\char`\"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}\label{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}} 
+\index{input.c@{input.c}!cleanInputBuffer@{cleanInputBuffer}}
+\index{cleanInputBuffer@{cleanInputBuffer}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{cleanInputBuffer()}{cleanInputBuffer()}}
+{\footnotesize\ttfamily void clean\+Input\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                         \{}
+\DoxyCodeLine{12     \textcolor{keywordtype}{char} ch;}
+\DoxyCodeLine{13     \textcolor{keywordflow}{while} ((ch = getchar()) != \textcolor{charliteral}{'\(\backslash\)n'} \&\& ch != EOF);}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}\label{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}} 
+\index{input.c@{input.c}!lerString@{lerString}}
+\index{lerString@{lerString}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{lerString()}{lerString()}}
+{\footnotesize\ttfamily void ler\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{unsigned int}]{tamanho,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                                               \{}
+\DoxyCodeLine{73     printf(msg);}
+\DoxyCodeLine{74     \textcolor{keywordflow}{if} (fgets(\textcolor{keywordtype}{string}, tamanho, stdin) != NULL) \{}
+\DoxyCodeLine{75         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} len = strlen(\textcolor{keywordtype}{string}) -\/ 1;}
+\DoxyCodeLine{76         \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}[len] == \textcolor{charliteral}{'\(\backslash\)n'}) \{}
+\DoxyCodeLine{77             \textcolor{keywordtype}{string}[len] = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{78         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{79             \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{80         \}}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{input_8c_ae15b6840f5e86d21d0d01c31b5d25cc0}\label{input_8c_ae15b6840f5e86d21d0d01c31b5d25cc0}} 
+\index{input.c@{input.c}!obterChar@{obterChar}}
+\index{obterChar@{obterChar}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterChar()}{obterChar()}}
+{\footnotesize\ttfamily char obter\+Char (\begin{DoxyParamCaption}\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                           \{}
+\DoxyCodeLine{65     \textcolor{keywordtype}{char} valor;}
+\DoxyCodeLine{66     printf(msg);}
+\DoxyCodeLine{67     valor = getchar();}
+\DoxyCodeLine{68     \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{69     \textcolor{keywordflow}{return} valor;}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{input_8c_a21f2b70641e75f55e2bd11550fedd899}\label{input_8c_a21f2b70641e75f55e2bd11550fedd899}} 
+\index{input.c@{input.c}!obterDouble@{obterDouble}}
+\index{obterDouble@{obterDouble}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterDouble()}{obterDouble()}}
+{\footnotesize\ttfamily double obter\+Double (\begin{DoxyParamCaption}\item[{double}]{min\+Valor,  }\item[{double}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                                                 \{}
+\DoxyCodeLine{53     \textcolor{keywordtype}{double} valor;}
+\DoxyCodeLine{54     printf(msg);}
+\DoxyCodeLine{55     \textcolor{keywordflow}{while} (scanf(\textcolor{stringliteral}{"{}\%lf"{}}, \&valor) != 1 || valor < minValor || valor > maxValor) \{}
+\DoxyCodeLine{56         puts(\mbox{\hyperlink{input_8c_a7dac90953bf2709d6153d7503fe3c77e}{VALOR\_INVALIDO}});}
+\DoxyCodeLine{57         \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{58         printf(msg);}
+\DoxyCodeLine{59     \}}
+\DoxyCodeLine{60     \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{61     \textcolor{keywordflow}{return} valor;}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{input_8c_acf0457ff431a6ac3c752715e778b566e}\label{input_8c_acf0457ff431a6ac3c752715e778b566e}} 
+\index{input.c@{input.c}!obterFloat@{obterFloat}}
+\index{obterFloat@{obterFloat}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterFloat()}{obterFloat()}}
+{\footnotesize\ttfamily float obter\+Float (\begin{DoxyParamCaption}\item[{float}]{min\+Valor,  }\item[{float}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                                             \{}
+\DoxyCodeLine{41     \textcolor{keywordtype}{float} valor;}
+\DoxyCodeLine{42     printf(msg);}
+\DoxyCodeLine{43     \textcolor{keywordflow}{while} (scanf(\textcolor{stringliteral}{"{}\%f"{}}, \&valor) != 1 || valor < minValor || valor > maxValor) \{}
+\DoxyCodeLine{44         puts(\mbox{\hyperlink{input_8c_a7dac90953bf2709d6153d7503fe3c77e}{VALOR\_INVALIDO}});}
+\DoxyCodeLine{45         \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{46         printf(msg);}
+\DoxyCodeLine{47     \}}
+\DoxyCodeLine{48     \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} valor;}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}\label{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}} 
+\index{input.c@{input.c}!obterInt@{obterInt}}
+\index{obterInt@{obterInt}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterInt()}{obterInt()}}
+{\footnotesize\ttfamily int obter\+Int (\begin{DoxyParamCaption}\item[{int}]{min\+Valor,  }\item[{int}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                                     \{}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} valor;}
+\DoxyCodeLine{18     printf(msg);}
+\DoxyCodeLine{19     \textcolor{keywordflow}{while} (scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&valor) != 1 || valor < minValor || valor > maxValor) \{}
+\DoxyCodeLine{20         puts(\mbox{\hyperlink{input_8c_a7dac90953bf2709d6153d7503fe3c77e}{VALOR\_INVALIDO}});}
+\DoxyCodeLine{21         \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{22         printf(msg);}
+\DoxyCodeLine{23     \}}
+\DoxyCodeLine{24     \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{25     \textcolor{keywordflow}{return} valor;}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{input_8c_a694e9552dbdb11eb6ef36e9752241595}\label{input_8c_a694e9552dbdb11eb6ef36e9752241595}} 
+\index{input.c@{input.c}!obterLong@{obterLong}}
+\index{obterLong@{obterLong}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterLong()}{obterLong()}}
+{\footnotesize\ttfamily long obter\+Long (\begin{DoxyParamCaption}\item[{long}]{min\+Valor,  }\item[{long}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28                                                         \{}
+\DoxyCodeLine{29     \textcolor{keywordtype}{long} valor;}
+\DoxyCodeLine{30     printf(msg);}
+\DoxyCodeLine{31     \textcolor{keywordflow}{while} (scanf(\textcolor{stringliteral}{"{}\%ld"{}}, \&valor) != 1 || valor < minValor || valor > maxValor) \{}
+\DoxyCodeLine{32         puts(\mbox{\hyperlink{input_8c_a7dac90953bf2709d6153d7503fe3c77e}{VALOR\_INVALIDO}});}
+\DoxyCodeLine{33         \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{34         printf(msg);}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36     \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{cleanInputBuffer}}();}
+\DoxyCodeLine{37     \textcolor{keywordflow}{return} valor;}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}

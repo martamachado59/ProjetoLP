@@ -1,0 +1,310 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}client\+\_\+struct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}article\+\_\+struct.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_abcbaf0b6f816a8e971fa07e6983da608}{CLIENTE}}~\textquotesingle{}c\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{main_8c_a47ccb915a08340e9ed578686706afd1e}{ADMINISTRADOR}}~\textquotesingle{}a\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{main_8c_a980931f2c39615f2d4f50a31e8a9a56e}{SANDALIA}}~\textquotesingle{}s\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{main_8c_a3563f819d27a1fe809b8fe8903d4600e}{BOTAS}}~\textquotesingle{}b\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{main_8c_a1eeb65b75136f46b37bc7ece4d648ebd}{SAPATOS}}~\textquotesingle{}sap\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{main_8c_a1313549dab34f3761b909ec95113f616}{ler\+\_\+tipo\+\_\+utilizador}} ()
+\item 
+int \mbox{\hyperlink{main_8c_a5349d87c84933ea1c180005faa538093}{ler\+\_\+nif}} ()
+\item 
+char \mbox{\hyperlink{main_8c_a90dda2c6d29951eacf99ab6bdd7d6978}{ler\+\_\+tipo\+\_\+calcado}} ()
+\item 
+int \mbox{\hyperlink{main_8c_a37a1f050c97a3e5f2f80903f1b514bbd}{ler\+\_\+quantidade}} ()
+\item 
+float \mbox{\hyperlink{main_8c_aeefd2ae6a461d7e65f2b9ae3f30c1123}{ler\+\_\+mao\+\_\+obra}} ()
+\item 
+float \mbox{\hyperlink{main_8c_ae0bdd32b903389ec3c4b4f5a26978aff}{ler\+\_\+margem}} ()
+\item 
+float \mbox{\hyperlink{main_8c_a1a120932b1d613ff23804b4c3e959189}{ler\+\_\+custo\+\_\+restante}} ()
+\item 
+float \mbox{\hyperlink{main_8c_a15c591fba2cd25c9cb186a9246ecea91}{cal\+\_\+mao\+\_\+obra}} (int quantidade, char calcado)
+\item 
+int \mbox{\hyperlink{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8c_a47ccb915a08340e9ed578686706afd1e}\label{main_8c_a47ccb915a08340e9ed578686706afd1e}} 
+\index{main.c@{main.c}!ADMINISTRADOR@{ADMINISTRADOR}}
+\index{ADMINISTRADOR@{ADMINISTRADOR}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ADMINISTRADOR}{ADMINISTRADOR}}
+{\footnotesize\ttfamily \#define ADMINISTRADOR~\textquotesingle{}a\textquotesingle{}}
+
+\mbox{\Hypertarget{main_8c_a3563f819d27a1fe809b8fe8903d4600e}\label{main_8c_a3563f819d27a1fe809b8fe8903d4600e}} 
+\index{main.c@{main.c}!BOTAS@{BOTAS}}
+\index{BOTAS@{BOTAS}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{BOTAS}{BOTAS}}
+{\footnotesize\ttfamily \#define BOTAS~\textquotesingle{}b\textquotesingle{}}
+
+\mbox{\Hypertarget{main_8c_abcbaf0b6f816a8e971fa07e6983da608}\label{main_8c_abcbaf0b6f816a8e971fa07e6983da608}} 
+\index{main.c@{main.c}!CLIENTE@{CLIENTE}}
+\index{CLIENTE@{CLIENTE}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{CLIENTE}{CLIENTE}}
+{\footnotesize\ttfamily \#define CLIENTE~\textquotesingle{}c\textquotesingle{}}
+
+\mbox{\Hypertarget{main_8c_a980931f2c39615f2d4f50a31e8a9a56e}\label{main_8c_a980931f2c39615f2d4f50a31e8a9a56e}} 
+\index{main.c@{main.c}!SANDALIA@{SANDALIA}}
+\index{SANDALIA@{SANDALIA}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{SANDALIA}{SANDALIA}}
+{\footnotesize\ttfamily \#define SANDALIA~\textquotesingle{}s\textquotesingle{}}
+
+\mbox{\Hypertarget{main_8c_a1eeb65b75136f46b37bc7ece4d648ebd}\label{main_8c_a1eeb65b75136f46b37bc7ece4d648ebd}} 
+\index{main.c@{main.c}!SAPATOS@{SAPATOS}}
+\index{SAPATOS@{SAPATOS}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{SAPATOS}{SAPATOS}}
+{\footnotesize\ttfamily \#define SAPATOS~\textquotesingle{}sap\textquotesingle{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a15c591fba2cd25c9cb186a9246ecea91}\label{main_8c_a15c591fba2cd25c9cb186a9246ecea91}} 
+\index{main.c@{main.c}!cal\_mao\_obra@{cal\_mao\_obra}}
+\index{cal\_mao\_obra@{cal\_mao\_obra}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{cal\_mao\_obra()}{cal\_mao\_obra()}}
+{\footnotesize\ttfamily float cal\+\_\+mao\+\_\+obra (\begin{DoxyParamCaption}\item[{int}]{quantidade,  }\item[{char}]{calcado }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{104                                                  \{}
+\DoxyCodeLine{105     \textcolor{keywordflow}{if} (calcado == \mbox{\hyperlink{main_8c_a980931f2c39615f2d4f50a31e8a9a56e}{SANDALIA}}) \{}
+\DoxyCodeLine{106         \textcolor{keywordtype}{int} mao\_obra = 4;}
+\DoxyCodeLine{107         \textcolor{keywordflow}{return} quantidade * mao\_obra;}
+\DoxyCodeLine{108     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (calcado == \mbox{\hyperlink{main_8c_a3563f819d27a1fe809b8fe8903d4600e}{BOTAS}}) \{}
+\DoxyCodeLine{109         \textcolor{keywordtype}{int} mao\_obra = 6;}
+\DoxyCodeLine{110         \textcolor{keywordflow}{return} quantidade * mao\_obra;}
+\DoxyCodeLine{111     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (calcado == \mbox{\hyperlink{main_8c_a1eeb65b75136f46b37bc7ece4d648ebd}{SAPATOS}}) \{}
+\DoxyCodeLine{112         \textcolor{keywordtype}{int} mao\_obra = 5;}
+\DoxyCodeLine{113         \textcolor{keywordflow}{return} quantidade * mao\_obra;}
+\DoxyCodeLine{114     \}}
+\DoxyCodeLine{115 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a1a120932b1d613ff23804b4c3e959189}\label{main_8c_a1a120932b1d613ff23804b4c3e959189}} 
+\index{main.c@{main.c}!ler\_custo\_restante@{ler\_custo\_restante}}
+\index{ler\_custo\_restante@{ler\_custo\_restante}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ler\_custo\_restante()}{ler\_custo\_restante()}}
+{\footnotesize\ttfamily float ler\+\_\+custo\+\_\+restante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                            \{}
+\DoxyCodeLine{92     \textcolor{keywordtype}{float} valor\_custo\_restante;}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{95         printf(\textcolor{stringliteral}{"{}Insira o valor do custo restante: "{}});}
+\DoxyCodeLine{96         scanf(\textcolor{stringliteral}{"{}\%f"{}}, \&valor\_custo\_restante);}
+\DoxyCodeLine{97     \} \textcolor{keywordflow}{while} (valor\_custo\_restante <= 0);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     \textcolor{keywordflow}{return} valor\_custo\_restante;}
+\DoxyCodeLine{100 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_aeefd2ae6a461d7e65f2b9ae3f30c1123}\label{main_8c_aeefd2ae6a461d7e65f2b9ae3f30c1123}} 
+\index{main.c@{main.c}!ler\_mao\_obra@{ler\_mao\_obra}}
+\index{ler\_mao\_obra@{ler\_mao\_obra}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ler\_mao\_obra()}{ler\_mao\_obra()}}
+{\footnotesize\ttfamily float ler\+\_\+mao\+\_\+obra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                      \{}
+\DoxyCodeLine{71     \textcolor{keywordtype}{float} preco\_mao\_obra;}
+\DoxyCodeLine{72     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{73         printf(\textcolor{stringliteral}{"{}Insira o preço de mão obra: "{}});}
+\DoxyCodeLine{74         scanf(\textcolor{stringliteral}{"{}\%f"{}}, \&preco\_mao\_obra);}
+\DoxyCodeLine{75     \} \textcolor{keywordflow}{while} (preco\_mao\_obra <= 0);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     \textcolor{keywordflow}{return} preco\_mao\_obra;}
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_ae0bdd32b903389ec3c4b4f5a26978aff}\label{main_8c_ae0bdd32b903389ec3c4b4f5a26978aff}} 
+\index{main.c@{main.c}!ler\_margem@{ler\_margem}}
+\index{ler\_margem@{ler\_margem}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ler\_margem()}{ler\_margem()}}
+{\footnotesize\ttfamily float ler\+\_\+margem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                    \{}
+\DoxyCodeLine{81     \textcolor{keywordtype}{float} valor\_margem;}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{84         printf(\textcolor{stringliteral}{"{}Insira o valor da margem de lucro: "{}});}
+\DoxyCodeLine{85         scanf(\textcolor{stringliteral}{"{}\%f"{}}, \&valor\_margem);}
+\DoxyCodeLine{86     \} \textcolor{keywordflow}{while} (valor\_margem <= 0.0 || valor\_margem >= 1.0);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88     \textcolor{keywordflow}{return} valor\_margem;}
+\DoxyCodeLine{89 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a5349d87c84933ea1c180005faa538093}\label{main_8c_a5349d87c84933ea1c180005faa538093}} 
+\index{main.c@{main.c}!ler\_nif@{ler\_nif}}
+\index{ler\_nif@{ler\_nif}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ler\_nif()}{ler\_nif()}}
+{\footnotesize\ttfamily int ler\+\_\+nif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37               \{}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} nif;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{41         printf(\textcolor{stringliteral}{"{}Insira o seu nif: \(\backslash\)n"{}});}
+\DoxyCodeLine{42         scanf(\textcolor{stringliteral}{"{} \%d"{}}, \&nif);}
+\DoxyCodeLine{43     \} \textcolor{keywordflow}{while} (nif <= 99999999 || nif >= 999999999);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keywordflow}{return} nif;}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a37a1f050c97a3e5f2f80903f1b514bbd}\label{main_8c_a37a1f050c97a3e5f2f80903f1b514bbd}} 
+\index{main.c@{main.c}!ler\_quantidade@{ler\_quantidade}}
+\index{ler\_quantidade@{ler\_quantidade}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ler\_quantidade()}{ler\_quantidade()}}
+{\footnotesize\ttfamily int ler\+\_\+quantidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                      \{}
+\DoxyCodeLine{60     \textcolor{keywordtype}{int} num;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{63         printf(\textcolor{stringliteral}{"{}Insira a quantidade de pares de sapatos: "{}});}
+\DoxyCodeLine{64         scanf(\textcolor{stringliteral}{"{} \%d"{}}, \&num);}
+\DoxyCodeLine{65     \} \textcolor{keywordflow}{while} (num < 0 || num >= 1000);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \textcolor{keywordflow}{return} num;}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a90dda2c6d29951eacf99ab6bdd7d6978}\label{main_8c_a90dda2c6d29951eacf99ab6bdd7d6978}} 
+\index{main.c@{main.c}!ler\_tipo\_calcado@{ler\_tipo\_calcado}}
+\index{ler\_tipo\_calcado@{ler\_tipo\_calcado}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ler\_tipo\_calcado()}{ler\_tipo\_calcado()}}
+{\footnotesize\ttfamily char ler\+\_\+tipo\+\_\+calcado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                         \{}
+\DoxyCodeLine{49     \textcolor{keywordtype}{char} calcado;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{52         printf(\textcolor{stringliteral}{"{}Insira o tipo de calçado (s-\/sandalia,b-\/botas,sap-\/sapatos): "{}});}
+\DoxyCodeLine{53         scanf(\textcolor{stringliteral}{"{} \%c"{}}, \&calcado);}
+\DoxyCodeLine{54     \} \textcolor{keywordflow}{while} (calcado != \mbox{\hyperlink{main_8c_a980931f2c39615f2d4f50a31e8a9a56e}{SANDALIA}} \&\& calcado != \mbox{\hyperlink{main_8c_a3563f819d27a1fe809b8fe8903d4600e}{BOTAS}} \&\& calcado != \mbox{\hyperlink{main_8c_a1eeb65b75136f46b37bc7ece4d648ebd}{SAPATOS}});}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keywordflow}{return} calcado;}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a1313549dab34f3761b909ec95113f616}\label{main_8c_a1313549dab34f3761b909ec95113f616}} 
+\index{main.c@{main.c}!ler\_tipo\_utilizador@{ler\_tipo\_utilizador}}
+\index{ler\_tipo\_utilizador@{ler\_tipo\_utilizador}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ler\_tipo\_utilizador()}{ler\_tipo\_utilizador()}}
+{\footnotesize\ttfamily char ler\+\_\+tipo\+\_\+utilizador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                            \{}
+\DoxyCodeLine{27     \textcolor{keywordtype}{char} tipo\_utilizador;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{30         printf(\textcolor{stringliteral}{"{} Insira o tipo de utilizador ( a-\/administrador, c-\/cliente): "{}});}
+\DoxyCodeLine{31         scanf(\textcolor{stringliteral}{"{}\%c"{}}, \&tipo\_utilizador);}
+\DoxyCodeLine{32     \} \textcolor{keywordflow}{while} (tipo\_utilizador != \mbox{\hyperlink{main_8c_a47ccb915a08340e9ed578686706afd1e}{ADMINISTRADOR}} \&\& tipo\_utilizador != \mbox{\hyperlink{main_8c_abcbaf0b6f816a8e971fa07e6983da608}{CLIENTE}});}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordflow}{return} tipo\_utilizador;}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117                                 \{}
+\DoxyCodeLine{118     \textcolor{comment}{/*float tamanho\_sapatos[15]=\{0.65,0.7,0.75,0.8,0.85,0.9,0.95,1,1.05,1.10,1.15,1.20,1.25,1.30,1.35\};}}
+\DoxyCodeLine{119 \textcolor{comment}{    float tamanho\_botas[15]=\{0.7,0.75,0.8,0.85,0.9,0.95,1,1.05,1.10,1.15,1.20,1.25,1.30,1.35,1.40\};}}
+\DoxyCodeLine{120 \textcolor{comment}{    float tamanho\_sandalias[15]=\{0.8,0.825,0.850,0.875,0.9,0.925,0.950,0.975,1,1.025,1.050,1.075,1.1,1.125,1.150\};*/}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122     \textcolor{comment}{//    float mao\_obra,margem,restante;}}
+\DoxyCodeLine{123     \textcolor{comment}{//    int nif,quantidade,cod\_cliente;}}
+\DoxyCodeLine{124     \textcolor{comment}{//    char nome[60], pais[40], tipo\_utilizador,calcado;}}
+\DoxyCodeLine{125     \textcolor{comment}{//    }}
+\DoxyCodeLine{126     \textcolor{comment}{//    tipo\_utilizador=ler\_tipo\_utilizador();}}
+\DoxyCodeLine{127     \textcolor{comment}{//    }}
+\DoxyCodeLine{128     \textcolor{comment}{//    //CLIENTE}}
+\DoxyCodeLine{129     \textcolor{comment}{//    if(tipo\_utilizador == CLIENTE)}}
+\DoxyCodeLine{130     \textcolor{comment}{//    \{}}
+\DoxyCodeLine{131     \textcolor{comment}{//        //TENTAR POR AUTOMATICO O CODIGO}}
+\DoxyCodeLine{132     \textcolor{comment}{//        printf("{}Insira o seu código cliente: \(\backslash\)n"{});}}
+\DoxyCodeLine{133     \textcolor{comment}{//        scanf("{} \%d"{},\&cod\_cliente);}}
+\DoxyCodeLine{134     \textcolor{comment}{//        nif=ler\_nif(); }}
+\DoxyCodeLine{135     \textcolor{comment}{//        printf("{}Insira o seu nome: \(\backslash\)n"{});}}
+\DoxyCodeLine{136     \textcolor{comment}{//        scanf("{} \%s"{},\&nome);  }}
+\DoxyCodeLine{137     \textcolor{comment}{//        printf("{}Insira o seu pais: \(\backslash\)n"{});}}
+\DoxyCodeLine{138     \textcolor{comment}{//        scanf("{} \%s"{},\&pais);}}
+\DoxyCodeLine{139     \textcolor{comment}{//        calcado=ler\_tipo\_calcado();}}
+\DoxyCodeLine{140     \textcolor{comment}{//        quantidade=ler\_quantidade();}}
+\DoxyCodeLine{141     \textcolor{comment}{//        mao\_obra=cal\_mao\_obra(quantidade,calcado);}}
+\DoxyCodeLine{142     \textcolor{comment}{//        }}
+\DoxyCodeLine{143     \textcolor{comment}{//        //Mostrar Valores ao cliente}}
+\DoxyCodeLine{144     \textcolor{comment}{//        printf("{}\(\backslash\)n O seu código cliente é:\%d"{},cod\_cliente);}}
+\DoxyCodeLine{145     \textcolor{comment}{//        printf("{}\(\backslash\)n O seu nif é:\%d"{},nif);}}
+\DoxyCodeLine{146     \textcolor{comment}{//        printf("{}\(\backslash\)n O cliente:\%s"{},nome);}}
+\DoxyCodeLine{147     \textcolor{comment}{//        printf("{}\(\backslash\)n País:\%s"{},pais);}}
+\DoxyCodeLine{148     \textcolor{comment}{//        printf("{}\(\backslash\)n O número de pares é:\%d"{},quantidade);}}
+\DoxyCodeLine{149     \textcolor{comment}{//        printf("{}\(\backslash\)n O calçado escolhido é:\%c"{},calcado);}}
+\DoxyCodeLine{150     \textcolor{comment}{//        printf("{}\(\backslash\)n O valor de mão de obra é:\%.2f"{},mao\_obra);}}
+\DoxyCodeLine{151     \textcolor{comment}{//    \}   }}
+\DoxyCodeLine{152     \textcolor{comment}{// /**************************************/   }}
+\DoxyCodeLine{153     \textcolor{comment}{//    //ADMINISTRADOR}}
+\DoxyCodeLine{154     \textcolor{comment}{//    }}
+\DoxyCodeLine{155     \textcolor{comment}{//    //Mudar preços}}
+\DoxyCodeLine{156     \textcolor{comment}{//    if(tipo\_utilizador == ADMINISTRADOR)}}
+\DoxyCodeLine{157     \textcolor{comment}{//    \{}}
+\DoxyCodeLine{158     \textcolor{comment}{//        mao\_obra=ler\_mao\_obra();}}
+\DoxyCodeLine{159     \textcolor{comment}{//        margem=ler\_margem();}}
+\DoxyCodeLine{160     \textcolor{comment}{//        restante=ler\_custo\_restante();}}
+\DoxyCodeLine{161     \textcolor{comment}{//    \}}}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163     \textcolor{comment}{//    Clientes clientes = \{.contador = 0\};}}
+\DoxyCodeLine{164     \textcolor{comment}{//    inserirClientes(\&clientes);}}
+\DoxyCodeLine{165     \textcolor{comment}{//    //inserirClientes(\&clientes);}}
+\DoxyCodeLine{166     \textcolor{comment}{//    //inserirClientes(\&clientes);}}
+\DoxyCodeLine{167     \textcolor{comment}{//    listarClientes(clientes);}}
+\DoxyCodeLine{168     \textcolor{comment}{//    //atualizarClientes(\&clientes);}}
+\DoxyCodeLine{169     \textcolor{comment}{//    removerClientes(\&clientes);}}
+\DoxyCodeLine{170     \textcolor{comment}{//    listarClientes(clientes);}}
+\DoxyCodeLine{171     \textcolor{comment}{//    //imprimirCliente(clientes.clientes[0]);}}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173     \mbox{\hyperlink{struct_artigos}{Artigos}} artigos = \{.\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}} = 0\};}
+\DoxyCodeLine{174     \mbox{\hyperlink{article__struct_8c_a389b47186221cc0c2e7c08d114154241}{inserirArtigos}}(\&artigos);}
+\DoxyCodeLine{175     \mbox{\hyperlink{article__struct_8c_a361c31b9d14879bbdda5c9a16af8c87e}{imprimirArtigo}}(artigos.\mbox{\hyperlink{struct_artigos_a2004f2b33358def654bd166f491ab59e}{artigos}}[0]);}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177     \textcolor{keywordflow}{return} (EXIT\_SUCCESS);}
+\DoxyCodeLine{178 \}}
+
+\end{DoxyCode}

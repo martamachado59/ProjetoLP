@@ -1,0 +1,159 @@
+\hypertarget{article__struct_8c}{}\doxysection{article\+\_\+struct.\+c File Reference}
+\label{article__struct_8c}\index{article\_struct.c@{article\_struct.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}article\+\_\+struct.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{article__struct_8c_a361c31b9d14879bbdda5c9a16af8c87e}{imprimir\+Artigo}} (\mbox{\hyperlink{struct_artigo}{Artigo}} artigo)
+\item 
+int \mbox{\hyperlink{article__struct_8c_a64429cd29ff5a8b596ea041bc0695dd6}{procurar\+Artigo}} (\mbox{\hyperlink{struct_artigos}{Artigos}} artigo, int cod\+\_\+artigo)
+\item 
+int \mbox{\hyperlink{article__struct_8c_a389b47186221cc0c2e7c08d114154241}{inserir\+Artigos}} (\mbox{\hyperlink{struct_artigos}{Artigos}} $\ast$artigos)
+\item 
+void \mbox{\hyperlink{article__struct_8c_a789a64fc5e828a8d13d921418a19a29a}{atualizar\+Artigos}} (\mbox{\hyperlink{struct_artigos}{Artigos}} $\ast$artigos)
+\item 
+void \mbox{\hyperlink{article__struct_8c_a8ef638dde287c2ca3d99319e5b30680d}{atualizar\+Artigo}} (\mbox{\hyperlink{struct_artigo}{Artigo}} $\ast$artigo)
+\item 
+void \mbox{\hyperlink{article__struct_8c_a2cbac06c178ea039aebea341a3186ad6}{remover\+Artigos}} (\mbox{\hyperlink{struct_artigos}{Artigos}} $\ast$artigos)
+\item 
+void \mbox{\hyperlink{article__struct_8c_af41182f3570d8d996b43fab91370e640}{listar\+Artigos}} (\mbox{\hyperlink{struct_artigos}{Artigos}} artigos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{article__struct_8c_a8ef638dde287c2ca3d99319e5b30680d}\label{article__struct_8c_a8ef638dde287c2ca3d99319e5b30680d}} 
+\index{article\_struct.c@{article\_struct.c}!atualizarArtigo@{atualizarArtigo}}
+\index{atualizarArtigo@{atualizarArtigo}!article\_struct.c@{article\_struct.c}}
+\doxysubsubsection{\texorpdfstring{atualizarArtigo()}{atualizarArtigo()}}
+{\footnotesize\ttfamily void atualizar\+Artigo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_artigo}{Artigo}} $\ast$}]{artigo }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                      \{}
+\DoxyCodeLine{49     \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{lerString}}((*artigo).nome, \mbox{\hyperlink{article__struct_8h_a5471af55eb7acc8381d374d65194a083}{MAX\_NOME\_ARTIGO}}, \mbox{\hyperlink{article__struct_8h_a24821793d3512d829e8a08de0058b4ac}{MSG\_OBTER\_NOME}});}
+\DoxyCodeLine{50     (*artigo).tipo\_artigo =}
+\DoxyCodeLine{51             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_ac3273650642b0e8047c9ee0d562c7d18}{MIN\_TIPO}}, \mbox{\hyperlink{article__struct_8h_ab65eb4cb4e4631ad72ed5e9579bc9e5d}{MAX\_TIPO}}, \mbox{\hyperlink{article__struct_8h_a3e6d78166bb7f0e6a56234f3f8cdd5e8}{OBTER\_TIPO}});}
+\DoxyCodeLine{52     (*artigo).tam\_min =}
+\DoxyCodeLine{53             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_acfccd4d6e028c86fe0558f7f54c77316}{MIN\_TAM}}, \mbox{\hyperlink{article__struct_8h_a22f04193987fe8741199b66fb25e9d91}{MAX\_TAM}}, \mbox{\hyperlink{article__struct_8h_af794c2d42eb71f6815259fc43077dae5}{OBTER\_TAM\_MIN}});}
+\DoxyCodeLine{54     (*artigo).tam\_max =}
+\DoxyCodeLine{55             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_acfccd4d6e028c86fe0558f7f54c77316}{MIN\_TAM}}, \mbox{\hyperlink{article__struct_8h_a22f04193987fe8741199b66fb25e9d91}{MAX\_TAM}}, \mbox{\hyperlink{article__struct_8h_aed83458a1359e03f9e3eb6b8624e034d}{OBTER\_TAM\_MAX}});}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{article__struct_8c_a789a64fc5e828a8d13d921418a19a29a}\label{article__struct_8c_a789a64fc5e828a8d13d921418a19a29a}} 
+\index{article\_struct.c@{article\_struct.c}!atualizarArtigos@{atualizarArtigos}}
+\index{atualizarArtigos@{atualizarArtigos}!article\_struct.c@{article\_struct.c}}
+\doxysubsubsection{\texorpdfstring{atualizarArtigos()}{atualizarArtigos()}}
+{\footnotesize\ttfamily void atualizar\+Artigos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_artigos}{Artigos}} $\ast$}]{artigos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                         \{}
+\DoxyCodeLine{39     \textcolor{keywordtype}{int} numero = \mbox{\hyperlink{article__struct_8c_a64429cd29ff5a8b596ea041bc0695dd6}{procurarArtigo}}(*artigos,}
+\DoxyCodeLine{40             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_a7a80f91120ad2b868a1c5d1ab8e2364a}{MIN\_NUM\_ARTIGO}}, \mbox{\hyperlink{article__struct_8h_a5ef8388b95e3c853a1d3759ffb8c6524}{MAX\_NUM\_ARTIGO}}, \mbox{\hyperlink{article__struct_8h_a4dcd4b0f62c520fdf5fdaceca160feb1}{MSG\_OBTER\_NUM\_ARTIGO}}));}
+\DoxyCodeLine{41     \textcolor{keywordflow}{if} (numero != -\/1) \{}
+\DoxyCodeLine{42         \mbox{\hyperlink{client__struct_8c_a6c1539fd01b0880ee804e841fdc17f7b}{atualizarCliente}}(\&(*artigos).artigos[numero]);}
+\DoxyCodeLine{43     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{44         puts(\mbox{\hyperlink{article__struct_8h_afdd555ddc55c54e36e2d7f8f83f250ef}{ERRO\_ARTIGO\_NAO\_EXISTE}});}
+\DoxyCodeLine{45     \}}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{article__struct_8c_a361c31b9d14879bbdda5c9a16af8c87e}\label{article__struct_8c_a361c31b9d14879bbdda5c9a16af8c87e}} 
+\index{article\_struct.c@{article\_struct.c}!imprimirArtigo@{imprimirArtigo}}
+\index{imprimirArtigo@{imprimirArtigo}!article\_struct.c@{article\_struct.c}}
+\doxysubsubsection{\texorpdfstring{imprimirArtigo()}{imprimirArtigo()}}
+{\footnotesize\ttfamily void imprimir\+Artigo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_artigo}{Artigo}}}]{artigo }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                                    \{}
+\DoxyCodeLine{11     printf(\textcolor{stringliteral}{"{}\(\backslash\)n\%d \%s \%d \%d \%d"{}}, artigo.\mbox{\hyperlink{struct_artigo_a72bce9d92f3c65c4f0e3fced58d7376d}{cod\_artigo}}, artigo.\mbox{\hyperlink{struct_artigo_aaa43c38debefa2cac0ba20cb1964b0b0}{nome}}, artigo.\mbox{\hyperlink{struct_artigo_a41c4b6b7b00363db229a8055f5f056c7}{tipo\_artigo}},}
+\DoxyCodeLine{12             artigo.\mbox{\hyperlink{struct_artigo_ac5fd3db779ffcd78880f0d1736352760}{tam\_min}}, artigo.\mbox{\hyperlink{struct_artigo_a22540be4fa18de17c6978d834f17d038}{tam\_max}});}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{article__struct_8c_a389b47186221cc0c2e7c08d114154241}\label{article__struct_8c_a389b47186221cc0c2e7c08d114154241}} 
+\index{article\_struct.c@{article\_struct.c}!inserirArtigos@{inserirArtigos}}
+\index{inserirArtigos@{inserirArtigos}!article\_struct.c@{article\_struct.c}}
+\doxysubsubsection{\texorpdfstring{inserirArtigos()}{inserirArtigos()}}
+{\footnotesize\ttfamily int inserir\+Artigos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_artigos}{Artigos}} $\ast$}]{artigos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                      \{}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} cod\_artigo = \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_a7a80f91120ad2b868a1c5d1ab8e2364a}{MIN\_NUM\_ARTIGO}}, \mbox{\hyperlink{article__struct_8h_a5ef8388b95e3c853a1d3759ffb8c6524}{MAX\_NUM\_ARTIGO}}, \mbox{\hyperlink{article__struct_8h_a4dcd4b0f62c520fdf5fdaceca160feb1}{MSG\_OBTER\_NUM\_ARTIGO}});}
+\DoxyCodeLine{27     \textcolor{keywordflow}{if} (\mbox{\hyperlink{article__struct_8c_a64429cd29ff5a8b596ea041bc0695dd6}{procurarArtigo}}(*artigos, cod\_artigo) == -\/1) \{}
+\DoxyCodeLine{28         artigos-\/>\mbox{\hyperlink{struct_artigos_a2004f2b33358def654bd166f491ab59e}{artigos}}[artigos-\/>\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}}].\mbox{\hyperlink{struct_artigo_a72bce9d92f3c65c4f0e3fced58d7376d}{cod\_artigo}} = cod\_artigo;}
+\DoxyCodeLine{29         \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{lerString}}(artigos-\/>\mbox{\hyperlink{struct_artigos_a2004f2b33358def654bd166f491ab59e}{artigos}}[artigos-\/>\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}}].\mbox{\hyperlink{struct_artigo_aaa43c38debefa2cac0ba20cb1964b0b0}{nome}}, \mbox{\hyperlink{article__struct_8h_a5471af55eb7acc8381d374d65194a083}{MAX\_NOME\_ARTIGO}}, \mbox{\hyperlink{article__struct_8h_a24821793d3512d829e8a08de0058b4ac}{MSG\_OBTER\_NOME}});}
+\DoxyCodeLine{30         artigos-\/>\mbox{\hyperlink{struct_artigos_a2004f2b33358def654bd166f491ab59e}{artigos}}[artigos-\/>\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}}].\mbox{\hyperlink{struct_artigo_a41c4b6b7b00363db229a8055f5f056c7}{tipo\_artigo}} = \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_ac3273650642b0e8047c9ee0d562c7d18}{MIN\_TIPO}}, \mbox{\hyperlink{article__struct_8h_ab65eb4cb4e4631ad72ed5e9579bc9e5d}{MAX\_TIPO}}, \mbox{\hyperlink{article__struct_8h_a3e6d78166bb7f0e6a56234f3f8cdd5e8}{OBTER\_TIPO}});}
+\DoxyCodeLine{31         artigos-\/>\mbox{\hyperlink{struct_artigos_a2004f2b33358def654bd166f491ab59e}{artigos}}[artigos-\/>\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}}].\mbox{\hyperlink{struct_artigo_ac5fd3db779ffcd78880f0d1736352760}{tam\_min}} = \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_acfccd4d6e028c86fe0558f7f54c77316}{MIN\_TAM}}, \mbox{\hyperlink{article__struct_8h_a22f04193987fe8741199b66fb25e9d91}{MAX\_TAM}}, \mbox{\hyperlink{article__struct_8h_af794c2d42eb71f6815259fc43077dae5}{OBTER\_TAM\_MIN}});}
+\DoxyCodeLine{32         artigos-\/>\mbox{\hyperlink{struct_artigos_a2004f2b33358def654bd166f491ab59e}{artigos}}[artigos-\/>\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}}].\mbox{\hyperlink{struct_artigo_a22540be4fa18de17c6978d834f17d038}{tam\_max}} = \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_acfccd4d6e028c86fe0558f7f54c77316}{MIN\_TAM}}, \mbox{\hyperlink{article__struct_8h_a22f04193987fe8741199b66fb25e9d91}{MAX\_TAM}}, \mbox{\hyperlink{article__struct_8h_aed83458a1359e03f9e3eb6b8624e034d}{OBTER\_TAM\_MAX}});}
+\DoxyCodeLine{33         \textcolor{keywordflow}{return} artigos-\/>\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}}++;}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{article__struct_8c_af41182f3570d8d996b43fab91370e640}\label{article__struct_8c_af41182f3570d8d996b43fab91370e640}} 
+\index{article\_struct.c@{article\_struct.c}!listarArtigos@{listarArtigos}}
+\index{listarArtigos@{listarArtigos}!article\_struct.c@{article\_struct.c}}
+\doxysubsubsection{\texorpdfstring{listarArtigos()}{listarArtigos()}}
+{\footnotesize\ttfamily void listar\+Artigos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_artigos}{Artigos}}}]{artigos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                     \{}
+\DoxyCodeLine{70     \textcolor{keywordflow}{if} (artigos.\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}} > 0) \{}
+\DoxyCodeLine{71         \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{72         \textcolor{keywordflow}{for} (i = 0; i < artigos.\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}}; i++) \{}
+\DoxyCodeLine{73             \mbox{\hyperlink{article__struct_8c_a361c31b9d14879bbdda5c9a16af8c87e}{imprimirArtigo}}(artigos.\mbox{\hyperlink{struct_artigos_a2004f2b33358def654bd166f491ab59e}{artigos}}[i]);}
+\DoxyCodeLine{74         \}}
+\DoxyCodeLine{75     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{76         puts(\mbox{\hyperlink{article__struct_8h_a17d1cfa48ecf37a2a28b9e0e8b9dc6e1}{ERRO\_LISTA\_VAZIA}});}
+\DoxyCodeLine{77     \}}
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{article__struct_8c_a64429cd29ff5a8b596ea041bc0695dd6}\label{article__struct_8c_a64429cd29ff5a8b596ea041bc0695dd6}} 
+\index{article\_struct.c@{article\_struct.c}!procurarArtigo@{procurarArtigo}}
+\index{procurarArtigo@{procurarArtigo}!article\_struct.c@{article\_struct.c}}
+\doxysubsubsection{\texorpdfstring{procurarArtigo()}{procurarArtigo()}}
+{\footnotesize\ttfamily int procurar\+Artigo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_artigos}{Artigos}}}]{artigo,  }\item[{int}]{cod\+\_\+artigo }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                                    \{}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{17     \textcolor{keywordflow}{for} (i = 0; i < artigo.\mbox{\hyperlink{struct_artigos_a3a4b2ea14f3bc05fad5979d76d83e618}{contador}}; i++) \{}
+\DoxyCodeLine{18         \textcolor{keywordflow}{if} (artigo.\mbox{\hyperlink{struct_artigos_a2004f2b33358def654bd166f491ab59e}{artigos}}[i].\mbox{\hyperlink{struct_artigo_a72bce9d92f3c65c4f0e3fced58d7376d}{cod\_artigo}} == cod\_artigo) \{}
+\DoxyCodeLine{19             \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{20         \}}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{article__struct_8c_a2cbac06c178ea039aebea341a3186ad6}\label{article__struct_8c_a2cbac06c178ea039aebea341a3186ad6}} 
+\index{article\_struct.c@{article\_struct.c}!removerArtigos@{removerArtigos}}
+\index{removerArtigos@{removerArtigos}!article\_struct.c@{article\_struct.c}}
+\doxysubsubsection{\texorpdfstring{removerArtigos()}{removerArtigos()}}
+{\footnotesize\ttfamily void remover\+Artigos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_artigos}{Artigos}} $\ast$}]{artigos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                       \{}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} numero = \mbox{\hyperlink{article__struct_8c_a64429cd29ff5a8b596ea041bc0695dd6}{procurarArtigo}}(*artigos,}
+\DoxyCodeLine{60             \mbox{\hyperlink{input_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\mbox{\hyperlink{article__struct_8h_a7a80f91120ad2b868a1c5d1ab8e2364a}{MIN\_NUM\_ARTIGO}}, \mbox{\hyperlink{article__struct_8h_a5ef8388b95e3c853a1d3759ffb8c6524}{MAX\_NUM\_ARTIGO}}, \mbox{\hyperlink{article__struct_8h_a4dcd4b0f62c520fdf5fdaceca160feb1}{MSG\_OBTER\_NUM\_ARTIGO}}));}
+\DoxyCodeLine{61     \textcolor{keywordflow}{if} (numero != -\/1) \{}
+\DoxyCodeLine{62         \textcolor{comment}{//Check de encomenda}}
+\DoxyCodeLine{63         \textcolor{comment}{//(*artigos).artigos[numero].apagado = true;}}
+\DoxyCodeLine{64     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{65         puts(\mbox{\hyperlink{article__struct_8h_afdd555ddc55c54e36e2d7f8f83f250ef}{ERRO\_ARTIGO\_NAO\_EXISTE}});}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
