@@ -1,18 +1,12 @@
 var searchData=
 [
-  ['c_5fstandard_5fheaders_5findexer_2ec_0',['c_standard_headers_indexer.c',['../c__standard__headers__indexer_8c.html',1,'']]],
-  ['cal_5fmao_5fobra_1',['cal_mao_obra',['../main_8c.html#a15c591fba2cd25c9cb186a9246ecea91',1,'main.c']]],
-  ['cleaninputbuffer_2',['cleanInputBuffer',['../input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d',1,'input.c']]],
-  ['client_5fstruct_2ec_3',['client_struct.c',['../client__struct_8c.html',1,'']]],
-  ['client_5fstruct_2eh_4',['client_struct.h',['../client__struct_8h.html',1,'']]],
-  ['client_5fstruct_2eo_2ed_5',['client_struct.o.d',['../client__struct_8o_8d.html',1,'']]],
-  ['cliente_6',['Cliente',['../struct_cliente.html',1,'']]],
-  ['cliente_7',['CLIENTE',['../main_8c.html#abcbaf0b6f816a8e971fa07e6983da608',1,'main.c']]],
-  ['clientes_8',['Clientes',['../struct_clientes.html',1,'']]],
-  ['clientes_9',['clientes',['../struct_clientes.html#a74177aa22ee7dca97ff03a748c733a1a',1,'Clientes']]],
-  ['clientstruct_5fh_10',['CLIENTSTRUCT_H',['../client__struct_8h.html#a13146edd55a2b9f6b3151f1a91c38170',1,'client_struct.h']]],
-  ['cod_5fartigo_11',['cod_artigo',['../struct_artigo.html#a72bce9d92f3c65c4f0e3fced58d7376d',1,'Artigo']]],
-  ['cod_5fcliente_12',['cod_cliente',['../struct_cliente.html#abe09348e3333bdf8681ae2c2b7f410c1',1,'Cliente']]],
-  ['contador_13',['contador',['../struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618',1,'Artigos::contador()'],['../struct_clientes.html#af4c0f604be175500a011c5a4a8860e17',1,'Clientes::contador()']]],
-  ['cpp_5fstandard_5fheaders_5findexer_2ecpp_14',['cpp_standard_headers_indexer.cpp',['../cpp__standard__headers__indexer_8cpp.html',1,'']]]
+  ['imprimirartigo_0',['imprimirArtigo',['../article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e',1,'article_struct.c']]],
+  ['imprimircliente_1',['imprimirCliente',['../client__struct_8c.html#a26dc126dac89e6d6f7822bcd9119400a',1,'client_struct.c']]],
+  ['imprimirpreco_2',['imprimirPreco',['../article__struct_8c.html#a24bae7b26a78296a9eba2575c9d0a99a',1,'article_struct.c']]],
+  ['input_2ec_3',['input.c',['../input_8c.html',1,'']]],
+  ['input_2eh_4',['input.h',['../input_8h.html',1,'']]],
+  ['inserirartigoencomenda_5',['inserirArtigoEncomenda',['../order_8c.html#a4525de4ff29c42174f0d60fde8be7b3f',1,'inserirArtigoEncomenda(Encomenda *encomenda, Cliente *cliente, Artigo *artigo, Precos *precos):&#160;order.c'],['../order__struct_8h.html#a4525de4ff29c42174f0d60fde8be7b3f',1,'inserirArtigoEncomenda(Encomenda *encomenda, Cliente *cliente, Artigo *artigo, Precos *precos):&#160;order.c']]],
+  ['inserirartigos_6',['inserirArtigos',['../article__struct_8c.html#a389b47186221cc0c2e7c08d114154241',1,'inserirArtigos(Artigos *artigos):&#160;article_struct.c'],['../article__struct_8h.html#a389b47186221cc0c2e7c08d114154241',1,'inserirArtigos(Artigos *artigos):&#160;article_struct.c']]],
+  ['inserirclientes_7',['inserirClientes',['../client__struct_8c.html#a43b67bec8f5df6eb44dc705e6397fb94',1,'inserirClientes(Clientes *clientes):&#160;client_struct.c'],['../client__struct_8h.html#a43b67bec8f5df6eb44dc705e6397fb94',1,'inserirClientes(Clientes *clientes):&#160;client_struct.c']]],
+  ['inserirprecos_8',['inserirPrecos',['../article__struct_8c.html#a91bcabe95a1db6e7889e2858f9a1b94b',1,'inserirPrecos(Precos *precos):&#160;article_struct.c'],['../article__struct_8h.html#a91bcabe95a1db6e7889e2858f9a1b94b',1,'inserirPrecos(Precos *precos):&#160;article_struct.c']]]
 ];

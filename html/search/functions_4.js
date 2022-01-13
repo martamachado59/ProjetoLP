@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.c']]]
+  ['obterint_0',['obterInt',['../input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f',1,'obterInt(int minValor, int maxValor, char *msg):&#160;input.c'],['../input_8h.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f',1,'obterInt(int minValor, int maxValor, char *msg):&#160;input.c']]]
 ];

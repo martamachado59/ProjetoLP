@@ -3,6 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.c to edit this template
  */
 
+/**
+ * @file input.c
+ * @brief Doxygen
+ * @return 
+ */
+
 #include <stdio.h>
 #include <string.h>
 

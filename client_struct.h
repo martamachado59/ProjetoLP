@@ -3,6 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template
  */
 
+/**
+ * @file client_struct.h
+ * @brief Doxygen
+ * @return 
+ */
+
 /* 
  * File:   clientStruct.h
  * Author: Marta

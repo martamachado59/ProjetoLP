@@ -3,6 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template
  */
 
+/**
+ * @file order_struct.h
+ * @brief Doxygen
+ * @return 
+ */
+
 /* 
  * File:   order_struct.h
  * Author: Marta

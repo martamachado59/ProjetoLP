@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -50,23 +46,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('input_8h.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,12 +60,16 @@ $(document).ready(function(){initNavTree('input_8h.html',''); initResizable(); }
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">input.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Doxygen.  
+<a href="#details">More...</a></p>
 
 <p><a href="input_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -105,7 +88,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a8deaff72b3466f323d5ffe40426e1ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a8deaff72b3466f323d5ffe40426e1ea1">lerString</a> (char *string, unsigned int tamanho, char *msg)</td></tr>
 <tr class="separator:a8deaff72b3466f323d5ffe40426e1ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Doxygen. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a8deaff72b3466f323d5ffe40426e1ea1" name="a8deaff72b3466f323d5ffe40426e1ea1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8deaff72b3466f323d5ffe40426e1ea1">&#9670;&nbsp;</a></span>lerString()</h2>
 
@@ -137,18 +123,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                              {</div>
-<div class="line"><span class="lineno">   73</span>    printf(msg);</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">if</span> (fgets(<span class="keywordtype">string</span>, tamanho, stdin) != NULL) {</div>
-<div class="line"><span class="lineno">   75</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len = strlen(<span class="keywordtype">string</span>) - 1;</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">if</span> (<span class="keywordtype">string</span>[len] == <span class="charliteral">&#39;\n&#39;</span>) {</div>
-<div class="line"><span class="lineno">   77</span>            <span class="keywordtype">string</span>[len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><span class="lineno">   78</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   79</span>            <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="line"><span class="lineno">   82</span>}</div>
-<div class="ttc" id="ainput_8c_html_a11ac4d3ec555747d95fee8ae7aa18b5d"><div class="ttname"><a href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a></div><div class="ttdeci">void cleanInputBuffer()</div><div class="ttdef"><b>Definition:</b> input.c:11</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                              {</div>
+<div class="line"><span class="lineno">   86</span>    printf(msg);</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (fgets(<span class="keywordtype">string</span>, tamanho, stdin) != NULL) {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len = strlen(<span class="keywordtype">string</span>) - 1;</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">if</span> (<span class="keywordtype">string</span>[len] == <span class="charliteral">&#39;\n&#39;</span>) {</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordtype">string</span>[len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">   91</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   92</span>            <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   93</span>        }</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
+<div class="line"><span class="lineno">   95</span>}</div>
+<div class="ttc" id="ainput_8c_html_a11ac4d3ec555747d95fee8ae7aa18b5d"><div class="ttname"><a href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a></div><div class="ttdeci">void cleanInputBuffer()</div><div class="ttdef"><b>Definition:</b> input.c:20</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -167,13 +153,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   64</span>                          {</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordtype">char</span> valor;</div>
-<div class="line"><span class="lineno">   66</span>    printf(msg);</div>
-<div class="line"><span class="lineno">   67</span>    valor = getchar();</div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> valor;</div>
-<div class="line"><span class="lineno">   70</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                          {</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordtype">char</span> valor;</div>
+<div class="line"><span class="lineno">   79</span>    printf(msg);</div>
+<div class="line"><span class="lineno">   80</span>    valor = getchar();</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> valor;</div>
+<div class="line"><span class="lineno">   83</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -208,18 +194,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   52</span>                                                                {</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordtype">double</span> valor;</div>
-<div class="line"><span class="lineno">   54</span>    printf(msg);</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">while</span> (scanf(<span class="stringliteral">&quot;%lf&quot;</span>, &amp;valor) != 1 || valor &lt; minValor || valor &gt; maxValor) {</div>
-<div class="line"><span class="lineno">   56</span>        puts(<a class="code hl_define" href="input_8c.html#a7dac90953bf2709d6153d7503fe3c77e">VALOR_INVALIDO</a>);</div>
-<div class="line"><span class="lineno">   57</span>        <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   58</span>        printf(msg);</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
-<div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">return</span> valor;</div>
-<div class="line"><span class="lineno">   62</span>}</div>
-<div class="ttc" id="ainput_8c_html_a7dac90953bf2709d6153d7503fe3c77e"><div class="ttname"><a href="input_8c.html#a7dac90953bf2709d6153d7503fe3c77e">VALOR_INVALIDO</a></div><div class="ttdeci">#define VALOR_INVALIDO</div><div class="ttdef"><b>Definition:</b> input.c:9</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>                                                                {</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordtype">double</span> valor;</div>
+<div class="line"><span class="lineno">   67</span>    printf(msg);</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">while</span> (scanf(<span class="stringliteral">&quot;%lf&quot;</span>, &amp;valor) != 1 || valor &lt; minValor || valor &gt; maxValor) {</div>
+<div class="line"><span class="lineno">   69</span>        puts(VALOR_INVALIDO);</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   71</span>        printf(msg);</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> valor;</div>
+<div class="line"><span class="lineno">   75</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,17 +239,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                            {</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordtype">float</span> valor;</div>
-<div class="line"><span class="lineno">   42</span>    printf(msg);</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">while</span> (scanf(<span class="stringliteral">&quot;%f&quot;</span>, &amp;valor) != 1 || valor &lt; minValor || valor &gt; maxValor) {</div>
-<div class="line"><span class="lineno">   44</span>        puts(<a class="code hl_define" href="input_8c.html#a7dac90953bf2709d6153d7503fe3c77e">VALOR_INVALIDO</a>);</div>
-<div class="line"><span class="lineno">   45</span>        <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   46</span>        printf(msg);</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">return</span> valor;</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                            {</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordtype">float</span> valor;</div>
+<div class="line"><span class="lineno">   55</span>    printf(msg);</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">while</span> (scanf(<span class="stringliteral">&quot;%f&quot;</span>, &amp;valor) != 1 || valor &lt; minValor || valor &gt; maxValor) {</div>
+<div class="line"><span class="lineno">   57</span>        puts(VALOR_INVALIDO);</div>
+<div class="line"><span class="lineno">   58</span>        <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   59</span>        printf(msg);</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> valor;</div>
+<div class="line"><span class="lineno">   63</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -299,17 +284,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                                                    {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordtype">int</span> valor;</div>
-<div class="line"><span class="lineno">   18</span>    printf(msg);</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">while</span> (scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;valor) != 1 || valor &lt; minValor || valor &gt; maxValor) {</div>
-<div class="line"><span class="lineno">   20</span>        puts(<a class="code hl_define" href="input_8c.html#a7dac90953bf2709d6153d7503fe3c77e">VALOR_INVALIDO</a>);</div>
-<div class="line"><span class="lineno">   21</span>        <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   22</span>        printf(msg);</div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-<div class="line"><span class="lineno">   24</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span> valor;</div>
-<div class="line"><span class="lineno">   26</span>}</div>
+<p >Assinaturas das funções dos scanf</p>
+<p >funções do scanf </p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                    {</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordtype">int</span> valor;</div>
+<div class="line"><span class="lineno">   31</span>    printf(msg);</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">while</span> (scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;valor) != 1 || valor &lt; minValor || valor &gt; maxValor) {</div>
+<div class="line"><span class="lineno">   33</span>        puts(VALOR_INVALIDO);</div>
+<div class="line"><span class="lineno">   34</span>        <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   35</span>        printf(msg);</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="line"><span class="lineno">   37</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> valor;</div>
+<div class="line"><span class="lineno">   39</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -344,28 +331,24 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   28</span>                                                        {</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordtype">long</span> valor;</div>
-<div class="line"><span class="lineno">   30</span>    printf(msg);</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">while</span> (scanf(<span class="stringliteral">&quot;%ld&quot;</span>, &amp;valor) != 1 || valor &lt; minValor || valor &gt; maxValor) {</div>
-<div class="line"><span class="lineno">   32</span>        puts(<a class="code hl_define" href="input_8c.html#a7dac90953bf2709d6153d7503fe3c77e">VALOR_INVALIDO</a>);</div>
-<div class="line"><span class="lineno">   33</span>        <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   34</span>        printf(msg);</div>
-<div class="line"><span class="lineno">   35</span>    }</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> valor;</div>
-<div class="line"><span class="lineno">   38</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                                                        {</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordtype">long</span> valor;</div>
+<div class="line"><span class="lineno">   43</span>    printf(msg);</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">while</span> (scanf(<span class="stringliteral">&quot;%ld&quot;</span>, &amp;valor) != 1 || valor &lt; minValor || valor &gt; maxValor) {</div>
+<div class="line"><span class="lineno">   45</span>        puts(VALOR_INVALIDO);</div>
+<div class="line"><span class="lineno">   46</span>        <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   47</span>        printf(msg);</div>
+<div class="line"><span class="lineno">   48</span>    }</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_function" href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a>();</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> valor;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="input_8h.html">input.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>

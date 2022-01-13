@@ -3,6 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template
  */
 
+/**
+ * @file input.h
+ * @brief Doxygen
+ * @return 
+ */
+
 /* 
  * File:   input.h
  * Author: Marta

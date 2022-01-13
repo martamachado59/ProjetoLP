@@ -2,6 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.c to edit this template
  */
+
+/**
+ * @file client_struct.c
+ * @brief Doxygen
+ * @return 
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include "input.h"

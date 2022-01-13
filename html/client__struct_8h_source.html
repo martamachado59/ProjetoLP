@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -51,22 +47,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('client__struct_8h_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,77 +70,62 @@ $(document).ready(function(){initNavTree('client__struct_8h_source.html',''); in
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/* </span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * File:   clientStruct.h</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * Author: marta</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * Created on 2 de janeiro de 2022, 16:25</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a13146edd55a2b9f6b3151f1a91c38170">   15</a></span><span class="preprocessor">#define CLIENTSTRUCT_H</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a0cf5c23bdf46ca7f4778aea7da2bc548">   17</a></span><span class="preprocessor">#define MAX_CLIENTES 50</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="client__struct_8h.html#aaf0c11244777b8dde7b6833b18af60d1">   18</a></span><span class="preprocessor">#define ERRO_CLIENTE_NAO_EXISTE &quot;O cliente não existe na lista.&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a17d1cfa48ecf37a2a28b9e0e8b9dc6e1">   19</a></span><span class="preprocessor">#define ERRO_LISTA_VAZIA &quot;A lista de cliente está vazia.&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a65d3b21c5bfbd8ac97abd329e5a56ead">   20</a></span><span class="preprocessor">#define ERRO_LISTA_CHEIA &quot;A lista de cliente está cheia.&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="client__struct_8h.html#ab112b7752fa3ccf2d0f7fbcc52cb1439">   21</a></span><span class="preprocessor">#define ERRO_CLIENTE_EXISTE &quot;O número de cliente já se encontra atribuído.&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * File:   clientStruct.h</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * Author: Marta</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * Author: Mara</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * Created on 2 de janeiro de 2022, 16:25</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define CLIENTSTRUCT_H</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="client__struct_8h.html#aa7497b2ad3c08c7768f409ca10b7764c">   23</a></span><span class="preprocessor">#define MAX_NOME_CLIENTE 50</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a24821793d3512d829e8a08de0058b4ac">   24</a></span><span class="preprocessor">#define MSG_OBTER_NOME &quot;Insira o nome do cliente: &quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a302620ea0edcac33622925b502fa01fe">   26</a></span><span class="preprocessor">#define MIN_NIF 000000001</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a3e74ee334b9255a077dc7238eb74edae">   27</a></span><span class="preprocessor">#define MAX_NIF 999999999</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a1d382c293dd113b7e7cff41fdb5f7ae3">   28</a></span><span class="preprocessor">#define OBTER_NIF &quot;Insira o NIF: &quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a027e514e2a81b2c406c76982be780e4a">   30</a></span><span class="preprocessor">#define MAX_PAIS_CLIENTE 50</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a610ec952fd16f258adf94fdbcdfb2d39">   31</a></span><span class="preprocessor">#define MSG_OBTER_PAIS &quot;Insira o nome do pais: &quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="client__struct_8h.html#a04ebc52791fcb14454d2ac35b818a4ea">   33</a></span><span class="preprocessor">#define MIN_NUM_CLIENTE 0</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="client__struct_8h.html#ab3d232456dd499c0d4f655ffa5ca6db4">   34</a></span><span class="preprocessor">#define MAX_NUM_CLIENTE 1000</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="client__struct_8h.html#ab76431b6b015fa2f606c6d44f6518481">   35</a></span><span class="preprocessor">#define MSG_OBTER_NUM_CLIENTE &quot;Insira um número de cliente [0-1000]: &quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_cliente.html">   37</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_cliente.html#abe09348e3333bdf8681ae2c2b7f410c1">   38</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_cliente.html#abe09348e3333bdf8681ae2c2b7f410c1">cod_cliente</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_cliente.html#a8b1a10d4f4ad1cbd1fd66f20a288fdcb">   39</a></span>    <span class="keywordtype">char</span> nome[<a class="code hl_define" href="client__struct_8h.html#aa7497b2ad3c08c7768f409ca10b7764c">MAX_NOME_CLIENTE</a>];</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_cliente.html#abb000fc03fa9343f9b59e5a27a30404a">   40</a></span>    <span class="keywordtype">long</span> <a class="code hl_variable" href="struct_cliente.html#abb000fc03fa9343f9b59e5a27a30404a">nif</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_cliente.html#aca70a10e004a1487c360daa2e73ac415">   41</a></span>    <span class="keywordtype">char</span> pais[<a class="code hl_define" href="client__struct_8h.html#a027e514e2a81b2c406c76982be780e4a">MAX_PAIS_CLIENTE</a>];</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_cliente.html#a059190954dabaceb1653fc0ca8a76495">   42</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_cliente.html#a059190954dabaceb1653fc0ca8a76495">apagado</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <a class="code hl_struct" href="struct_cliente.html">Cliente</a>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_clientes.html">   45</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_clientes.html#af4c0f604be175500a011c5a4a8860e17">   46</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_clientes.html#af4c0f604be175500a011c5a4a8860e17">contador</a>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_clientes.html#a74177aa22ee7dca97ff03a748c733a1a">   47</a></span>    <a class="code hl_struct" href="struct_cliente.html">Cliente</a> clientes[<a class="code hl_define" href="client__struct_8h.html#a0cf5c23bdf46ca7f4778aea7da2bc548">MAX_CLIENTES</a>];</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <a class="code hl_struct" href="struct_clientes.html">Clientes</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">int</span> <a class="code hl_function" href="client__struct_8h.html#a43b67bec8f5df6eb44dc705e6397fb94">inserirClientes</a>(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> *clientes);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">int</span> <a class="code hl_function" href="client__struct_8h.html#a5651c71cfc50aa8138d81ec2c66d22c2">procurarCliente</a>(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> cliente, <span class="keywordtype">int</span> cod_cliente);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> <a class="code hl_function" href="client__struct_8h.html#af4d6f851bb2ea2ad04e459ea9505ce14">atualizarClientes</a>(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> *clientes);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span> <a class="code hl_function" href="client__struct_8h.html#a1eba25f7ae992ca97172a4660fa8424a">removerClientes</a>(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> *clientes);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">void</span> <a class="code hl_function" href="client__struct_8h.html#aa1ac7b4e1389f28381daad2966f01a1f">listarClientes</a>(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> clientes);</div>
-<div class="ttc" id="aclient__struct_8h_html_a027e514e2a81b2c406c76982be780e4a"><div class="ttname"><a href="client__struct_8h.html#a027e514e2a81b2c406c76982be780e4a">MAX_PAIS_CLIENTE</a></div><div class="ttdeci">#define MAX_PAIS_CLIENTE</div><div class="ttdef"><b>Definition:</b> client_struct.h:30</div></div>
-<div class="ttc" id="aclient__struct_8h_html_a0cf5c23bdf46ca7f4778aea7da2bc548"><div class="ttname"><a href="client__struct_8h.html#a0cf5c23bdf46ca7f4778aea7da2bc548">MAX_CLIENTES</a></div><div class="ttdeci">#define MAX_CLIENTES</div><div class="ttdef"><b>Definition:</b> client_struct.h:17</div></div>
-<div class="ttc" id="aclient__struct_8h_html_a1eba25f7ae992ca97172a4660fa8424a"><div class="ttname"><a href="client__struct_8h.html#a1eba25f7ae992ca97172a4660fa8424a">removerClientes</a></div><div class="ttdeci">void removerClientes(Clientes *clientes)</div><div class="ttdef"><b>Definition:</b> client_struct.c:56</div></div>
-<div class="ttc" id="aclient__struct_8h_html_a43b67bec8f5df6eb44dc705e6397fb94"><div class="ttname"><a href="client__struct_8h.html#a43b67bec8f5df6eb44dc705e6397fb94">inserirClientes</a></div><div class="ttdeci">int inserirClientes(Clientes *clientes)</div><div class="ttdef"><b>Definition:</b> client_struct.c:25</div></div>
-<div class="ttc" id="aclient__struct_8h_html_a5651c71cfc50aa8138d81ec2c66d22c2"><div class="ttname"><a href="client__struct_8h.html#a5651c71cfc50aa8138d81ec2c66d22c2">procurarCliente</a></div><div class="ttdeci">int procurarCliente(Clientes cliente, int cod_cliente)</div><div class="ttdef"><b>Definition:</b> client_struct.c:15</div></div>
-<div class="ttc" id="aclient__struct_8h_html_aa1ac7b4e1389f28381daad2966f01a1f"><div class="ttname"><a href="client__struct_8h.html#aa1ac7b4e1389f28381daad2966f01a1f">listarClientes</a></div><div class="ttdeci">void listarClientes(Clientes clientes)</div><div class="ttdef"><b>Definition:</b> client_struct.c:66</div></div>
-<div class="ttc" id="aclient__struct_8h_html_aa7497b2ad3c08c7768f409ca10b7764c"><div class="ttname"><a href="client__struct_8h.html#aa7497b2ad3c08c7768f409ca10b7764c">MAX_NOME_CLIENTE</a></div><div class="ttdeci">#define MAX_NOME_CLIENTE</div><div class="ttdef"><b>Definition:</b> client_struct.h:23</div></div>
-<div class="ttc" id="aclient__struct_8h_html_af4d6f851bb2ea2ad04e459ea9505ce14"><div class="ttname"><a href="client__struct_8h.html#af4d6f851bb2ea2ad04e459ea9505ce14">atualizarClientes</a></div><div class="ttdeci">void atualizarClientes(Clientes *clientes)</div><div class="ttdef"><b>Definition:</b> client_struct.c:39</div></div>
-<div class="ttc" id="astruct_cliente_html"><div class="ttname"><a href="struct_cliente.html">Cliente</a></div><div class="ttdef"><b>Definition:</b> client_struct.h:37</div></div>
-<div class="ttc" id="astruct_cliente_html_a059190954dabaceb1653fc0ca8a76495"><div class="ttname"><a href="struct_cliente.html#a059190954dabaceb1653fc0ca8a76495">Cliente::apagado</a></div><div class="ttdeci">bool apagado</div><div class="ttdef"><b>Definition:</b> client_struct.h:42</div></div>
-<div class="ttc" id="astruct_cliente_html_abb000fc03fa9343f9b59e5a27a30404a"><div class="ttname"><a href="struct_cliente.html#abb000fc03fa9343f9b59e5a27a30404a">Cliente::nif</a></div><div class="ttdeci">long nif</div><div class="ttdef"><b>Definition:</b> client_struct.h:40</div></div>
-<div class="ttc" id="astruct_cliente_html_abe09348e3333bdf8681ae2c2b7f410c1"><div class="ttname"><a href="struct_cliente.html#abe09348e3333bdf8681ae2c2b7f410c1">Cliente::cod_cliente</a></div><div class="ttdeci">int cod_cliente</div><div class="ttdef"><b>Definition:</b> client_struct.h:38</div></div>
-<div class="ttc" id="astruct_clientes_html"><div class="ttname"><a href="struct_clientes.html">Clientes</a></div><div class="ttdef"><b>Definition:</b> client_struct.h:45</div></div>
-<div class="ttc" id="astruct_clientes_html_af4c0f604be175500a011c5a4a8860e17"><div class="ttname"><a href="struct_clientes.html#af4c0f604be175500a011c5a4a8860e17">Clientes::contador</a></div><div class="ttdeci">int contador</div><div class="ttdef"><b>Definition:</b> client_struct.h:46</div></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define MAX_CLIENTES 50</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define ERRO_CLIENTE_NAO_EXISTE &quot;O cliente não existe na lista.&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define ERRO_LISTA_VAZIA &quot;A lista de cliente está vazia.&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define ERRO_LISTA_CHEIA &quot;A lista de cliente está cheia.&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define ERRO_CLIENTE_EXISTE &quot;O número de cliente já se encontra atribuído.&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define MAX_NOME_CLIENTE 50</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define MSG_OBTER_NOME &quot;Insira o nome do cliente: &quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#define MIN_NIF 000000001</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define MAX_NIF 999999999</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define OBTER_NIF &quot;Insira o NIF: &quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#define MAX_PAIS_CLIENTE 50</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#define MSG_OBTER_PAIS &quot;Insira o nome do pais: &quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define MIN_NUM_CLIENTE 0</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define MAX_NUM_CLIENTE 1000</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define MSG_OBTER_NUM_CLIENTE &quot;Insira um número de cliente [0-1000]: &quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_cliente.html">   46</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">int</span> cod_cliente;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">char</span> nome[MAX_NOME_CLIENTE];</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">long</span> nif;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">char</span> pais[MAX_PAIS_CLIENTE];</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> apagado;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} <a class="code hl_struct" href="struct_cliente.html">Cliente</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_clientes.html">   54</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">int</span> contador;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_struct" href="struct_cliente.html">Cliente</a> clientes[MAX_CLIENTES];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <a class="code hl_struct" href="struct_clientes.html">Clientes</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">int</span> <a class="code hl_function" href="client__struct_8h.html#a43b67bec8f5df6eb44dc705e6397fb94">inserirClientes</a>(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> *clientes);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">int</span> procurarCliente(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> cliente, <span class="keywordtype">int</span> cod_cliente);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> atualizarClientes(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> *clientes);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">void</span> removerClientes(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> *clientes);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span> listarClientes(<a class="code hl_struct" href="struct_clientes.html">Clientes</a> clientes);</div>
+<div class="ttc" id="aclient__struct_8h_html_a43b67bec8f5df6eb44dc705e6397fb94"><div class="ttname"><a href="client__struct_8h.html#a43b67bec8f5df6eb44dc705e6397fb94">inserirClientes</a></div><div class="ttdeci">int inserirClientes(Clientes *clientes)</div><div class="ttdef"><b>Definition:</b> client_struct.c:42</div></div>
+<div class="ttc" id="astruct_cliente_html"><div class="ttname"><a href="struct_cliente.html">Cliente</a></div><div class="ttdef"><b>Definition:</b> client_struct.h:46</div></div>
+<div class="ttc" id="astruct_clientes_html"><div class="ttname"><a href="struct_clientes.html">Clientes</a></div><div class="ttdef"><b>Definition:</b> client_struct.h:54</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="client__struct_8h.html">client_struct.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>

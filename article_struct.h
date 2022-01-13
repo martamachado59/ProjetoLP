@@ -3,6 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template
  */
 
+/**
+ * @file article_struct.h
+ * @brief Doxygen
+ * @return 
+ */
+
 /* 
  * File:   article_struct.h
  * Author: Marta

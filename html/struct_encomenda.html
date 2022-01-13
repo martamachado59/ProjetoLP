@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projeto de LP: Cliente Struct Reference</title>
+<title>Projeto de LP: Encomenda Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,34 +64,34 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">Cliente Struct Reference</div></div>
+  <div class="headertitle"><div class="title">Encomenda Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="client__struct_8h_source.html">client_struct.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="order__struct_8h_source.html">order_struct.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8681a8febcefc20b7659c5c3f0f9ecfa"><td class="memItemLeft" align="right" valign="top"><a id="a8681a8febcefc20b7659c5c3f0f9ecfa" name="a8681a8febcefc20b7659c5c3f0f9ecfa"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>cod_cliente</b></td></tr>
-<tr class="separator:a8681a8febcefc20b7659c5c3f0f9ecfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2784a34c3329b35b5344de735b0d92c4"><td class="memItemLeft" align="right" valign="top"><a id="a2784a34c3329b35b5344de735b0d92c4" name="a2784a34c3329b35b5344de735b0d92c4"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>nome</b> [MAX_NOME_CLIENTE]</td></tr>
-<tr class="separator:a2784a34c3329b35b5344de735b0d92c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fb58d776c9faaf839bd53da312b2ca9"><td class="memItemLeft" align="right" valign="top"><a id="a0fb58d776c9faaf839bd53da312b2ca9" name="a0fb58d776c9faaf839bd53da312b2ca9"></a>
-long&#160;</td><td class="memItemRight" valign="bottom"><b>nif</b></td></tr>
-<tr class="separator:a0fb58d776c9faaf839bd53da312b2ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affaceff8ee113527354603ea32f66290"><td class="memItemLeft" align="right" valign="top"><a id="affaceff8ee113527354603ea32f66290" name="affaceff8ee113527354603ea32f66290"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>pais</b> [MAX_PAIS_CLIENTE]</td></tr>
-<tr class="separator:affaceff8ee113527354603ea32f66290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8bee023003c97c6537f8ad53b561a4e"><td class="memItemLeft" align="right" valign="top"><a id="ab8bee023003c97c6537f8ad53b561a4e" name="ab8bee023003c97c6537f8ad53b561a4e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>apagado</b></td></tr>
-<tr class="separator:ab8bee023003c97c6537f8ad53b561a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785db41dbf71d8f29575e8910ea84ecc"><td class="memItemLeft" align="right" valign="top"><a id="a785db41dbf71d8f29575e8910ea84ecc" name="a785db41dbf71d8f29575e8910ea84ecc"></a>
+<a class="el" href="struct_cliente.html">Cliente</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cliente</b></td></tr>
+<tr class="separator:a785db41dbf71d8f29575e8910ea84ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024c7e21d988cf42db72b4894802d70b"><td class="memItemLeft" align="right" valign="top"><a id="a024c7e21d988cf42db72b4894802d70b" name="a024c7e21d988cf42db72b4894802d70b"></a>
+<a class="el" href="struct_artigo.html">Artigo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>artigos</b> [MAX_ARTIGOS_ENCOMENDA]</td></tr>
+<tr class="separator:a024c7e21d988cf42db72b4894802d70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e637f3708c69d189e738600e294e447"><td class="memItemLeft" align="right" valign="top"><a id="a3e637f3708c69d189e738600e294e447" name="a3e637f3708c69d189e738600e294e447"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tamanhos</b> [MAX_ARTIGOS_ENCOMENDA]</td></tr>
+<tr class="separator:a3e637f3708c69d189e738600e294e447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8791573689179ff66237bb25e0b116"><td class="memItemLeft" align="right" valign="top"><a id="aed8791573689179ff66237bb25e0b116" name="aed8791573689179ff66237bb25e0b116"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>precoEncomenda</b></td></tr>
+<tr class="separator:aed8791573689179ff66237bb25e0b116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6a3fb7cddd9bd7254692264962b5b3"><td class="memItemLeft" align="right" valign="top"><a id="a2c6a3fb7cddd9bd7254692264962b5b3" name="a2c6a3fb7cddd9bd7254692264962b5b3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>contador</b></td></tr>
+<tr class="separator:a2c6a3fb7cddd9bd7254692264962b5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Cria um struct para armazenar todos os clientes e os seus dados </p>
+<div class="textblock"><p >Cria um struct para armazenar todas as encomendas </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="client__struct_8h_source.html">client_struct.h</a></li>
+<li><a class="el" href="order__struct_8h_source.html">order_struct.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -50,23 +46,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('article__struct_8c.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,12 +60,16 @@ $(document).ready(function(){initNavTree('article__struct_8c.html',''); initResi
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">article_struct.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Doxygen.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="input_8h_source.html">input.h</a>&quot;</code><br />
@@ -108,8 +91,53 @@ Functions</h2></td></tr>
 <tr class="separator:a2cbac06c178ea039aebea341a3186ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af41182f3570d8d996b43fab91370e640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#af41182f3570d8d996b43fab91370e640">listarArtigos</a> (<a class="el" href="struct_artigos.html">Artigos</a> artigos)</td></tr>
 <tr class="separator:af41182f3570d8d996b43fab91370e640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bae7b26a78296a9eba2575c9d0a99a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#a24bae7b26a78296a9eba2575c9d0a99a">imprimirPreco</a> (<a class="el" href="struct_preco_artigo.html">PrecoArtigo</a> precoArtigo)</td></tr>
+<tr class="separator:a24bae7b26a78296a9eba2575c9d0a99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e7227fbb1f5ca7871572a61e5ad0c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#a17e7227fbb1f5ca7871572a61e5ad0c7">procurarPreco</a> (<a class="el" href="struct_precos.html">Precos</a> precos, enum tipo tipo_artigo, int tam)</td></tr>
+<tr class="separator:a17e7227fbb1f5ca7871572a61e5ad0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bcabe95a1db6e7889e2858f9a1b94b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#a91bcabe95a1db6e7889e2858f9a1b94b">inserirPrecos</a> (<a class="el" href="struct_precos.html">Precos</a> *precos)</td></tr>
+<tr class="separator:a91bcabe95a1db6e7889e2858f9a1b94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20343debb824ae7c0e64260f5a67cb28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#a20343debb824ae7c0e64260f5a67cb28">atualizarPrecos</a> (<a class="el" href="struct_precos.html">Precos</a> *precos)</td></tr>
+<tr class="separator:a20343debb824ae7c0e64260f5a67cb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3e60f79af5956ae76260ae4d2124c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#aef3e60f79af5956ae76260ae4d2124c9">atualizarPreco</a> (<a class="el" href="struct_preco_artigo.html">PrecoArtigo</a> *preco)</td></tr>
+<tr class="separator:aef3e60f79af5956ae76260ae4d2124c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6b88b8310c79b22882073358a4d596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#a5d6b88b8310c79b22882073358a4d596">removerPrecos</a> (<a class="el" href="struct_precos.html">Precos</a> *precos)</td></tr>
+<tr class="separator:a5d6b88b8310c79b22882073358a4d596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018448cc084535aaf48039479da444b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#a018448cc084535aaf48039479da444b0">apagarDadosPreco</a> (<a class="el" href="struct_preco_artigo.html">PrecoArtigo</a> *preco)</td></tr>
+<tr class="separator:a018448cc084535aaf48039479da444b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a66c2f25fea25dc6c6f31f6a092c2ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="article__struct_8c.html#a6a66c2f25fea25dc6c6f31f6a092c2ce">listarPrecos</a> (<a class="el" href="struct_precos.html">Precos</a> precos)</td></tr>
+<tr class="separator:a6a66c2f25fea25dc6c6f31f6a092c2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Doxygen. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a018448cc084535aaf48039479da444b0" name="a018448cc084535aaf48039479da444b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018448cc084535aaf48039479da444b0">&#9670;&nbsp;</a></span>apagarDadosPreco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apagarDadosPreco </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_preco_artigo.html">PrecoArtigo</a> *&#160;</td>
+          <td class="paramname"><em>preco</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  182</span>                                         {</div>
+<div class="line"><span class="lineno">  183</span>    preco-&gt;tipo_artigo=0;</div>
+<div class="line"><span class="lineno">  184</span>    preco-&gt;tam=0;</div>
+<div class="line"><span class="lineno">  185</span>    preco-&gt;precoObra=0.0;</div>
+<div class="line"><span class="lineno">  186</span>    preco-&gt;precoFixo=0.0;</div>
+<div class="line"><span class="lineno">  187</span>    preco-&gt;precoTam=0.0;</div>
+<div class="line"><span class="lineno">  188</span>    preco-&gt;margem=0.0;</div>
+<div class="line"><span class="lineno">  189</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a8ef638dde287c2ca3d99319e5b30680d" name="a8ef638dde287c2ca3d99319e5b30680d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ef638dde287c2ca3d99319e5b30680d">&#9670;&nbsp;</a></span>atualizarArtigo()</h2>
 
@@ -125,26 +153,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   48</span>                                     {</div>
-<div class="line"><span class="lineno">   49</span>    <a class="code hl_function" href="input_8c.html#a8deaff72b3466f323d5ffe40426e1ea1">lerString</a>((*artigo).nome, <a class="code hl_define" href="article__struct_8h.html#a5471af55eb7acc8381d374d65194a083">MAX_NOME_ARTIGO</a>, <a class="code hl_define" href="article__struct_8h.html#a24821793d3512d829e8a08de0058b4ac">MSG_OBTER_NOME</a>);</div>
-<div class="line"><span class="lineno">   50</span>    (*artigo).tipo_artigo =</div>
-<div class="line"><span class="lineno">   51</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#ac3273650642b0e8047c9ee0d562c7d18">MIN_TIPO</a>, <a class="code hl_define" href="article__struct_8h.html#ab65eb4cb4e4631ad72ed5e9579bc9e5d">MAX_TIPO</a>, <a class="code hl_define" href="article__struct_8h.html#a3e6d78166bb7f0e6a56234f3f8cdd5e8">OBTER_TIPO</a>);</div>
-<div class="line"><span class="lineno">   52</span>    (*artigo).tam_min =</div>
-<div class="line"><span class="lineno">   53</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#acfccd4d6e028c86fe0558f7f54c77316">MIN_TAM</a>, <a class="code hl_define" href="article__struct_8h.html#a22f04193987fe8741199b66fb25e9d91">MAX_TAM</a>, <a class="code hl_define" href="article__struct_8h.html#af794c2d42eb71f6815259fc43077dae5">OBTER_TAM_MIN</a>);</div>
-<div class="line"><span class="lineno">   54</span>    (*artigo).tam_max =</div>
-<div class="line"><span class="lineno">   55</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#acfccd4d6e028c86fe0558f7f54c77316">MIN_TAM</a>, <a class="code hl_define" href="article__struct_8h.html#a22f04193987fe8741199b66fb25e9d91">MAX_TAM</a>, <a class="code hl_define" href="article__struct_8h.html#aed83458a1359e03f9e3eb6b8624e034d">OBTER_TAM_MAX</a>);</div>
-<div class="line"><span class="lineno">   56</span>}</div>
-<div class="ttc" id="aarticle__struct_8h_html_a22f04193987fe8741199b66fb25e9d91"><div class="ttname"><a href="article__struct_8h.html#a22f04193987fe8741199b66fb25e9d91">MAX_TAM</a></div><div class="ttdeci">#define MAX_TAM</div><div class="ttdef"><b>Definition:</b> article_struct.h:27</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_a24821793d3512d829e8a08de0058b4ac"><div class="ttname"><a href="article__struct_8h.html#a24821793d3512d829e8a08de0058b4ac">MSG_OBTER_NOME</a></div><div class="ttdeci">#define MSG_OBTER_NOME</div><div class="ttdef"><b>Definition:</b> article_struct.h:20</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_a3e6d78166bb7f0e6a56234f3f8cdd5e8"><div class="ttname"><a href="article__struct_8h.html#a3e6d78166bb7f0e6a56234f3f8cdd5e8">OBTER_TIPO</a></div><div class="ttdeci">#define OBTER_TIPO</div><div class="ttdef"><b>Definition:</b> article_struct.h:33</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_a5471af55eb7acc8381d374d65194a083"><div class="ttname"><a href="article__struct_8h.html#a5471af55eb7acc8381d374d65194a083">MAX_NOME_ARTIGO</a></div><div class="ttdeci">#define MAX_NOME_ARTIGO</div><div class="ttdef"><b>Definition:</b> article_struct.h:19</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_ab65eb4cb4e4631ad72ed5e9579bc9e5d"><div class="ttname"><a href="article__struct_8h.html#ab65eb4cb4e4631ad72ed5e9579bc9e5d">MAX_TIPO</a></div><div class="ttdeci">#define MAX_TIPO</div><div class="ttdef"><b>Definition:</b> article_struct.h:32</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_ac3273650642b0e8047c9ee0d562c7d18"><div class="ttname"><a href="article__struct_8h.html#ac3273650642b0e8047c9ee0d562c7d18">MIN_TIPO</a></div><div class="ttdeci">#define MIN_TIPO</div><div class="ttdef"><b>Definition:</b> article_struct.h:31</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_acfccd4d6e028c86fe0558f7f54c77316"><div class="ttname"><a href="article__struct_8h.html#acfccd4d6e028c86fe0558f7f54c77316">MIN_TAM</a></div><div class="ttdeci">#define MIN_TAM</div><div class="ttdef"><b>Definition:</b> article_struct.h:26</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_aed83458a1359e03f9e3eb6b8624e034d"><div class="ttname"><a href="article__struct_8h.html#aed83458a1359e03f9e3eb6b8624e034d">OBTER_TAM_MAX</a></div><div class="ttdeci">#define OBTER_TAM_MAX</div><div class="ttdef"><b>Definition:</b> article_struct.h:29</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_af794c2d42eb71f6815259fc43077dae5"><div class="ttname"><a href="article__struct_8h.html#af794c2d42eb71f6815259fc43077dae5">OBTER_TAM_MIN</a></div><div class="ttdeci">#define OBTER_TAM_MIN</div><div class="ttdef"><b>Definition:</b> article_struct.h:28</div></div>
-<div class="ttc" id="ainput_8c_html_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f"><div class="ttname"><a href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a></div><div class="ttdeci">int obterInt(int minValor, int maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:16</div></div>
-<div class="ttc" id="ainput_8c_html_a8deaff72b3466f323d5ffe40426e1ea1"><div class="ttname"><a href="input_8c.html#a8deaff72b3466f323d5ffe40426e1ea1">lerString</a></div><div class="ttdeci">void lerString(char *string, unsigned int tamanho, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:72</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>                                     {</div>
+<div class="line"><span class="lineno">   67</span>    lerString((*artigo).nome, MAX_NOME_ARTIGO, MSG_OBTER_NOME);</div>
+<div class="line"><span class="lineno">   68</span>    (*artigo).tipo_artigo =</div>
+<div class="line"><span class="lineno">   69</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TIPO, MAX_TIPO, OBTER_TIPO);</div>
+<div class="line"><span class="lineno">   70</span>    (*artigo).tam_min =</div>
+<div class="line"><span class="lineno">   71</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TAM, MAX_TAM, OBTER_TAM_MIN);</div>
+<div class="line"><span class="lineno">   72</span>    (*artigo).tam_max =</div>
+<div class="line"><span class="lineno">   73</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TAM, MAX_TAM, OBTER_TAM_MAX);</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="ainput_8c_html_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f"><div class="ttname"><a href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a></div><div class="ttdeci">int obterInt(int minValor, int maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:29</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -163,21 +181,71 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                        {</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> numero = <a class="code hl_function" href="article__struct_8c.html#a64429cd29ff5a8b596ea041bc0695dd6">procurarArtigo</a>(*artigos,</div>
-<div class="line"><span class="lineno">   40</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#a7a80f91120ad2b868a1c5d1ab8e2364a">MIN_NUM_ARTIGO</a>, <a class="code hl_define" href="article__struct_8h.html#a5ef8388b95e3c853a1d3759ffb8c6524">MAX_NUM_ARTIGO</a>, <a class="code hl_define" href="article__struct_8h.html#a4dcd4b0f62c520fdf5fdaceca160feb1">MSG_OBTER_NUM_ARTIGO</a>));</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (numero != -1) {</div>
-<div class="line"><span class="lineno">   42</span>        <a class="code hl_function" href="client__struct_8c.html#a6c1539fd01b0880ee804e841fdc17f7b">atualizarCliente</a>(&amp;(*artigos).artigos[numero]);</div>
-<div class="line"><span class="lineno">   43</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   44</span>        puts(<a class="code hl_define" href="article__struct_8h.html#afdd555ddc55c54e36e2d7f8f83f250ef">ERRO_ARTIGO_NAO_EXISTE</a>);</div>
-<div class="line"><span class="lineno">   45</span>    }</div>
-<div class="line"><span class="lineno">   46</span>}</div>
-<div class="ttc" id="aarticle__struct_8c_html_a64429cd29ff5a8b596ea041bc0695dd6"><div class="ttname"><a href="article__struct_8c.html#a64429cd29ff5a8b596ea041bc0695dd6">procurarArtigo</a></div><div class="ttdeci">int procurarArtigo(Artigos artigo, int cod_artigo)</div><div class="ttdef"><b>Definition:</b> article_struct.c:15</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_a4dcd4b0f62c520fdf5fdaceca160feb1"><div class="ttname"><a href="article__struct_8h.html#a4dcd4b0f62c520fdf5fdaceca160feb1">MSG_OBTER_NUM_ARTIGO</a></div><div class="ttdeci">#define MSG_OBTER_NUM_ARTIGO</div><div class="ttdef"><b>Definition:</b> article_struct.h:24</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_a5ef8388b95e3c853a1d3759ffb8c6524"><div class="ttname"><a href="article__struct_8h.html#a5ef8388b95e3c853a1d3759ffb8c6524">MAX_NUM_ARTIGO</a></div><div class="ttdeci">#define MAX_NUM_ARTIGO</div><div class="ttdef"><b>Definition:</b> article_struct.h:23</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_a7a80f91120ad2b868a1c5d1ab8e2364a"><div class="ttname"><a href="article__struct_8h.html#a7a80f91120ad2b868a1c5d1ab8e2364a">MIN_NUM_ARTIGO</a></div><div class="ttdeci">#define MIN_NUM_ARTIGO</div><div class="ttdef"><b>Definition:</b> article_struct.h:22</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_afdd555ddc55c54e36e2d7f8f83f250ef"><div class="ttname"><a href="article__struct_8h.html#afdd555ddc55c54e36e2d7f8f83f250ef">ERRO_ARTIGO_NAO_EXISTE</a></div><div class="ttdeci">#define ERRO_ARTIGO_NAO_EXISTE</div><div class="ttdef"><b>Definition:</b> article_struct.h:14</div></div>
-<div class="ttc" id="aclient__struct_8c_html_a6c1539fd01b0880ee804e841fdc17f7b"><div class="ttname"><a href="client__struct_8c.html#a6c1539fd01b0880ee804e841fdc17f7b">atualizarCliente</a></div><div class="ttdeci">void atualizarCliente(Cliente *cliente)</div><div class="ttdef"><b>Definition:</b> client_struct.c:49</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                                        {</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordtype">int</span> numero = procurarArtigo(*artigos,</div>
+<div class="line"><span class="lineno">   58</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_NUM_ARTIGO, MAX_NUM_ARTIGO, MSG_OBTER_NUM_ARTIGO));</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (numero != -1) {</div>
+<div class="line"><span class="lineno">   60</span>        atualizarArtigo(&amp;(*artigos).artigos[numero]);</div>
+<div class="line"><span class="lineno">   61</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   62</span>        puts(ERRO_ARTIGO_NAO_EXISTE);</div>
+<div class="line"><span class="lineno">   63</span>    }</div>
+<div class="line"><span class="lineno">   64</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aef3e60f79af5956ae76260ae4d2124c9" name="aef3e60f79af5956ae76260ae4d2124c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef3e60f79af5956ae76260ae4d2124c9">&#9670;&nbsp;</a></span>atualizarPreco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void atualizarPreco </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_preco_artigo.html">PrecoArtigo</a> *&#160;</td>
+          <td class="paramname"><em>preco</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  153</span>                                        {</div>
+<div class="line"><span class="lineno">  154</span>    (*preco).precoObra =</div>
+<div class="line"><span class="lineno">  155</span>            obterDouble(MIN_PRECO, MAX_PRECO, OBTER_PRECO_OBRA);</div>
+<div class="line"><span class="lineno">  156</span>    (*preco).precoFixo =</div>
+<div class="line"><span class="lineno">  157</span>            obterDouble(MIN_PRECO, MAX_PRECO, OBTER_PRECO_FIXO);</div>
+<div class="line"><span class="lineno">  158</span>    (*preco).precoTam =</div>
+<div class="line"><span class="lineno">  159</span>            obterDouble(MIN_PRECO, MAX_PRECO, OBTER_PRECO);</div>
+<div class="line"><span class="lineno">  160</span>    (*preco).margem = </div>
+<div class="line"><span class="lineno">  161</span>            obterDouble(MIN_MARGEM, MAX_MARGEM, OBTER_MARGEM);</div>
+<div class="line"><span class="lineno">  162</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a20343debb824ae7c0e64260f5a67cb28" name="a20343debb824ae7c0e64260f5a67cb28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20343debb824ae7c0e64260f5a67cb28">&#9670;&nbsp;</a></span>atualizarPrecos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void atualizarPrecos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_precos.html">Precos</a> *&#160;</td>
+          <td class="paramname"><em>precos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  142</span>                                     {</div>
+<div class="line"><span class="lineno">  143</span>    precos-&gt;precos[precos-&gt;contador].tipo_artigo = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TIPO, MAX_TIPO, OBTER_TIPO);</div>
+<div class="line"><span class="lineno">  144</span>    precos-&gt;precos[precos-&gt;contador].tam = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TAM, MAX_TAM, MSG_OBTER_NUM_PRECO_TAM);</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordtype">int</span> numero = procurarPreco(*precos, precos-&gt;precos[precos-&gt;contador].tipo_artigo, precos-&gt;precos[precos-&gt;contador].tam );</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">if</span> (numero == -1) {</div>
+<div class="line"><span class="lineno">  147</span>        atualizarPreco(&amp;(*precos).precos[numero]);</div>
+<div class="line"><span class="lineno">  148</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  149</span>        puts(ERRO_PRECO_NAO_EXISTE);</div>
+<div class="line"><span class="lineno">  150</span>    }</div>
+<div class="line"><span class="lineno">  151</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -196,15 +264,49 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                                   {</div>
-<div class="line"><span class="lineno">   11</span>    printf(<span class="stringliteral">&quot;\n%d %s %d %d %d&quot;</span>, artigo.<a class="code hl_variable" href="struct_artigo.html#a72bce9d92f3c65c4f0e3fced58d7376d">cod_artigo</a>, artigo.<a class="code hl_variable" href="struct_artigo.html#aaa43c38debefa2cac0ba20cb1964b0b0">nome</a>, artigo.<a class="code hl_variable" href="struct_artigo.html#a41c4b6b7b00363db229a8055f5f056c7">tipo_artigo</a>,</div>
-<div class="line"><span class="lineno">   12</span>            artigo.<a class="code hl_variable" href="struct_artigo.html#ac5fd3db779ffcd78880f0d1736352760">tam_min</a>, artigo.<a class="code hl_variable" href="struct_artigo.html#a22540be4fa18de17c6978d834f17d038">tam_max</a>);</div>
-<div class="line"><span class="lineno">   13</span>}</div>
-<div class="ttc" id="astruct_artigo_html_a22540be4fa18de17c6978d834f17d038"><div class="ttname"><a href="struct_artigo.html#a22540be4fa18de17c6978d834f17d038">Artigo::tam_max</a></div><div class="ttdeci">int tam_max</div><div class="ttdef"><b>Definition:</b> article_struct.h:44</div></div>
-<div class="ttc" id="astruct_artigo_html_a41c4b6b7b00363db229a8055f5f056c7"><div class="ttname"><a href="struct_artigo.html#a41c4b6b7b00363db229a8055f5f056c7">Artigo::tipo_artigo</a></div><div class="ttdeci">enum tipo tipo_artigo</div><div class="ttdef"><b>Definition:</b> article_struct.h:42</div></div>
-<div class="ttc" id="astruct_artigo_html_a72bce9d92f3c65c4f0e3fced58d7376d"><div class="ttname"><a href="struct_artigo.html#a72bce9d92f3c65c4f0e3fced58d7376d">Artigo::cod_artigo</a></div><div class="ttdeci">int cod_artigo</div><div class="ttdef"><b>Definition:</b> article_struct.h:40</div></div>
-<div class="ttc" id="astruct_artigo_html_aaa43c38debefa2cac0ba20cb1964b0b0"><div class="ttname"><a href="struct_artigo.html#aaa43c38debefa2cac0ba20cb1964b0b0">Artigo::nome</a></div><div class="ttdeci">char nome[MAX_NOME_ARTIGO]</div><div class="ttdef"><b>Definition:</b> article_struct.h:41</div></div>
-<div class="ttc" id="astruct_artigo_html_ac5fd3db779ffcd78880f0d1736352760"><div class="ttname"><a href="struct_artigo.html#ac5fd3db779ffcd78880f0d1736352760">Artigo::tam_min</a></div><div class="ttdeci">int tam_min</div><div class="ttdef"><b>Definition:</b> article_struct.h:43</div></div>
+<p >inserirArtigos é a função que cria os artigos, pedindo ao utilizador os dados necessários atualizarArtigos é a função que atualiza os dados de um determinado artigo procurarArtigo é a função que procura os artigos através do código artigo listarArtigos é a função que lista todos artigos inseridos imprimirArtigo é a função que mostra todos os dados do artigo com um respetivo código removerArtigos é a função que apaga os dados do artigo escolhido </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">funções</td><td>para a gestão dos artigos </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>                                   {</div>
+<div class="line"><span class="lineno">   29</span>    printf(<span class="stringliteral">&quot;\n%d %s %d %d %d \n&quot;</span>, artigo.cod_artigo, artigo.nome, artigo.tipo_artigo,</div>
+<div class="line"><span class="lineno">   30</span>            artigo.tam_min, artigo.tam_max);</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a24bae7b26a78296a9eba2575c9d0a99a" name="a24bae7b26a78296a9eba2575c9d0a99a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bae7b26a78296a9eba2575c9d0a99a">&#9670;&nbsp;</a></span>imprimirPreco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imprimirPreco </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_preco_artigo.html">PrecoArtigo</a>&#160;</td>
+          <td class="paramname"><em>precoArtigo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >inserirPrecos é a função que cria os preços necessários atualizarPrecos é a função que atualiza os preços procurarPreco é a função que procura os preços de um determinado artigo de um respetivo tamanho listarPrecos é a função que lista todos os precos inseridos imprimirPreco é a função que mostra todos os preços removePrecos é a função que apaga o preço do artigo escolhido apagarDadosPrecos é a função que põem todos os paramentros dos preços a 0 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encomenda</td><td>tem acesso aos valores inseridos nos artigos, clientes, preços </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>                                            {</div>
+<div class="line"><span class="lineno">  110</span>    printf(<span class="stringliteral">&quot;\n%d %d %lf %lf %lf %lf\n&quot;</span>, </div>
+<div class="line"><span class="lineno">  111</span>            precoArtigo.tipo_artigo, </div>
+<div class="line"><span class="lineno">  112</span>            precoArtigo.tam,</div>
+<div class="line"><span class="lineno">  113</span>            precoArtigo.precoObra,</div>
+<div class="line"><span class="lineno">  114</span>            precoArtigo.precoFixo,</div>
+<div class="line"><span class="lineno">  115</span>            precoArtigo.precoTam,</div>
+<div class="line"><span class="lineno">  116</span>            precoArtigo.margem);</div>
+<div class="line"><span class="lineno">  117</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -223,20 +325,62 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                                     {</div>
-<div class="line"><span class="lineno">   26</span>    <span class="keywordtype">int</span> cod_artigo = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#a7a80f91120ad2b868a1c5d1ab8e2364a">MIN_NUM_ARTIGO</a>, <a class="code hl_define" href="article__struct_8h.html#a5ef8388b95e3c853a1d3759ffb8c6524">MAX_NUM_ARTIGO</a>, <a class="code hl_define" href="article__struct_8h.html#a4dcd4b0f62c520fdf5fdaceca160feb1">MSG_OBTER_NUM_ARTIGO</a>);</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="article__struct_8c.html#a64429cd29ff5a8b596ea041bc0695dd6">procurarArtigo</a>(*artigos, cod_artigo) == -1) {</div>
-<div class="line"><span class="lineno">   28</span>        artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">artigos</a>[artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a>].<a class="code hl_variable" href="struct_artigo.html#a72bce9d92f3c65c4f0e3fced58d7376d">cod_artigo</a> = cod_artigo;</div>
-<div class="line"><span class="lineno">   29</span>        <a class="code hl_function" href="input_8c.html#a8deaff72b3466f323d5ffe40426e1ea1">lerString</a>(artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">artigos</a>[artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a>].<a class="code hl_variable" href="struct_artigo.html#aaa43c38debefa2cac0ba20cb1964b0b0">nome</a>, <a class="code hl_define" href="article__struct_8h.html#a5471af55eb7acc8381d374d65194a083">MAX_NOME_ARTIGO</a>, <a class="code hl_define" href="article__struct_8h.html#a24821793d3512d829e8a08de0058b4ac">MSG_OBTER_NOME</a>);</div>
-<div class="line"><span class="lineno">   30</span>        artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">artigos</a>[artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a>].<a class="code hl_variable" href="struct_artigo.html#a41c4b6b7b00363db229a8055f5f056c7">tipo_artigo</a> = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#ac3273650642b0e8047c9ee0d562c7d18">MIN_TIPO</a>, <a class="code hl_define" href="article__struct_8h.html#ab65eb4cb4e4631ad72ed5e9579bc9e5d">MAX_TIPO</a>, <a class="code hl_define" href="article__struct_8h.html#a3e6d78166bb7f0e6a56234f3f8cdd5e8">OBTER_TIPO</a>);</div>
-<div class="line"><span class="lineno">   31</span>        artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">artigos</a>[artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a>].<a class="code hl_variable" href="struct_artigo.html#ac5fd3db779ffcd78880f0d1736352760">tam_min</a> = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#acfccd4d6e028c86fe0558f7f54c77316">MIN_TAM</a>, <a class="code hl_define" href="article__struct_8h.html#a22f04193987fe8741199b66fb25e9d91">MAX_TAM</a>, <a class="code hl_define" href="article__struct_8h.html#af794c2d42eb71f6815259fc43077dae5">OBTER_TAM_MIN</a>);</div>
-<div class="line"><span class="lineno">   32</span>        artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">artigos</a>[artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a>].<a class="code hl_variable" href="struct_artigo.html#a22540be4fa18de17c6978d834f17d038">tam_max</a> = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#acfccd4d6e028c86fe0558f7f54c77316">MIN_TAM</a>, <a class="code hl_define" href="article__struct_8h.html#a22f04193987fe8741199b66fb25e9d91">MAX_TAM</a>, <a class="code hl_define" href="article__struct_8h.html#aed83458a1359e03f9e3eb6b8624e034d">OBTER_TAM_MAX</a>);</div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> artigos-&gt;<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a>++;</div>
-<div class="line"><span class="lineno">   34</span>    }</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   36</span>}</div>
-<div class="ttc" id="astruct_artigos_html_a2004f2b33358def654bd166f491ab59e"><div class="ttname"><a href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">Artigos::artigos</a></div><div class="ttdeci">Artigo artigos[MAX_ARTIGOS]</div><div class="ttdef"><b>Definition:</b> article_struct.h:49</div></div>
-<div class="ttc" id="astruct_artigos_html_a3a4b2ea14f3bc05fad5979d76d83e618"><div class="ttname"><a href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">Artigos::contador</a></div><div class="ttdeci">int contador</div><div class="ttdef"><b>Definition:</b> article_struct.h:48</div></div>
+<p >Assinaturas das funções dos artigos </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">artigos</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>valores relacionados com os artigos e a funcionalidade da função utilizada </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                     {</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">int</span> cod_artigo = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_NUM_ARTIGO, MAX_NUM_ARTIGO, MSG_OBTER_NUM_ARTIGO);</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (procurarArtigo(*artigos, cod_artigo) == -1) {</div>
+<div class="line"><span class="lineno">   46</span>        artigos-&gt;artigos[artigos-&gt;contador].cod_artigo = cod_artigo;</div>
+<div class="line"><span class="lineno">   47</span>        lerString(artigos-&gt;artigos[artigos-&gt;contador].nome, MAX_NOME_ARTIGO, MSG_OBTER_NOME);</div>
+<div class="line"><span class="lineno">   48</span>        artigos-&gt;artigos[artigos-&gt;contador].tipo_artigo = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TIPO, MAX_TIPO, OBTER_TIPO);</div>
+<div class="line"><span class="lineno">   49</span>        artigos-&gt;artigos[artigos-&gt;contador].tam_min = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TAM, MAX_TAM, OBTER_TAM_MIN);</div>
+<div class="line"><span class="lineno">   50</span>        artigos-&gt;artigos[artigos-&gt;contador].tam_max = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TAM, MAX_TAM, OBTER_TAM_MAX);</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span> artigos-&gt;contador++;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a91bcabe95a1db6e7889e2858f9a1b94b" name="a91bcabe95a1db6e7889e2858f9a1b94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bcabe95a1db6e7889e2858f9a1b94b">&#9670;&nbsp;</a></span>inserirPrecos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int inserirPrecos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_precos.html">Precos</a> *&#160;</td>
+          <td class="paramname"><em>precos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Assinaturas das funções dos preços </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">precos</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>preços relacionados com os artigos </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  129</span>                                  {</div>
+<div class="line"><span class="lineno">  130</span>    precos-&gt;precos[precos-&gt;contador].tipo_artigo = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TIPO, MAX_TIPO, OBTER_TIPO);</div>
+<div class="line"><span class="lineno">  131</span>    precos-&gt;precos[precos-&gt;contador].tam = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TAM, MAX_TAM, MSG_OBTER_NUM_PRECO_TAM);</div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">if</span> (procurarPreco(*precos, precos-&gt;precos[precos-&gt;contador].tipo_artigo, precos-&gt;precos[precos-&gt;contador].tam ) == -1) { </div>
+<div class="line"><span class="lineno">  133</span>        precos-&gt;precos[precos-&gt;contador].precoObra = obterDouble(MIN_PRECO, MAX_PRECO, OBTER_PRECO_OBRA);</div>
+<div class="line"><span class="lineno">  134</span>        precos-&gt;precos[precos-&gt;contador].precoFixo = obterDouble(MIN_PRECO, MAX_PRECO, OBTER_PRECO_FIXO);</div>
+<div class="line"><span class="lineno">  135</span>        precos-&gt;precos[precos-&gt;contador].precoTam = obterDouble(MIN_PRECO, MAX_PRECO, OBTER_PRECO);</div>
+<div class="line"><span class="lineno">  136</span>        precos-&gt;precos[precos-&gt;contador].margem = obterDouble(MIN_MARGEM, MAX_MARGEM, OBTER_MARGEM);</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">return</span> precos-&gt;contador++;</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  140</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -255,18 +399,46 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   69</span>                                    {</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (artigos.<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a> &gt; 0) {</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">for</span> (i = 0; i &lt; artigos.<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a>; i++) {</div>
-<div class="line"><span class="lineno">   73</span>            <a class="code hl_function" href="article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e">imprimirArtigo</a>(artigos.<a class="code hl_variable" href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">artigos</a>[i]);</div>
-<div class="line"><span class="lineno">   74</span>        }</div>
-<div class="line"><span class="lineno">   75</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   76</span>        puts(<a class="code hl_define" href="article__struct_8h.html#a17d1cfa48ecf37a2a28b9e0e8b9dc6e1">ERRO_LISTA_VAZIA</a>);</div>
-<div class="line"><span class="lineno">   77</span>    }</div>
-<div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="aarticle__struct_8c_html_a361c31b9d14879bbdda5c9a16af8c87e"><div class="ttname"><a href="article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e">imprimirArtigo</a></div><div class="ttdeci">void imprimirArtigo(Artigo artigo)</div><div class="ttdef"><b>Definition:</b> article_struct.c:10</div></div>
-<div class="ttc" id="aarticle__struct_8h_html_a17d1cfa48ecf37a2a28b9e0e8b9dc6e1"><div class="ttname"><a href="article__struct_8h.html#a17d1cfa48ecf37a2a28b9e0e8b9dc6e1">ERRO_LISTA_VAZIA</a></div><div class="ttdeci">#define ERRO_LISTA_VAZIA</div><div class="ttdef"><b>Definition:</b> article_struct.h:15</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                                    {</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (artigos.contador &gt; 0) {</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">for</span> (i = 0; i &lt; artigos.contador; i++) {</div>
+<div class="line"><span class="lineno">   91</span>            <a class="code hl_function" href="article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e">imprimirArtigo</a>(artigos.artigos[i]);</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
+<div class="line"><span class="lineno">   93</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   94</span>        puts(ERRO_LISTA_ARTIGOS_VAZIA);</div>
+<div class="line"><span class="lineno">   95</span>    }</div>
+<div class="line"><span class="lineno">   96</span>}</div>
+<div class="ttc" id="aarticle__struct_8c_html_a361c31b9d14879bbdda5c9a16af8c87e"><div class="ttname"><a href="article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e">imprimirArtigo</a></div><div class="ttdeci">void imprimirArtigo(Artigo artigo)</div><div class="ttdef"><b>Definition:</b> article_struct.c:28</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a66c2f25fea25dc6c6f31f6a092c2ce" name="a6a66c2f25fea25dc6c6f31f6a092c2ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a66c2f25fea25dc6c6f31f6a092c2ce">&#9670;&nbsp;</a></span>listarPrecos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void listarPrecos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_precos.html">Precos</a>&#160;</td>
+          <td class="paramname"><em>precos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  192</span>                                 {</div>
+<div class="line"><span class="lineno">  193</span>    <span class="keywordflow">if</span> (precos.contador &gt; 0) {</div>
+<div class="line"><span class="lineno">  194</span>        <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  195</span>        <span class="keywordflow">for</span> (i = 0; i &lt; precos.contador; i++) {</div>
+<div class="line"><span class="lineno">  196</span>            <a class="code hl_function" href="article__struct_8c.html#a24bae7b26a78296a9eba2575c9d0a99a">imprimirPreco</a>(precos.precos[i]);</div>
+<div class="line"><span class="lineno">  197</span>        }</div>
+<div class="line"><span class="lineno">  198</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  199</span>        puts(ERRO_LISTA_PRECOS_VAZIA);</div>
+<div class="line"><span class="lineno">  200</span>    }</div>
+<div class="line"><span class="lineno">  201</span>}</div>
+<div class="ttc" id="aarticle__struct_8c_html_a24bae7b26a78296a9eba2575c9d0a99a"><div class="ttname"><a href="article__struct_8c.html#a24bae7b26a78296a9eba2575c9d0a99a">imprimirPreco</a></div><div class="ttdeci">void imprimirPreco(PrecoArtigo precoArtigo)</div><div class="ttdef"><b>Definition:</b> article_struct.c:109</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -295,15 +467,58 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   15</span>                                                   {</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span> i;</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">for</span> (i = 0; i &lt; artigo.<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a>; i++) {</div>
-<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">if</span> (artigo.<a class="code hl_variable" href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">artigos</a>[i].<a class="code hl_variable" href="struct_artigo.html#a72bce9d92f3c65c4f0e3fced58d7376d">cod_artigo</a> == cod_artigo) {</div>
-<div class="line"><span class="lineno">   19</span>            <span class="keywordflow">return</span> i;</div>
-<div class="line"><span class="lineno">   20</span>        }</div>
-<div class="line"><span class="lineno">   21</span>    }</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   23</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                   {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">for</span> (i = 0; i &lt; artigo.contador; i++) {</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">if</span> (artigo.artigos[i].cod_artigo == cod_artigo) {</div>
+<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">return</span> i;</div>
+<div class="line"><span class="lineno">   38</span>        }</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a17e7227fbb1f5ca7871572a61e5ad0c7" name="a17e7227fbb1f5ca7871572a61e5ad0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e7227fbb1f5ca7871572a61e5ad0c7">&#9670;&nbsp;</a></span>procurarPreco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int procurarPreco </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_precos.html">Precos</a>&#160;</td>
+          <td class="paramname"><em>precos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum tipo&#160;</td>
+          <td class="paramname"><em>tipo_artigo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  119</span>                                                                 {</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">for</span> (i = 0; i &lt; precos.contador; i++) {</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">if</span> (precos.precos[i].tipo_artigo == tipo_artigo &amp;&amp; precos.precos[i].tam == tam) {</div>
+<div class="line"><span class="lineno">  123</span>            <span class="keywordflow">return</span> i;</div>
+<div class="line"><span class="lineno">  124</span>        }</div>
+<div class="line"><span class="lineno">  125</span>    }</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  127</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -322,27 +537,56 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   58</span>                                      {</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordtype">int</span> numero = <a class="code hl_function" href="article__struct_8c.html#a64429cd29ff5a8b596ea041bc0695dd6">procurarArtigo</a>(*artigos,</div>
-<div class="line"><span class="lineno">   60</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(<a class="code hl_define" href="article__struct_8h.html#a7a80f91120ad2b868a1c5d1ab8e2364a">MIN_NUM_ARTIGO</a>, <a class="code hl_define" href="article__struct_8h.html#a5ef8388b95e3c853a1d3759ffb8c6524">MAX_NUM_ARTIGO</a>, <a class="code hl_define" href="article__struct_8h.html#a4dcd4b0f62c520fdf5fdaceca160feb1">MSG_OBTER_NUM_ARTIGO</a>));</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> (numero != -1) {</div>
-<div class="line"><span class="lineno">   62</span>        <span class="comment">//Check de encomenda</span></div>
-<div class="line"><span class="lineno">   63</span>        <span class="comment">//(*artigos).artigos[numero].apagado = true;</span></div>
-<div class="line"><span class="lineno">   64</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   65</span>        puts(<a class="code hl_define" href="article__struct_8h.html#afdd555ddc55c54e36e2d7f8f83f250ef">ERRO_ARTIGO_NAO_EXISTE</a>);</div>
-<div class="line"><span class="lineno">   66</span>    }</div>
-<div class="line"><span class="lineno">   67</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                      {</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordtype">int</span> numero = procurarArtigo(*artigos,</div>
+<div class="line"><span class="lineno">   78</span>            <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_NUM_ARTIGO, MAX_NUM_ARTIGO, MSG_OBTER_NUM_ARTIGO));</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (numero != -1) {</div>
+<div class="line"><span class="lineno">   80</span>        <span class="comment">//Check de encomenda</span></div>
+<div class="line"><span class="lineno">   81</span>        <span class="comment">//(*artigos).artigos[numero].apagado = true;</span></div>
+<div class="line"><span class="lineno">   82</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   83</span>        puts(ERRO_ARTIGO_NAO_EXISTE);</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5d6b88b8310c79b22882073358a4d596" name="a5d6b88b8310c79b22882073358a4d596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6b88b8310c79b22882073358a4d596">&#9670;&nbsp;</a></span>removerPrecos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removerPrecos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_precos.html">Precos</a> *&#160;</td>
+          <td class="paramname"><em>precos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  164</span>                                   {</div>
+<div class="line"><span class="lineno">  165</span>    precos-&gt;precos[precos-&gt;contador].tipo_artigo = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TIPO, MAX_TIPO, OBTER_TIPO);</div>
+<div class="line"><span class="lineno">  166</span>    precos-&gt;precos[precos-&gt;contador].tam = <a class="code hl_function" href="input_8c.html#a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f">obterInt</a>(MIN_TAM, MAX_TAM, MSG_OBTER_NUM_PRECO_TAM);</div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordtype">int</span> numero = procurarPreco(*precos, precos-&gt;precos[precos-&gt;contador].tipo_artigo, precos-&gt;precos[precos-&gt;contador].tam );</div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">if</span> (numero != -1) {</div>
+<div class="line"><span class="lineno">  169</span>        <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  170</span>        <span class="keywordflow">for</span> (i = numero; i &lt; precos-&gt;contador - 1; i++) {</div>
+<div class="line"><span class="lineno">  171</span>            precos-&gt;precos[i] = precos-&gt;precos[i + 1];</div>
+<div class="line"><span class="lineno">  172</span>        }</div>
+<div class="line"><span class="lineno">  173</span>        apagarDadosPreco(&amp;precos-&gt;precos[i]);</div>
+<div class="line"><span class="lineno">  174</span>        precos-&gt;contador--;</div>
+<div class="line"><span class="lineno">  175</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  176</span>        puts(ERRO_PRECO_NAO_EXISTE);</div>
+<div class="line"><span class="lineno">  177</span>    }</div>
+<div class="line"><span class="lineno">  178</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="article__struct_8c.html">article_struct.c</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>

@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -50,23 +46,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('main_8c.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,6 +60,7 @@ $(document).ready(function(){initNavTree('main_8c.html',''); initResizable(); })
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
@@ -88,322 +68,44 @@ $(document).ready(function(){initNavTree('main_8c.html',''); initResizable(); })
   <div class="headertitle"><div class="title">main.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Doxygen.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="client__struct_8h_source.html">client_struct.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="input_8h_source.html">input.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="article__struct_8h_source.html">article_struct.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="order__struct_8h_source.html">order_struct.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu_8h_source.html">menu.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:abcbaf0b6f816a8e971fa07e6983da608"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#abcbaf0b6f816a8e971fa07e6983da608">CLIENTE</a>&#160;&#160;&#160;'c'</td></tr>
+<tr class="memitem:abcbaf0b6f816a8e971fa07e6983da608"><td class="memItemLeft" align="right" valign="top"><a id="abcbaf0b6f816a8e971fa07e6983da608" name="abcbaf0b6f816a8e971fa07e6983da608"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CLIENTE</b>&#160;&#160;&#160;'c'</td></tr>
 <tr class="separator:abcbaf0b6f816a8e971fa07e6983da608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ccb915a08340e9ed578686706afd1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a47ccb915a08340e9ed578686706afd1e">ADMINISTRADOR</a>&#160;&#160;&#160;'a'</td></tr>
+<tr class="memitem:a47ccb915a08340e9ed578686706afd1e"><td class="memItemLeft" align="right" valign="top"><a id="a47ccb915a08340e9ed578686706afd1e" name="a47ccb915a08340e9ed578686706afd1e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADMINISTRADOR</b>&#160;&#160;&#160;'a'</td></tr>
 <tr class="separator:a47ccb915a08340e9ed578686706afd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a980931f2c39615f2d4f50a31e8a9a56e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a980931f2c39615f2d4f50a31e8a9a56e">SANDALIA</a>&#160;&#160;&#160;'s'</td></tr>
+<tr class="memitem:a980931f2c39615f2d4f50a31e8a9a56e"><td class="memItemLeft" align="right" valign="top"><a id="a980931f2c39615f2d4f50a31e8a9a56e" name="a980931f2c39615f2d4f50a31e8a9a56e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SANDALIA</b>&#160;&#160;&#160;'s'</td></tr>
 <tr class="separator:a980931f2c39615f2d4f50a31e8a9a56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3563f819d27a1fe809b8fe8903d4600e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3563f819d27a1fe809b8fe8903d4600e">BOTAS</a>&#160;&#160;&#160;'b'</td></tr>
+<tr class="memitem:a3563f819d27a1fe809b8fe8903d4600e"><td class="memItemLeft" align="right" valign="top"><a id="a3563f819d27a1fe809b8fe8903d4600e" name="a3563f819d27a1fe809b8fe8903d4600e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOTAS</b>&#160;&#160;&#160;'b'</td></tr>
 <tr class="separator:a3563f819d27a1fe809b8fe8903d4600e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eeb65b75136f46b37bc7ece4d648ebd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a1eeb65b75136f46b37bc7ece4d648ebd">SAPATOS</a>&#160;&#160;&#160;'sap'</td></tr>
+<tr class="memitem:a1eeb65b75136f46b37bc7ece4d648ebd"><td class="memItemLeft" align="right" valign="top"><a id="a1eeb65b75136f46b37bc7ece4d648ebd" name="a1eeb65b75136f46b37bc7ece4d648ebd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAPATOS</b>&#160;&#160;&#160;'sap'</td></tr>
 <tr class="separator:a1eeb65b75136f46b37bc7ece4d648ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1313549dab34f3761b909ec95113f616"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a1313549dab34f3761b909ec95113f616">ler_tipo_utilizador</a> ()</td></tr>
 <tr class="separator:a1313549dab34f3761b909ec95113f616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5349d87c84933ea1c180005faa538093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a5349d87c84933ea1c180005faa538093">ler_nif</a> ()</td></tr>
-<tr class="separator:a5349d87c84933ea1c180005faa538093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90dda2c6d29951eacf99ab6bdd7d6978"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a90dda2c6d29951eacf99ab6bdd7d6978">ler_tipo_calcado</a> ()</td></tr>
-<tr class="separator:a90dda2c6d29951eacf99ab6bdd7d6978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a1f050c97a3e5f2f80903f1b514bbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a37a1f050c97a3e5f2f80903f1b514bbd">ler_quantidade</a> ()</td></tr>
-<tr class="separator:a37a1f050c97a3e5f2f80903f1b514bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeefd2ae6a461d7e65f2b9ae3f30c1123"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aeefd2ae6a461d7e65f2b9ae3f30c1123">ler_mao_obra</a> ()</td></tr>
-<tr class="separator:aeefd2ae6a461d7e65f2b9ae3f30c1123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0bdd32b903389ec3c4b4f5a26978aff"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae0bdd32b903389ec3c4b4f5a26978aff">ler_margem</a> ()</td></tr>
-<tr class="separator:ae0bdd32b903389ec3c4b4f5a26978aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a120932b1d613ff23804b4c3e959189"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a1a120932b1d613ff23804b4c3e959189">ler_custo_restante</a> ()</td></tr>
-<tr class="separator:a1a120932b1d613ff23804b4c3e959189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15c591fba2cd25c9cb186a9246ecea91"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a15c591fba2cd25c9cb186a9246ecea91">cal_mao_obra</a> (int quantidade, char calcado)</td></tr>
-<tr class="separator:a15c591fba2cd25c9cb186a9246ecea91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a47ccb915a08340e9ed578686706afd1e" name="a47ccb915a08340e9ed578686706afd1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47ccb915a08340e9ed578686706afd1e">&#9670;&nbsp;</a></span>ADMINISTRADOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ADMINISTRADOR&#160;&#160;&#160;'a'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3563f819d27a1fe809b8fe8903d4600e" name="a3563f819d27a1fe809b8fe8903d4600e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3563f819d27a1fe809b8fe8903d4600e">&#9670;&nbsp;</a></span>BOTAS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BOTAS&#160;&#160;&#160;'b'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abcbaf0b6f816a8e971fa07e6983da608" name="abcbaf0b6f816a8e971fa07e6983da608"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcbaf0b6f816a8e971fa07e6983da608">&#9670;&nbsp;</a></span>CLIENTE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CLIENTE&#160;&#160;&#160;'c'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a980931f2c39615f2d4f50a31e8a9a56e" name="a980931f2c39615f2d4f50a31e8a9a56e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a980931f2c39615f2d4f50a31e8a9a56e">&#9670;&nbsp;</a></span>SANDALIA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SANDALIA&#160;&#160;&#160;'s'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1eeb65b75136f46b37bc7ece4d648ebd" name="a1eeb65b75136f46b37bc7ece4d648ebd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eeb65b75136f46b37bc7ece4d648ebd">&#9670;&nbsp;</a></span>SAPATOS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SAPATOS&#160;&#160;&#160;'sap'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a15c591fba2cd25c9cb186a9246ecea91" name="a15c591fba2cd25c9cb186a9246ecea91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15c591fba2cd25c9cb186a9246ecea91">&#9670;&nbsp;</a></span>cal_mao_obra()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float cal_mao_obra </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>quantidade</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>calcado</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  104</span>                                                 {</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (calcado == <a class="code hl_define" href="main_8c.html#a980931f2c39615f2d4f50a31e8a9a56e">SANDALIA</a>) {</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordtype">int</span> mao_obra = 4;</div>
-<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">return</span> quantidade * mao_obra;</div>
-<div class="line"><span class="lineno">  108</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (calcado == <a class="code hl_define" href="main_8c.html#a3563f819d27a1fe809b8fe8903d4600e">BOTAS</a>) {</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keywordtype">int</span> mao_obra = 6;</div>
-<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">return</span> quantidade * mao_obra;</div>
-<div class="line"><span class="lineno">  111</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (calcado == <a class="code hl_define" href="main_8c.html#a1eeb65b75136f46b37bc7ece4d648ebd">SAPATOS</a>) {</div>
-<div class="line"><span class="lineno">  112</span>        <span class="keywordtype">int</span> mao_obra = 5;</div>
-<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> quantidade * mao_obra;</div>
-<div class="line"><span class="lineno">  114</span>    }</div>
-<div class="line"><span class="lineno">  115</span>}</div>
-<div class="ttc" id="amain_8c_html_a1eeb65b75136f46b37bc7ece4d648ebd"><div class="ttname"><a href="main_8c.html#a1eeb65b75136f46b37bc7ece4d648ebd">SAPATOS</a></div><div class="ttdeci">#define SAPATOS</div><div class="ttdef"><b>Definition:</b> main.c:23</div></div>
-<div class="ttc" id="amain_8c_html_a3563f819d27a1fe809b8fe8903d4600e"><div class="ttname"><a href="main_8c.html#a3563f819d27a1fe809b8fe8903d4600e">BOTAS</a></div><div class="ttdeci">#define BOTAS</div><div class="ttdef"><b>Definition:</b> main.c:22</div></div>
-<div class="ttc" id="amain_8c_html_a980931f2c39615f2d4f50a31e8a9a56e"><div class="ttname"><a href="main_8c.html#a980931f2c39615f2d4f50a31e8a9a56e">SANDALIA</a></div><div class="ttdeci">#define SANDALIA</div><div class="ttdef"><b>Definition:</b> main.c:21</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1a120932b1d613ff23804b4c3e959189" name="a1a120932b1d613ff23804b4c3e959189"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a120932b1d613ff23804b4c3e959189">&#9670;&nbsp;</a></span>ler_custo_restante()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ler_custo_restante </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   91</span>                           {</div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordtype">float</span> valor_custo_restante;</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   95</span>        printf(<span class="stringliteral">&quot;Insira o valor do custo restante: &quot;</span>);</div>
-<div class="line"><span class="lineno">   96</span>        scanf(<span class="stringliteral">&quot;%f&quot;</span>, &amp;valor_custo_restante);</div>
-<div class="line"><span class="lineno">   97</span>    } <span class="keywordflow">while</span> (valor_custo_restante &lt;= 0);</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> valor_custo_restante;</div>
-<div class="line"><span class="lineno">  100</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aeefd2ae6a461d7e65f2b9ae3f30c1123" name="aeefd2ae6a461d7e65f2b9ae3f30c1123"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeefd2ae6a461d7e65f2b9ae3f30c1123">&#9670;&nbsp;</a></span>ler_mao_obra()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ler_mao_obra </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                     {</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordtype">float</span> preco_mao_obra;</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   73</span>        printf(<span class="stringliteral">&quot;Insira o preço de mão obra: &quot;</span>);</div>
-<div class="line"><span class="lineno">   74</span>        scanf(<span class="stringliteral">&quot;%f&quot;</span>, &amp;preco_mao_obra);</div>
-<div class="line"><span class="lineno">   75</span>    } <span class="keywordflow">while</span> (preco_mao_obra &lt;= 0);</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> preco_mao_obra;</div>
-<div class="line"><span class="lineno">   78</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae0bdd32b903389ec3c4b4f5a26978aff" name="ae0bdd32b903389ec3c4b4f5a26978aff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0bdd32b903389ec3c4b4f5a26978aff">&#9670;&nbsp;</a></span>ler_margem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ler_margem </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   80</span>                   {</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordtype">float</span> valor_margem;</div>
-<div class="line"><span class="lineno">   82</span> </div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   84</span>        printf(<span class="stringliteral">&quot;Insira o valor da margem de lucro: &quot;</span>);</div>
-<div class="line"><span class="lineno">   85</span>        scanf(<span class="stringliteral">&quot;%f&quot;</span>, &amp;valor_margem);</div>
-<div class="line"><span class="lineno">   86</span>    } <span class="keywordflow">while</span> (valor_margem &lt;= 0.0 || valor_margem &gt;= 1.0);</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> valor_margem;</div>
-<div class="line"><span class="lineno">   89</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5349d87c84933ea1c180005faa538093" name="a5349d87c84933ea1c180005faa538093"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5349d87c84933ea1c180005faa538093">&#9670;&nbsp;</a></span>ler_nif()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ler_nif </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   37</span>              {</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordtype">int</span> nif;</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   41</span>        printf(<span class="stringliteral">&quot;Insira o seu nif: \n&quot;</span>);</div>
-<div class="line"><span class="lineno">   42</span>        scanf(<span class="stringliteral">&quot; %d&quot;</span>, &amp;nif);</div>
-<div class="line"><span class="lineno">   43</span>    } <span class="keywordflow">while</span> (nif &lt;= 99999999 || nif &gt;= 999999999);</div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> nif;</div>
-<div class="line"><span class="lineno">   46</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a37a1f050c97a3e5f2f80903f1b514bbd" name="a37a1f050c97a3e5f2f80903f1b514bbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37a1f050c97a3e5f2f80903f1b514bbd">&#9670;&nbsp;</a></span>ler_quantidade()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ler_quantidade </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   59</span>                     {</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">int</span> num;</div>
-<div class="line"><span class="lineno">   61</span> </div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   63</span>        printf(<span class="stringliteral">&quot;Insira a quantidade de pares de sapatos: &quot;</span>);</div>
-<div class="line"><span class="lineno">   64</span>        scanf(<span class="stringliteral">&quot; %d&quot;</span>, &amp;num);</div>
-<div class="line"><span class="lineno">   65</span>    } <span class="keywordflow">while</span> (num &lt; 0 || num &gt;= 1000);</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> num;</div>
-<div class="line"><span class="lineno">   68</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a90dda2c6d29951eacf99ab6bdd7d6978" name="a90dda2c6d29951eacf99ab6bdd7d6978"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90dda2c6d29951eacf99ab6bdd7d6978">&#9670;&nbsp;</a></span>ler_tipo_calcado()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char ler_tipo_calcado </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   48</span>                        {</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordtype">char</span> calcado;</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   52</span>        printf(<span class="stringliteral">&quot;Insira o tipo de calçado (s-sandalia,b-botas,sap-sapatos): &quot;</span>);</div>
-<div class="line"><span class="lineno">   53</span>        scanf(<span class="stringliteral">&quot; %c&quot;</span>, &amp;calcado);</div>
-<div class="line"><span class="lineno">   54</span>    } <span class="keywordflow">while</span> (calcado != <a class="code hl_define" href="main_8c.html#a980931f2c39615f2d4f50a31e8a9a56e">SANDALIA</a> &amp;&amp; calcado != <a class="code hl_define" href="main_8c.html#a3563f819d27a1fe809b8fe8903d4600e">BOTAS</a> &amp;&amp; calcado != <a class="code hl_define" href="main_8c.html#a1eeb65b75136f46b37bc7ece4d648ebd">SAPATOS</a>);</div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> calcado;</div>
-<div class="line"><span class="lineno">   57</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Doxygen. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a1313549dab34f3761b909ec95113f616" name="a1313549dab34f3761b909ec95113f616"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1313549dab34f3761b909ec95113f616">&#9670;&nbsp;</a></span>ler_tipo_utilizador()</h2>
 
@@ -418,18 +120,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                           {</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordtype">char</span> tipo_utilizador;</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   30</span>        printf(<span class="stringliteral">&quot; Insira o tipo de utilizador ( a-administrador, c-cliente): &quot;</span>);</div>
-<div class="line"><span class="lineno">   31</span>        scanf(<span class="stringliteral">&quot;%c&quot;</span>, &amp;tipo_utilizador);</div>
-<div class="line"><span class="lineno">   32</span>    } <span class="keywordflow">while</span> (tipo_utilizador != <a class="code hl_define" href="main_8c.html#a47ccb915a08340e9ed578686706afd1e">ADMINISTRADOR</a> &amp;&amp; tipo_utilizador != <a class="code hl_define" href="main_8c.html#abcbaf0b6f816a8e971fa07e6983da608">CLIENTE</a>);</div>
-<div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> tipo_utilizador;</div>
-<div class="line"><span class="lineno">   35</span>}</div>
-<div class="ttc" id="amain_8c_html_a47ccb915a08340e9ed578686706afd1e"><div class="ttname"><a href="main_8c.html#a47ccb915a08340e9ed578686706afd1e">ADMINISTRADOR</a></div><div class="ttdeci">#define ADMINISTRADOR</div><div class="ttdef"><b>Definition:</b> main.c:20</div></div>
-<div class="ttc" id="amain_8c_html_abcbaf0b6f816a8e971fa07e6983da608"><div class="ttname"><a href="main_8c.html#abcbaf0b6f816a8e971fa07e6983da608">CLIENTE</a></div><div class="ttdeci">#define CLIENTE</div><div class="ttdef"><b>Definition:</b> main.c:19</div></div>
+<p >Ciclo para pedir ao utilizador se é cliente ou administrador, e ler para usar no ciclo do while, para ter acesso a diferentes funções </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">função</td><td>para ver qual o utilizador será utilizado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>valor do utilizador(a,c) </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                           {</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordtype">char</span> tipo_utilizador;</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">   43</span>        printf(<span class="stringliteral">&quot;Insira o tipo de utilizador ( a-administrador, c-cliente): &quot;</span>);</div>
+<div class="line"><span class="lineno">   44</span>        scanf(<span class="stringliteral">&quot;%c&quot;</span>, &amp;tipo_utilizador);</div>
+<div class="line"><span class="lineno">   45</span>    } <span class="keywordflow">while</span> (tipo_utilizador != ADMINISTRADOR &amp;&amp; tipo_utilizador != CLIENTE);</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> tipo_utilizador;</div>
+<div class="line"><span class="lineno">   48</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -458,84 +165,172 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  117</span>                                {</div>
-<div class="line"><span class="lineno">  118</span>    <span class="comment">/*float tamanho_sapatos[15]={0.65,0.7,0.75,0.8,0.85,0.9,0.95,1,1.05,1.10,1.15,1.20,1.25,1.30,1.35};</span></div>
-<div class="line"><span class="lineno">  119</span><span class="comment">    float tamanho_botas[15]={0.7,0.75,0.8,0.85,0.9,0.95,1,1.05,1.10,1.15,1.20,1.25,1.30,1.35,1.40};</span></div>
-<div class="line"><span class="lineno">  120</span><span class="comment">    float tamanho_sandalias[15]={0.8,0.825,0.850,0.875,0.9,0.925,0.950,0.975,1,1.025,1.050,1.075,1.1,1.125,1.150};*/</span></div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    <span class="comment">//    float mao_obra,margem,restante;</span></div>
-<div class="line"><span class="lineno">  123</span>    <span class="comment">//    int nif,quantidade,cod_cliente;</span></div>
-<div class="line"><span class="lineno">  124</span>    <span class="comment">//    char nome[60], pais[40], tipo_utilizador,calcado;</span></div>
-<div class="line"><span class="lineno">  125</span>    <span class="comment">//    </span></div>
-<div class="line"><span class="lineno">  126</span>    <span class="comment">//    tipo_utilizador=ler_tipo_utilizador();</span></div>
-<div class="line"><span class="lineno">  127</span>    <span class="comment">//    </span></div>
-<div class="line"><span class="lineno">  128</span>    <span class="comment">//    //CLIENTE</span></div>
-<div class="line"><span class="lineno">  129</span>    <span class="comment">//    if(tipo_utilizador == CLIENTE)</span></div>
-<div class="line"><span class="lineno">  130</span>    <span class="comment">//    {</span></div>
-<div class="line"><span class="lineno">  131</span>    <span class="comment">//        //TENTAR POR AUTOMATICO O CODIGO</span></div>
-<div class="line"><span class="lineno">  132</span>    <span class="comment">//        printf(&quot;Insira o seu código cliente: \n&quot;);</span></div>
-<div class="line"><span class="lineno">  133</span>    <span class="comment">//        scanf(&quot; %d&quot;,&amp;cod_cliente);</span></div>
-<div class="line"><span class="lineno">  134</span>    <span class="comment">//        nif=ler_nif(); </span></div>
-<div class="line"><span class="lineno">  135</span>    <span class="comment">//        printf(&quot;Insira o seu nome: \n&quot;);</span></div>
-<div class="line"><span class="lineno">  136</span>    <span class="comment">//        scanf(&quot; %s&quot;,&amp;nome);  </span></div>
-<div class="line"><span class="lineno">  137</span>    <span class="comment">//        printf(&quot;Insira o seu pais: \n&quot;);</span></div>
-<div class="line"><span class="lineno">  138</span>    <span class="comment">//        scanf(&quot; %s&quot;,&amp;pais);</span></div>
-<div class="line"><span class="lineno">  139</span>    <span class="comment">//        calcado=ler_tipo_calcado();</span></div>
-<div class="line"><span class="lineno">  140</span>    <span class="comment">//        quantidade=ler_quantidade();</span></div>
-<div class="line"><span class="lineno">  141</span>    <span class="comment">//        mao_obra=cal_mao_obra(quantidade,calcado);</span></div>
-<div class="line"><span class="lineno">  142</span>    <span class="comment">//        </span></div>
-<div class="line"><span class="lineno">  143</span>    <span class="comment">//        //Mostrar Valores ao cliente</span></div>
-<div class="line"><span class="lineno">  144</span>    <span class="comment">//        printf(&quot;\n O seu código cliente é:%d&quot;,cod_cliente);</span></div>
-<div class="line"><span class="lineno">  145</span>    <span class="comment">//        printf(&quot;\n O seu nif é:%d&quot;,nif);</span></div>
-<div class="line"><span class="lineno">  146</span>    <span class="comment">//        printf(&quot;\n O cliente:%s&quot;,nome);</span></div>
-<div class="line"><span class="lineno">  147</span>    <span class="comment">//        printf(&quot;\n País:%s&quot;,pais);</span></div>
-<div class="line"><span class="lineno">  148</span>    <span class="comment">//        printf(&quot;\n O número de pares é:%d&quot;,quantidade);</span></div>
-<div class="line"><span class="lineno">  149</span>    <span class="comment">//        printf(&quot;\n O calçado escolhido é:%c&quot;,calcado);</span></div>
-<div class="line"><span class="lineno">  150</span>    <span class="comment">//        printf(&quot;\n O valor de mão de obra é:%.2f&quot;,mao_obra);</span></div>
-<div class="line"><span class="lineno">  151</span>    <span class="comment">//    }   </span></div>
-<div class="line"><span class="lineno">  152</span>    <span class="comment">// /**************************************/   </span></div>
-<div class="line"><span class="lineno">  153</span>    <span class="comment">//    //ADMINISTRADOR</span></div>
-<div class="line"><span class="lineno">  154</span>    <span class="comment">//    </span></div>
-<div class="line"><span class="lineno">  155</span>    <span class="comment">//    //Mudar preços</span></div>
-<div class="line"><span class="lineno">  156</span>    <span class="comment">//    if(tipo_utilizador == ADMINISTRADOR)</span></div>
-<div class="line"><span class="lineno">  157</span>    <span class="comment">//    {</span></div>
-<div class="line"><span class="lineno">  158</span>    <span class="comment">//        mao_obra=ler_mao_obra();</span></div>
-<div class="line"><span class="lineno">  159</span>    <span class="comment">//        margem=ler_margem();</span></div>
-<div class="line"><span class="lineno">  160</span>    <span class="comment">//        restante=ler_custo_restante();</span></div>
-<div class="line"><span class="lineno">  161</span>    <span class="comment">//    }</span></div>
-<div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>    <span class="comment">//    Clientes clientes = {.contador = 0};</span></div>
-<div class="line"><span class="lineno">  164</span>    <span class="comment">//    inserirClientes(&amp;clientes);</span></div>
-<div class="line"><span class="lineno">  165</span>    <span class="comment">//    //inserirClientes(&amp;clientes);</span></div>
-<div class="line"><span class="lineno">  166</span>    <span class="comment">//    //inserirClientes(&amp;clientes);</span></div>
-<div class="line"><span class="lineno">  167</span>    <span class="comment">//    listarClientes(clientes);</span></div>
-<div class="line"><span class="lineno">  168</span>    <span class="comment">//    //atualizarClientes(&amp;clientes);</span></div>
-<div class="line"><span class="lineno">  169</span>    <span class="comment">//    removerClientes(&amp;clientes);</span></div>
-<div class="line"><span class="lineno">  170</span>    <span class="comment">//    listarClientes(clientes);</span></div>
-<div class="line"><span class="lineno">  171</span>    <span class="comment">//    //imprimirCliente(clientes.clientes[0]);</span></div>
-<div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>    <a class="code hl_struct" href="struct_artigos.html">Artigos</a> artigos = {.<a class="code hl_variable" href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">contador</a> = 0};</div>
-<div class="line"><span class="lineno">  174</span>    <a class="code hl_function" href="article__struct_8c.html#a389b47186221cc0c2e7c08d114154241">inserirArtigos</a>(&amp;artigos);</div>
-<div class="line"><span class="lineno">  175</span>    <a class="code hl_function" href="article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e">imprimirArtigo</a>(artigos.<a class="code hl_variable" href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">artigos</a>[0]);</div>
-<div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">return</span> (EXIT_SUCCESS);</div>
-<div class="line"><span class="lineno">  178</span>}</div>
-<div class="ttc" id="aarticle__struct_8c_html_a361c31b9d14879bbdda5c9a16af8c87e"><div class="ttname"><a href="article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e">imprimirArtigo</a></div><div class="ttdeci">void imprimirArtigo(Artigo artigo)</div><div class="ttdef"><b>Definition:</b> article_struct.c:10</div></div>
-<div class="ttc" id="aarticle__struct_8c_html_a389b47186221cc0c2e7c08d114154241"><div class="ttname"><a href="article__struct_8c.html#a389b47186221cc0c2e7c08d114154241">inserirArtigos</a></div><div class="ttdeci">int inserirArtigos(Artigos *artigos)</div><div class="ttdef"><b>Definition:</b> article_struct.c:25</div></div>
-<div class="ttc" id="astruct_artigos_html"><div class="ttname"><a href="struct_artigos.html">Artigos</a></div><div class="ttdef"><b>Definition:</b> article_struct.h:47</div></div>
-<div class="ttc" id="astruct_artigos_html_a2004f2b33358def654bd166f491ab59e"><div class="ttname"><a href="struct_artigos.html#a2004f2b33358def654bd166f491ab59e">Artigos::artigos</a></div><div class="ttdeci">Artigo artigos[MAX_ARTIGOS]</div><div class="ttdef"><b>Definition:</b> article_struct.h:49</div></div>
-<div class="ttc" id="astruct_artigos_html_a3a4b2ea14f3bc05fad5979d76d83e618"><div class="ttname"><a href="struct_artigos.html#a3a4b2ea14f3bc05fad5979d76d83e618">Artigos::contador</a></div><div class="ttdeci">int contador</div><div class="ttdef"><b>Definition:</b> article_struct.h:48</div></div>
+<p >Declaração de variaveis usadas ao longo do <a class="el" href="main_8c.html" title="Doxygen.">main.c</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">contadores</td><td>dos clientes, artigos e encomendas</td></tr>
+    <tr><td class="paramname">menus</td><td>apresentados ao administrador e acesso à encomenda feita pelo cliente </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>no menu do cliente os v alores da fatura na encomenda </dd>
+<dd>
+no menu do adminiosrador tem acesso as funções de gestão dos artigos, clientes e encomendas</dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                {</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordtype">int</span> op;</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordtype">char</span> tipo_utilizador,<a class="code hl_function" href="menu_8h.html#a3adbf3b32be1f93587068eeed4e676fd">menu</a>;</div>
+<div class="line"><span class="lineno">   55</span>    </div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_struct" href="struct_clientes.html">Clientes</a> clientes = {.contador = 0};</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_struct" href="struct_artigos.html">Artigos</a> artigos = {.contador = 0};</div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">//fata o contador das encomendas</span></div>
+<div class="line"><span class="lineno">   63</span>    </div>
+<div class="line"><span class="lineno">   64</span>    tipo_utilizador=<a class="code hl_function" href="main_8c.html#a1313549dab34f3761b909ec95113f616">ler_tipo_utilizador</a>();</div>
+<div class="line"><span class="lineno">   65</span>    </div>
+<div class="line"><span class="lineno">   72</span><span class="comment">    /********MENU*******/</span></div>
+<div class="line"><span class="lineno">   73</span>        <span class="comment">//CLIENTE</span></div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">if</span>(tipo_utilizador == CLIENTE)</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    {</div>
+<div class="line"><span class="lineno">   77</span>        <span class="comment">//inserirArtigoEncomenda(Encomenda, Cliente, Artigo, Precos );</span></div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="line"><span class="lineno">   79</span>        <span class="comment">//ADMINISTRADOR</span></div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(tipo_utilizador == ADMINISTRADOR)</div>
+<div class="line"><span class="lineno">   81</span>      {  </div>
+<div class="line"><span class="lineno">   82</span>        Menu_administrador:</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_function" href="menu_8c.html#ae3a600065cfe3e0105b6209e35d20264">menu_principal</a>();</div>
+<div class="line"><span class="lineno">   84</span>        scanf(<span class="stringliteral">&quot;%d&quot;</span>,&amp;op);</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">do</span>{</div>
+<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">switch</span>(op){               </div>
+<div class="line"><span class="lineno">   87</span>                <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">   88</span>                    <span class="keywordflow">do</span>{                        </div>
+<div class="line"><span class="lineno">   89</span>                        sub_menu_clientes();</div>
+<div class="line"><span class="lineno">   90</span>                        scanf(<span class="stringliteral">&quot;%d&quot;</span>,&amp;op);</div>
+<div class="line"><span class="lineno">   91</span>                        </div>
+<div class="line"><span class="lineno">   92</span>                        <span class="keywordflow">switch</span>(op){</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>                            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">   95</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   96</span>                                <a class="code hl_function" href="client__struct_8c.html#a43b67bec8f5df6eb44dc705e6397fb94">inserirClientes</a>(&amp;clientes);                                </div>
+<div class="line"><span class="lineno">   97</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>                            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">  100</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  101</span>                                atualizarClientes(&amp;clientes);</div>
+<div class="line"><span class="lineno">  102</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>                            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">  105</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  106</span>                                listarClientes(clientes);</div>
+<div class="line"><span class="lineno">  107</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>                            <span class="keywordflow">case</span> 4:</div>
+<div class="line"><span class="lineno">  110</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  111</span>                                <a class="code hl_function" href="client__struct_8c.html#a26dc126dac89e6d6f7822bcd9119400a">imprimirCliente</a>(clientes.clientes[0]);</div>
+<div class="line"><span class="lineno">  112</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  113</span>                                </div>
+<div class="line"><span class="lineno">  114</span>                            <span class="keywordflow">case</span> 5:</div>
+<div class="line"><span class="lineno">  115</span>                                printf(<span class="stringliteral">&quot;\n Insira o código do cliente: &quot;</span>);</div>
+<div class="line"><span class="lineno">  116</span>                                <span class="keywordtype">int</span> cod_cliente=0;</div>
+<div class="line"><span class="lineno">  117</span>                                scanf(<span class="stringliteral">&quot;%d&quot;</span>,&amp;cod_cliente);</div>
+<div class="line"><span class="lineno">  118</span>                                <span class="keywordtype">int</span> IDcliente = procurarCliente(clientes, cod_cliente);</div>
+<div class="line"><span class="lineno">  119</span>                                <a class="code hl_function" href="client__struct_8c.html#a26dc126dac89e6d6f7822bcd9119400a">imprimirCliente</a>(clientes.clientes[IDcliente]);</div>
+<div class="line"><span class="lineno">  120</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  121</span>                            <span class="keywordflow">case</span> 6:</div>
+<div class="line"><span class="lineno">  122</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  123</span>                                <span class="comment">//remover nao funciona</span></div>
+<div class="line"><span class="lineno">  124</span>                                <span class="comment">//removerClientes(&amp;clientes);                               </span></div>
+<div class="line"><span class="lineno">  125</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>                            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  128</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  129</span>                                printf(<span class="stringliteral">&quot;\nOpcão invalida.&quot;</span>);</div>
+<div class="line"><span class="lineno">  130</span>                        }                       </div>
+<div class="line"><span class="lineno">  131</span>                    }<span class="keywordflow">while</span>(op!=1 &amp;&amp; op!=2 &amp;&amp; op!=3 &amp;&amp; op!=4 &amp;&amp; op!=5&amp;&amp; op!=6);</div>
+<div class="line"><span class="lineno">  132</span>                    <span class="keywordflow">break</span>;                   </div>
+<div class="line"><span class="lineno">  133</span>                <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">  134</span>                    <span class="keywordflow">do</span>{                       </div>
+<div class="line"><span class="lineno">  135</span>                        sub_menu_artigos();</div>
+<div class="line"><span class="lineno">  136</span>                        scanf(<span class="stringliteral">&quot;%d&quot;</span>,&amp;op);                       </div>
+<div class="line"><span class="lineno">  137</span>                        <span class="keywordflow">switch</span>(op){</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>                                <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">  140</span>                                    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  141</span>                                    <a class="code hl_function" href="article__struct_8c.html#a389b47186221cc0c2e7c08d114154241">inserirArtigos</a>(&amp;artigos);</div>
+<div class="line"><span class="lineno">  142</span>                                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  143</span>                                <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">  144</span>                                    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  145</span>                                    atualizarArtigos(&amp;artigos);</div>
+<div class="line"><span class="lineno">  146</span>                                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  147</span>                                <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">  148</span>                                    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  149</span>                                    listarArtigos(artigos);</div>
+<div class="line"><span class="lineno">  150</span>                                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  151</span>                                <span class="keywordflow">case</span> 4:</div>
+<div class="line"><span class="lineno">  152</span>                                    printf(<span class="stringliteral">&quot;\n Insira o código do artigo: &quot;</span>);</div>
+<div class="line"><span class="lineno">  153</span>                                    <span class="keywordtype">int</span> cod_artigo=0;</div>
+<div class="line"><span class="lineno">  154</span>                                    scanf(<span class="stringliteral">&quot;%d&quot;</span>,&amp;cod_artigo);</div>
+<div class="line"><span class="lineno">  155</span>                                    <span class="keywordtype">int</span> IDartigo = procurarArtigo(artigos, cod_artigo);</div>
+<div class="line"><span class="lineno">  156</span>                                    <a class="code hl_function" href="article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e">imprimirArtigo</a>(artigos.artigos[IDartigo]);</div>
+<div class="line"><span class="lineno">  157</span>                                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  158</span>                                <span class="keywordflow">case</span> 5:</div>
+<div class="line"><span class="lineno">  159</span>                                    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  160</span>                                    <span class="comment">//remover nao funciona</span></div>
+<div class="line"><span class="lineno">  161</span>                                    <span class="comment">//removerArtigos(&amp;artigos);</span></div>
+<div class="line"><span class="lineno">  162</span>                                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  163</span>                                <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  164</span>                                    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  165</span>                                    printf(<span class="stringliteral">&quot;\nOpcão invalida.&quot;</span>);                                 </div>
+<div class="line"><span class="lineno">  166</span>                            }</div>
+<div class="line"><span class="lineno">  167</span>                        }<span class="keywordflow">while</span>(op!=1 &amp;&amp; op!=2 &amp;&amp; op!=3 &amp;&amp; op!=4 &amp;&amp; op!=5);</div>
+<div class="line"><span class="lineno">  168</span>                <span class="keywordflow">break</span>;                              </div>
+<div class="line"><span class="lineno">  169</span>            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">  170</span>                <span class="keywordflow">do</span>{                   </div>
+<div class="line"><span class="lineno">  171</span>                    sub_menu_encomendas();</div>
+<div class="line"><span class="lineno">  172</span>                    scanf(<span class="stringliteral">&quot;%d&quot;</span>,&amp;op);</div>
+<div class="line"><span class="lineno">  173</span>                         </div>
+<div class="line"><span class="lineno">  174</span>                        <span class="keywordflow">switch</span>(op){</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>                            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">  177</span>                               <span class="comment">// inserirArtigoEncomenda(encomenda,cliente,artigo,precos);</span></div>
+<div class="line"><span class="lineno">  178</span>                               <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  179</span>                            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">  180</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  181</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  182</span>                                <span class="comment">//listarArtigosEncomenda(artigo,encomeda);</span></div>
+<div class="line"><span class="lineno">  183</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  184</span>                            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">  185</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  186</span>                                <span class="comment">//procurarArtigoEncomenda(encomenda,artigo,tam);</span></div>
+<div class="line"><span class="lineno">  187</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  188</span>                            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  189</span>                                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  190</span>                                printf(<span class="stringliteral">&quot;\nOpcão invalida.&quot;</span>);</div>
+<div class="line"><span class="lineno">  191</span>                        }</div>
+<div class="line"><span class="lineno">  192</span>                  }<span class="keywordflow">while</span>(op!=1 &amp;&amp; op!=2 &amp;&amp; op!=3);</div>
+<div class="line"><span class="lineno">  193</span>                  <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  194</span>            <span class="keywordflow">break</span>;            </div>
+<div class="line"><span class="lineno">  195</span>         }</div>
+<div class="line"><span class="lineno">  196</span>         <span class="keywordflow">goto</span> Menu_administrador;</div>
+<div class="line"><span class="lineno">  197</span>       }<span class="keywordflow">while</span>(op!=1 &amp;&amp; op!=2 &amp;&amp; op!=3); </div>
+<div class="line"><span class="lineno">  198</span>     }</div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">return</span> (EXIT_SUCCESS);</div>
+<div class="line"><span class="lineno">  200</span>}</div>
+<div class="ttc" id="aarticle__struct_8c_html_a361c31b9d14879bbdda5c9a16af8c87e"><div class="ttname"><a href="article__struct_8c.html#a361c31b9d14879bbdda5c9a16af8c87e">imprimirArtigo</a></div><div class="ttdeci">void imprimirArtigo(Artigo artigo)</div><div class="ttdef"><b>Definition:</b> article_struct.c:28</div></div>
+<div class="ttc" id="aarticle__struct_8c_html_a389b47186221cc0c2e7c08d114154241"><div class="ttname"><a href="article__struct_8c.html#a389b47186221cc0c2e7c08d114154241">inserirArtigos</a></div><div class="ttdeci">int inserirArtigos(Artigos *artigos)</div><div class="ttdef"><b>Definition:</b> article_struct.c:43</div></div>
+<div class="ttc" id="aclient__struct_8c_html_a26dc126dac89e6d6f7822bcd9119400a"><div class="ttname"><a href="client__struct_8c.html#a26dc126dac89e6d6f7822bcd9119400a">imprimirCliente</a></div><div class="ttdeci">void imprimirCliente(Cliente cliente)</div><div class="ttdef"><b>Definition:</b> client_struct.c:27</div></div>
+<div class="ttc" id="aclient__struct_8c_html_a43b67bec8f5df6eb44dc705e6397fb94"><div class="ttname"><a href="client__struct_8c.html#a43b67bec8f5df6eb44dc705e6397fb94">inserirClientes</a></div><div class="ttdeci">int inserirClientes(Clientes *clientes)</div><div class="ttdef"><b>Definition:</b> client_struct.c:42</div></div>
+<div class="ttc" id="amain_8c_html_a1313549dab34f3761b909ec95113f616"><div class="ttname"><a href="main_8c.html#a1313549dab34f3761b909ec95113f616">ler_tipo_utilizador</a></div><div class="ttdeci">char ler_tipo_utilizador()</div><div class="ttdef"><b>Definition:</b> main.c:39</div></div>
+<div class="ttc" id="amenu_8c_html_ae3a600065cfe3e0105b6209e35d20264"><div class="ttname"><a href="menu_8c.html#ae3a600065cfe3e0105b6209e35d20264">menu_principal</a></div><div class="ttdeci">void menu_principal()</div><div class="ttdef"><b>Definition:</b> menu.c:25</div></div>
+<div class="ttc" id="amenu_8h_html_a3adbf3b32be1f93587068eeed4e676fd"><div class="ttname"><a href="menu_8h.html#a3adbf3b32be1f93587068eeed4e676fd">menu</a></div><div class="ttdeci">void menu(op)</div></div>
+<div class="ttc" id="astruct_artigos_html"><div class="ttname"><a href="struct_artigos.html">Artigos</a></div><div class="ttdef"><b>Definition:</b> article_struct.h:70</div></div>
+<div class="ttc" id="astruct_clientes_html"><div class="ttname"><a href="struct_clientes.html">Clientes</a></div><div class="ttdef"><b>Definition:</b> client_struct.h:54</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>

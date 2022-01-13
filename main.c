@@ -74,6 +74,7 @@ int main(int argc, char** argv) {
     if(tipo_utilizador == CLIENTE)
 
     {
+        //nao funciona
         //inserirArtigoEncomenda(Encomenda, Cliente, Artigo, Precos );
     }
         //ADMINISTRADOR
@@ -112,12 +113,16 @@ int main(int argc, char** argv) {
                                 break;
                                 
                             case 5:
-                                printf("\n");
-                               // procurarCliente(&cod_cliente);
+                                printf("\n Insira o código do cliente: ");
+                                int cod_cliente=0;
+                                scanf("%d",&cod_cliente);
+                                int IDcliente = procurarCliente(clientes, cod_cliente);
+                                imprimirCliente(clientes.clientes[IDcliente]);
                                 break;
                             case 6:
                                 printf("\n");
-                                removerClientes(&clientes);                               
+                                //remover nao funciona
+                                //removerClientes(&clientes);                               
                                 break;
 
                             default:
@@ -145,12 +150,16 @@ int main(int argc, char** argv) {
                                     listarArtigos(artigos);
                                     break;
                                 case 4:
-                                    printf("\n");
-                                    //procurarArtigos(&clientes,&cod_artigo);
+                                    printf("\n Insira o código do artigo: ");
+                                    int cod_artigo=0;
+                                    scanf("%d",&cod_artigo);
+                                    int IDartigo = procurarArtigo(artigos, cod_artigo);
+                                    imprimirArtigo(artigos.artigos[IDartigo]);
                                     break;
                                 case 5:
                                     printf("\n");
-                                    removerArtigos(&artigos);
+                                    //remover nao funciona
+                                    //removerArtigos(&artigos);
                                     break;
                                 default:
                                     printf("\n");

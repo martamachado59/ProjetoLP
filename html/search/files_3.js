@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['input_2ec_0',['input.c',['../input_8c.html',1,'']]],
-  ['input_2eh_1',['input.h',['../input_8h.html',1,'']]],
-  ['input_2eo_2ed_2',['input.o.d',['../input_8o_8d.html',1,'']]]
+  ['main_2ec_0',['main.c',['../main_8c.html',1,'']]],
+  ['menu_2ec_1',['menu.c',['../menu_8c.html',1,'']]],
+  ['menu_2eh_2',['menu.h',['../menu_8h.html',1,'']]]
 ];
