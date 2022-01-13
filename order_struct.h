@@ -15,7 +15,9 @@
 #include "client_struct.h"
 #include "article_struct.h"
 
-//struct das encomendas
+/**
+ *Cria um struct para armazenar todas as encomendas
+ */
 
 typedef struct {
     Cliente cliente;
@@ -25,7 +27,14 @@ typedef struct {
     int contador;
 } Encomenda;
 
-//funções das encomendas
+/**
+ * Assinaturas das funções das encomendas
+ * @param encomenda
+ * @param cliente
+ * @param artigo
+ * @param precos
+ * @return valores usados nas encomendas
+ */
 
 int inserirArtigoEncomenda(Encomenda *encomenda, Cliente *cliente, Artigo *artigo, Precos *precos);
 int procurarArtigoEncomenda(Encomenda *encomenda, Artigo *artigo, int tam);

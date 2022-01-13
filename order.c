@@ -8,7 +8,12 @@
 #include "input.h"
 #include "order_struct.h"
 
-//funções das encomendas
+/**
+ * inseirArtigoEncomenda é a função que mostra todos os parametros necessários para fazer uma encomenda
+ * procurarArtigoEncemenda é a função que procura nas encomendas os artigos
+ * listarArtigoEncomenda é a função que lista todas as encomendas feitas
+ * @param encomenda tem acesso aos valores inseridos nos artigos, clientes, preços
+ */
 int inserirArtigoEncomenda(Encomenda *encomenda, Cliente *cliente, Artigo *artigo, Precos *precos){
     if(cliente->apagado){
         return -1;

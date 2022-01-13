@@ -8,10 +8,17 @@
 
 #define VALOR_INVALIDO "O valor inserido é inválido."
 
+/**
+ * Limpa output
+ */
 void cleanInputBuffer() {
     char ch;
     while ((ch = getchar()) != '\n' && ch != EOF);
 }
+
+/**
+ * funções do scanf 
+ */
 
 int obterInt(int minValor, int maxValor, char *msg) {
     int valor;

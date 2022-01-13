@@ -34,7 +34,9 @@
 #define MAX_NUM_CLIENTE 1000
 #define MSG_OBTER_NUM_CLIENTE "Insira um número de cliente [0-1000]: "
 
-//struct do cliente
+/**
+ * Cria um struct para armazenar todos os clientes e os seus dados
+ */
 typedef struct {
     int cod_cliente;
     char nome[MAX_NOME_CLIENTE];
@@ -48,7 +50,11 @@ typedef struct {
     Cliente clientes[MAX_CLIENTES];
 } Clientes;
 
-//funções dos clientes
+/**
+ * Assinaturas das funções dos clientes
+ * @param clientes
+ * @return 
+ */
 
 int inserirClientes(Clientes *clientes);
 int procurarCliente(Clientes cliente, int cod_cliente);

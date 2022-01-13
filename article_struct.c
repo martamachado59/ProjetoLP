@@ -7,7 +7,16 @@
 #include "input.h"
 #include "article_struct.h"
 
-//funções dos artigos
+/**
+ * inserirArtigos é a função que cria os artigos, pedindo ao utilizador os dados necessários
+ * atualizarArtigos é a função que atualiza os dados de um determinado artigo
+ * procurarArtigo é a função que procura os artigos através do código artigo
+ * listarArtigos é a função que lista todos artigos inseridos
+ * imprimirArtigo é a função que mostra todos os dados do artigo com um respetivo código
+ * removerArtigos é a função que apaga os dados do artigo escolhido
+ * @param funções para a gestão dos artigos
+ */
+
 
 void imprimirArtigo(Artigo artigo) {
     printf("\n%d %s %d %d %d \n", artigo.cod_artigo, artigo.nome, artigo.tipo_artigo,
@@ -79,7 +88,16 @@ void listarArtigos(Artigos artigos) {
     }
 }
 
-//funções dos preços
+/**
+ * inserirPrecos é a função que cria os preços necessários
+ * atualizarPrecos é a função que atualiza os preços
+ * procurarPreco é a função que procura os preços de um determinado artigo de um respetivo tamanho
+ * listarPrecos é a função que lista todos os precos inseridos
+ * imprimirPreco é a função que mostra todos os preços 
+ * removePrecos é a função que apaga o preço do artigo escolhido
+ * apagarDadosPrecos é a função que põem todos os paramentros dos preços a 0
+ * @param encomenda tem acesso aos valores inseridos nos artigos, clientes, preços
+ */
 
 void imprimirPreco(PrecoArtigo precoArtigo) {
     printf("\n%d %d %lf %lf %lf %lf\n", 

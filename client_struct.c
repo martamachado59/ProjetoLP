@@ -8,6 +8,15 @@
 #include "client_struct.h"
 
 //funções dos clientes
+/**
+ * inserirClientes é a função que cria os clientes, pedindo ao utilizador os dados necessários
+ * atualizarCliente é a função que atualiza os dados de um determinado cliente
+ * procurarClientes é a função que procura os clientes através do código cliente
+ * listarClientes é a função que lista todos clientes inseridos
+ * imprimirCliente é a função que mostra todos os dados do cliente com um respetivo código
+ * removerClientes é a função que apaga os dados do cliente escolhido
+ * @param funções usadas para a gestão dos clientes
+ */
 void imprimirCliente(Cliente cliente) {
     printf("\n%d %s %ld %s %d \n", cliente.cod_cliente, cliente.nome, cliente.nif,
             cliente.pais, cliente.apagado);

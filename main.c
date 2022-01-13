@@ -8,10 +8,11 @@
  * @brief Doxygen
  * @return 
  */
+
 /*
  * File:   main.c
- * Author: Marta Machado
- * Author: Mara Leite
+ * Author: Marta Machado <8210403@estg.ipp.pt>
+ * Author: Mara Leite <8210320@estg.ipp.pt>
  * Created on 23 de dezembro de 2021, 00:20
  */
 
@@ -19,6 +20,8 @@
 #include <stdlib.h>
 #include "input.h"
 #include "order_struct.h"
+#include "menu.h"
+
 
 #define CLIENTE 'c'
 #define ADMINISTRADOR 'a'
@@ -28,7 +31,11 @@
 
 
 /**** LER VALORES ****/
-
+/**
+ * Ciclo para pedir ao utilizador se é cliente ou administrador, e ler para usar no ciclo do while, para ter acesso a diferentes funções
+ * @param função para ver qual o utilizador será utilizado
+ * @return valor do utilizador(a,c)
+ */
 char ler_tipo_utilizador() {
     char tipo_utilizador;
 
@@ -39,189 +46,147 @@ char ler_tipo_utilizador() {
 
     return tipo_utilizador;
 }
-/*
-int ler_nif() {
-    int nif;
-
-    do {
-        printf("Insira o seu nif: \n");
-        scanf(" %d", &nif);
-    } while (nif <= 99999999 || nif >= 999999999);
-
-    return nif;
-}
-
-char ler_tipo_calcado() {
-    char calcado;
-
-    do {
-        printf("Insira o tipo de calçado (s-sandalia,b-botas,sap-sapatos): ");
-        scanf(" %c", &calcado);
-    } while (calcado != SANDALIA && calcado != BOTAS && calcado != SAPATOS);
-
-    return calcado;
-}
-
-int ler_quantidade() {
-    int num;
-
-    do {
-        printf("Insira a quantidade de pares de sapatos: ");
-        scanf(" %d", &num);
-    } while (num < 0 || num >= 1000);
-
-    return num;
-}
-
-float ler_mao_obra() {
-    float preco_mao_obra;
-    do {
-        printf("Insira o preço de mão obra: ");
-        scanf("%f", &preco_mao_obra);
-    } while (preco_mao_obra <= 0);
-
-    return preco_mao_obra;
-}
-
-float ler_margem() {
-    float valor_margem;
-
-    do {
-        printf("Insira o valor da margem de lucro: ");
-        scanf("%f", &valor_margem);
-    } while (valor_margem <= 0.0 || valor_margem >= 1.0);
-
-    return valor_margem;
-}
-
-float ler_custo_restante() {
-    float valor_custo_restante;
-
-    do {
-        printf("Insira o valor do custo restante: ");
-        scanf("%f", &valor_custo_restante);
-    } while (valor_custo_restante <= 0);
-
-    return valor_custo_restante;
-}
-
-/******CALCULOS******/
-<<<<<<< Updated upstream
-
-float cal_mao_obra(int quantidade,char calcado){
-    if(calcado == SANDALIA)
-    {
-        int mao_obra=4;
-        return quantidade * mao_obra;
-    }
-    else if(calcado == BOTAS)
-    {
-        int mao_obra=6;
-        return quantidade * mao_obra;
-    }
-    else if(calcado == SAPATOS)
-    {
-        int mao_obra=5;
-=======
-/*
-float cal_mao_obra(int quantidade, char calcado) {
-    if (calcado == SANDALIA) {
-        int mao_obra = 4;
-        return quantidade * mao_obra;
-    } else if (calcado == BOTAS) {
-        int mao_obra = 6;
-        return quantidade * mao_obra;
-    } else if (calcado == SAPATOS) {
-        int mao_obra = 5;
->>>>>>> Stashed changes
-        return quantidade * mao_obra;
-    }
-}
- */
-
 int main(int argc, char** argv) {
+    /**
+     * Declaração de variaveis usadas ao longo do main.c
+     */
     int op;
-    char tipo_utilizador;
+    char tipo_utilizador,menu;
+    
+    /**
+     * 
+     * @param contadores dos clientes, artigos e encomendas
+     */
+    Clientes clientes = {.contador = 0};
+    Artigos artigos = {.contador = 0};
+    //fata o contador das encomendas
     
     tipo_utilizador=ler_tipo_utilizador();
     
+    /**
+     * 
+     * @param menus apresentados ao administrador e acesso à encomenda feita pelo cliente
+     * @return no menu do cliente os v alores da fatura na encomenda
+     * @return no menu do adminiosrador tem acesso as funções de gestão dos artigos, clientes e encomendas
+     */
     /********MENU*******/
         //CLIENTE
     if(tipo_utilizador == CLIENTE)
-<<<<<<< Updated upstream
+
     {
-        //TENTAR POR AUTOMATICO O CODIGO
-        printf("Insira o seu código cliente: \n");
-        scanf(" %d",&cod_cliente);
-        nif=ler_nif(); 
-        printf("Insira o seu nome: \n");
-        scanf(" %s",&nome);  
-        printf("Insira o seu pais: \n");
-        scanf(" %s",&pais);
-        calcado=ler_tipo_calcado();
-        quantidade=ler_quantidade();
-        mao_obra=cal_mao_obra(quantidade,calcado);
-=======
-      {
->>>>>>> Stashed changes
-        
-      }
+        //inserirArtigoEncomenda(Encomenda, Cliente, Artigo, Precos );
+    }
         //ADMINISTRADOR
     else if(tipo_utilizador == ADMINISTRADOR)
-      {
-        /****ADM-CLIENTES****/
-        printf("Escolha uma das opções:\n"
-                "1-Inserir cliente\n"
-                "2-Atualizar cliente\n"
-                "3-Listar clientes\n"
-                "4-Imprimir Cliente\n"
-                "5-Remover Cliente\n"
-                "Indique a sua opção:");
+      {  
+        Menu_administrador:
+        menu_principal();
         scanf("%d",&op);
-         Clientes clientes = {.contador = 0};
-        switch(op){
-           
-            case 0:
-            break;
-            
-            case 1:
-                inserirClientes(&clientes);
-                break;
-            
-            case 2:
-                atualizarClientes(&clientes);
-                break;
-            
+        do{
+            switch(op){               
+                case 1:
+                    do{                        
+                        sub_menu_clientes();
+                        scanf("%d",&op);
+                        
+                        switch(op){
+
+                            case 1:
+                                printf("\n");
+                                inserirClientes(&clientes);                                
+                                break;
+
+                            case 2:
+                                printf("\n");
+                                atualizarClientes(&clientes);
+                                break;
+
+                            case 3:
+                                printf("\n");
+                                listarClientes(clientes);
+                                break;
+
+                            case 4:
+                                printf("\n");
+                                imprimirCliente(clientes.clientes[0]);
+                                break;
+                                
+                            case 5:
+                                printf("\n");
+                               // procurarCliente(&cod_cliente);
+                                break;
+                            case 6:
+                                printf("\n");
+                                removerClientes(&clientes);                               
+                                break;
+
+                            default:
+                                printf("\n");
+                                printf("\nOpcão invalida.");
+                        }                       
+                    }while(op!=1 && op!=2 && op!=3 && op!=4 && op!=5&& op!=6);
+                    break;                   
+                case 2:
+                    do{                       
+                        sub_menu_artigos();
+                        scanf("%d",&op);                       
+                        switch(op){
+
+                                case 1:
+                                    printf("\n");
+                                    inserirArtigos(&artigos);
+                                    break;
+                                case 2:
+                                    printf("\n");
+                                    atualizarArtigos(&artigos);
+                                    break;
+                                case 3:
+                                    printf("\n");
+                                    listarArtigos(artigos);
+                                    break;
+                                case 4:
+                                    printf("\n");
+                                    //procurarArtigos(&clientes,&cod_artigo);
+                                    break;
+                                case 5:
+                                    printf("\n");
+                                    removerArtigos(&artigos);
+                                    break;
+                                default:
+                                    printf("\n");
+                                    printf("\nOpcão invalida.");                                 
+                            }
+                        }while(op!=1 && op!=2 && op!=3 && op!=4 && op!=5);
+                break;                              
             case 3:
-                listarClientes(clientes);
-                break;
-            
-            case 4:
-                imprimirCliente(clientes.clientes[0]);
-                break;
-            
-            case 5:
-                removerClientes(&clientes);
-                break;
-            
-            default:
-            printf("\nOpcão invalida.");
-      }
-       
-        /****ADM-ARTIGOS****/
-     //   Artigos artigos = {.contador = 0};
-     //   inserirArtigos(&artigos);
-     //   imprimirArtigo(artigos.artigos[0]);
-        
-        /****ADM-PREÇOS****/
-     //   Precos precos = {.contador = 0};
-     //   inserirPrecos(&precos);
-     //   imprimirPreco(precos.precos[0]);
-        
-        /****ADM-ENCOMENDAS****/
-     //   Encomenda encomenda = {.contador = 0, .precoEncomenda = 0};
-     //   inserirArtigoEncomenda(&encomenda, &clientes.clientes[0], &artigos.artigos[0], &precos);
-     //   listarArtigosEncomenda(&encomenda);
-      }
+                do{                   
+                    sub_menu_encomendas();
+                    scanf("%d",&op);
+                         
+                        switch(op){
+
+                            case 1:
+                               // inserirArtigoEncomenda(encomenda,cliente,artigo,precos);
+                               break;
+                            case 2:
+                                printf("\n");
+                                printf("\n");
+                                //listarArtigosEncomenda(artigo,encomeda);
+                                break;
+                            case 3:
+                                printf("\n");
+                                //procurarArtigoEncomenda(encomenda,artigo,tam);
+                                break;
+                            default:
+                                printf("\n");
+                                printf("\nOpcão invalida.");
+                        }
+                  }while(op!=1 && op!=2 && op!=3);
+                  break;
+            break;            
+         }
+         goto Menu_administrador;
+       }while(op!=1 && op!=2 && op!=3); 
+     }
     return (EXIT_SUCCESS);
 }

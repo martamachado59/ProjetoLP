@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/client_struct.o \
 	${OBJECTDIR}/input.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/menu.o \
 	${OBJECTDIR}/order.o
 
 
@@ -65,8 +66,6 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projeto_lp.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projeto_lp ${OBJECTFILES} ${LDLIBSOPTIONS}
-<<<<<<< Updated upstream
-=======
 
 ${OBJECTDIR}/article_struct.o: article_struct.c
 	${MKDIR} -p ${OBJECTDIR}
@@ -82,12 +81,16 @@ ${OBJECTDIR}/input.o: input.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/input.o input.c
->>>>>>> Stashed changes
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/menu.o: menu.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/menu.o menu.c
 
 ${OBJECTDIR}/order.o: order.c
 	${MKDIR} -p ${OBJECTDIR}

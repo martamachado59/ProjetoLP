@@ -50,7 +50,9 @@ enum tipo {
     Bota, Sapato, Sandalia
 };
 
-// struct dos artigos
+/**
+ * Cria um struct para armazenar todos artigos e as informações
+ */
 typedef struct {
     int cod_artigo;
     char nome[MAX_NOME_ARTIGO];
@@ -64,7 +66,11 @@ typedef struct {
     Artigo artigos[MAX_ARTIGOS];
 } Artigos;
 
-//funções dos artigos
+/**
+ * Assinaturas das funções dos artigos
+ * @param artigos
+ * @return valores relacionados com os artigos e a funcionalidade da função utilizada
+ */
 
 int inserirArtigos(Artigos *artigos);
 int procurarArtigo(Artigos artigos, int cod_artigo);
@@ -74,7 +80,9 @@ void listarArtigos(Artigos artigos);
 
 #define MAX_PRECOS 50
 
-//struct para preços dos artigos
+/**
+ * Cria um struct para armazenar todos os preços relacionados com os artigos
+ */
 typedef struct {
     enum tipo tipo_artigo;
     int tam;
@@ -89,7 +97,11 @@ typedef struct {
     PrecoArtigo precos[MAX_PRECOS];
 } Precos;
 
-//funções de preços
+/**
+ * Assinaturas das funções dos preços
+ * @param precos
+ * @return preços relacionados com os artigos
+ */
 int inserirPrecos(Precos *precos);
 int procurarPreco(Precos precos, enum tipo tipo_artigo, int tam);
 void atualizarPrecos(Precos *precos);
