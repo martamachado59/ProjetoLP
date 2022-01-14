@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Encomendas.h</itemPath>
       <itemPath>article_struct.h</itemPath>
       <itemPath>client_struct.h</itemPath>
       <itemPath>input.h</itemPath>
@@ -17,6 +18,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Encomendas.c</itemPath>
       <itemPath>article_struct.c</itemPath>
       <itemPath>client_struct.c</itemPath>
       <itemPath>input.c</itemPath>
@@ -49,6 +51,10 @@
           <standard>10</standard>
         </cTool>
       </compileType>
+      <item path="Encomendas.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Encomendas.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="article_struct.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="article_struct.h" ex="false" tool="3" flavor2="0">
@@ -93,6 +99,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Encomendas.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Encomendas.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="article_struct.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="article_struct.h" ex="false" tool="3" flavor2="0">

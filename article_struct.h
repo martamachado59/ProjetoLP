@@ -16,6 +16,12 @@
  * Created on 2 de janeiro de 2022, 18:53
  */
 
+#ifndef ARTICLE_STRUCT_H
+
+#include <stdbool.h>
+
+#define ARTICLE_STRUCT_H
+
 #define MAX_ARTIGOS 50
 #define ERRO_ARTIGO_NAO_EXISTE "O artigo não existe na lista."
 #define ERRO_LISTA_ARTIGOS_VAZIA "A lista de artigos está vazia."
@@ -23,7 +29,7 @@
 #define ERRO_ARTIGO_EXISTE "O número de artigo já se encontra atribuído."
 
 #define MAX_NOME_ARTIGO 50
-#define MSG_OBTER_NOME "Insira o nome do artigo: "
+#define MSG_OBTER_NOME_ART "Insira o nome do artigo: "
 
 #define MIN_NUM_ARTIGO 0
 #define MAX_NUM_ARTIGO 1000
@@ -52,9 +58,11 @@
 #define MAX_TIPO 3
 #define OBTER_TIPO "Insira o tipo [1-Botas; 2-Sapatos; 3-Sandalia]: "
 
+#define MAX_PRECOS 50
 enum tipo {
     Bota, Sapato, Sandalia
 };
+
 
 /**
  * Cria um struct para armazenar todos artigos e as informações
@@ -65,6 +73,7 @@ typedef struct {
     enum tipo tipo_artigo;
     int tam_min;
     int tam_max;
+    bool apagado;
 } Artigo;
 
 typedef struct {
@@ -84,8 +93,6 @@ void atualizarArtigos(Artigos *artigos);
 void removerArtigos(Artigos *artigos);
 void listarArtigos(Artigos artigos);
 
-#define MAX_PRECOS 50
-
 /**
  * Cria um struct para armazenar todos os preços relacionados com os artigos
  */
@@ -103,6 +110,8 @@ typedef struct {
     PrecoArtigo precos[MAX_PRECOS];
 } Precos;
 
+
+
 /**
  * Assinaturas das funções dos preços
  * @param precos
@@ -113,3 +122,8 @@ int procurarPreco(Precos precos, enum tipo tipo_artigo, int tam);
 void atualizarPrecos(Precos *precos);
 void removerPrecos(Precos *precos);
 void listarPrecos(Precos precos);
+
+void GuardarArtigosFicheiro(Artigos artigos);
+void LerArtigosFicheiro(Artigos *artigos);
+#endif
+

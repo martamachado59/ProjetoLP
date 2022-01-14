@@ -15,6 +15,7 @@
  * Author: Mara
  * Created on 2 de janeiro de 2022, 16:25
  */
+#ifndef CLIENTSTRUCT_H
 
 #include <stdbool.h>
 
@@ -67,3 +68,9 @@ int procurarCliente(Clientes cliente, int cod_cliente);
 void atualizarClientes(Clientes *clientes);
 void removerClientes(Clientes *clientes);
 void listarClientes(Clientes clientes);
+
+void GuardarClientesFicheiro(Clientes clientes);
+void LerClientesFicheiro(Clientes *clientes);
+
+#endif
+

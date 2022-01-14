@@ -52,15 +52,20 @@ int main(int argc, char** argv) {
      */
     int op;
     char tipo_utilizador,menu;
-    
+	int c,a;
+
     /**
      * 
      * @param contadores dos clientes, artigos e encomendas
      */
     Clientes clientes = {.contador = 0};
     Artigos artigos = {.contador = 0};
+    Encomendas encomendas = {.contador = 0};
     //fata o contador das encomendas
     
+    LerClientesFicheiro(&clientes);
+    LerArtigosFicheiro(&artigos);
+    LerEncomendasFicheiro(&encomendas);
     tipo_utilizador=ler_tipo_utilizador();
     
     /**
@@ -121,8 +126,8 @@ int main(int argc, char** argv) {
                                 break;
                             case 6:
                                 printf("\n");
-                                //remover nao funciona
-                                //removerClientes(&clientes);                               
+                               
+                                removerClientes(&clientes);                               
                                 break;
 
                             default:
@@ -158,8 +163,7 @@ int main(int argc, char** argv) {
                                     break;
                                 case 5:
                                     printf("\n");
-                                    //remover nao funciona
-                                    //removerArtigos(&artigos);
+                                    removerArtigos(&artigos);
                                     break;
                                 default:
                                     printf("\n");
@@ -171,27 +175,38 @@ int main(int argc, char** argv) {
                 do{                   
                     sub_menu_encomendas();
                     scanf("%d",&op);
-                         
                         switch(op){
-
                             case 1:
-                               // inserirArtigoEncomenda(encomenda,cliente,artigo,precos);
+                               printf("Código cliente: ");
+                               scanf("%d",&c);
+                               printf("Código artigo: ");
+                               scanf("%d",&a);
+                               int idCliente = procurarCliente(clientes,c);
+                               int idArtigo = procurarArtigo(artigos, a);
+                               Cliente cliente = clientes.clientes[idCliente];
+                               Artigo artigo = artigos.artigos[idArtigo];
+                               CriarEncomenda(&encomendas,cliente,artigo);
                                break;
                             case 2:
                                 printf("\n");
                                 printf("\n");
-                                //listarArtigosEncomenda(artigo,encomeda);
+                                listarEncomendas(encomendas);
                                 break;
-                            case 3:
+                            /*case 3:
                                 printf("\n");
                                 //procurarArtigoEncomenda(encomenda,artigo,tam);
-                                break;
+                                break;*/
                             default:
                                 printf("\n");
                                 printf("\nOpcão invalida.");
                         }
                   }while(op!=1 && op!=2 && op!=3);
                   break;
+                case 0:
+                    GuardarClientesFicheiro(clientes);
+                    GuardarArtigosFicheiro(artigos);
+                    GuardarEncomendasFicheiro(encomendas);
+                    return(EXIT_SUCCESS);
             break;            
          }
          goto Menu_administrador;

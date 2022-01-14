@@ -17,6 +17,10 @@
  * Created on 2 de janeiro de 2022, 17:11
  */
 
+#ifndef INPUT_H
+
+#define INPUT_H
+
 /**
  * Assinaturas das funções dos scanf
  */
@@ -27,4 +31,6 @@ float obterFloat(float minValor, float maxValor, char *msg);
 double obterDouble(double minValor, double maxValor, char *msg);
 char obterChar(char *msg);
 void lerString(char *string, unsigned int tamanho, char *msg);
+
+#endif
 

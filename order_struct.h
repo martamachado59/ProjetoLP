@@ -17,10 +17,13 @@
  * Created on 9 de janeiro de 2022, 21:56
  */
 
+#ifndef ARTICLE_STRUCT_H
+
 #define MAX_ARTIGOS_ENCOMENDA 50
 #include "client_struct.h"
 #include "article_struct.h"
 
+#define ARTICLE_STRUCT_H
 /**
  *Cria um struct para armazenar todas as encomendas
  */
@@ -33,6 +36,11 @@ typedef struct {
     int contador;
 } Encomenda;
 
+typedef struct {
+    int contador;
+    Encomenda Encomendas[100];
+} Encomendas;
+
 /**
  * Assinaturas das funções das encomendas
  * @param encomenda
@@ -42,6 +50,8 @@ typedef struct {
  * @return valores usados nas encomendas
  */
 
-int inserirArtigoEncomenda(Encomenda *encomenda, Cliente *cliente, Artigo *artigo, Precos *precos);
+//int inserirArtigoEncomenda(Encomendas *encomenda, Cliente cliente, Artigo artigo /*,Precos *precos*/);
 int procurarArtigoEncomenda(Encomenda *encomenda, Artigo *artigo, int tam);
 void listarArtigosEncomenda(Encomenda *encomenda);
+
+#endif

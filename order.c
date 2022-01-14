@@ -20,7 +20,7 @@
  * listarArtigoEncomenda é a função que lista todas as encomendas feitas
  * @param encomenda tem acesso aos valores inseridos nos artigos, clientes, preços
  */
-int inserirArtigoEncomenda(Encomenda *encomenda, Cliente *cliente, Artigo *artigo, Precos *precos){
+/*int inserirArtigoEncomenda(Encomendas *encomenda, Cliente *cliente, Artigo *artigo/*, Precos *precos){
     if(cliente->apagado){
         return -1;
     }
@@ -29,18 +29,18 @@ int inserirArtigoEncomenda(Encomenda *encomenda, Cliente *cliente, Artigo *artig
     snprintf(buffer, sizeof(buffer), "Insira o tamanho do produto entre %d e %d : ", artigo->tam_min, artigo->tam_max);
     int tam = obterInt(artigo->tam_min, artigo->tam_max, buffer);
     
-    int preco = procurarPreco(*precos, artigo->tipo_artigo, tam);
+    //int preco = procurarPreco(*precos, artigo->tipo_artigo, tam);
     
-    if (procurarArtigoEncomenda(encomenda, artigo, tam) == -1 && preco != -1) {
-        encomenda->cliente = *cliente;
-        encomenda->artigos[encomenda->contador] = *artigo;
-        encomenda->tamanhos[encomenda->contador] = tam;
-        encomenda->precoEncomenda += ((precos->precos[preco].precoFixo * precos->precos[preco].precoTam) + precos->precos[preco].precoObra) * ( 1 + precos->precos[preco].margem);
+    if (procurarArtigoEncomenda(encomenda, artigo, tam) == -1 /*&& preco != -1) {
+        encomenda->Encomendas[encomenda->contador].cliente = *cliente;
+        encomenda->Encomendas[encomenda->contador].artigos = *artigo;
+        encomenda->Encomendas[encomenda->contador].tamanhos = tam;
+        encomenda->Encomendas[encomenda->contador].precoEncomenda = 1;//((precos->precos[preco].precoFixo * precos->precos[preco].precoTam) + precos->precos[preco].precoObra) * ( 1 + precos->precos[preco].margem);
         return encomenda->contador++;
     }
     
     return -1;
-}
+}*/
 int procurarArtigoEncomenda(Encomenda *encomenda, Artigo *artigo, int tam){
     int i;
     for (i = 0; i < encomenda->contador; i++) {

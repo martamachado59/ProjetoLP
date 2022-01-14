@@ -66,8 +66,7 @@ void sub_menu_encomendas()
     printf("\n Administração das encomendas\n");
     printf("\n Escolha uma das opções:\n"
             " 1-Inserir encomendas\n"
-            " 2-Listar Artigos\n"
-            " 3-Procurar Artigos\n"
+            " 2-Listar Encomendas\n"
             " Indique a sua opção:");
     
 }

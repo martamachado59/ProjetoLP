@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Encomendas.o \
 	${OBJECTDIR}/article_struct.o \
 	${OBJECTDIR}/client_struct.o \
 	${OBJECTDIR}/input.o \
@@ -66,6 +67,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projeto_lp.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projeto_lp ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Encomendas.o: Encomendas.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Encomendas.o Encomendas.c
 
 ${OBJECTDIR}/article_struct.o: article_struct.c
 	${MKDIR} -p ${OBJECTDIR}

@@ -17,16 +17,17 @@
  */
 
 #ifndef MENU_H
+
 #define MENU_H
 
 int op;    
  /**
   * Assinaturas das funções do menu
   */
-void menu(op);
-void sub_menu_clientes(op);
-void sub_menu_artigos(op);
-void sub_menu_encomendas(op);
+void menu();
+void sub_menu_clientes();
+void sub_menu_artigos();
+void sub_menu_encomendas();
 
 #endif /* MENU_H */
 
