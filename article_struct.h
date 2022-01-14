@@ -92,6 +92,7 @@ int procurarArtigo(Artigos artigos, int cod_artigo);
 void atualizarArtigos(Artigos *artigos);
 void removerArtigos(Artigos *artigos);
 void listarArtigos(Artigos artigos);
+void imprimirArtigos(Artigos artigos);
 
 /**
  * Cria um struct para armazenar todos os preços relacionados com os artigos

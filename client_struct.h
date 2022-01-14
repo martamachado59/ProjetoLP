@@ -68,6 +68,7 @@ int procurarCliente(Clientes cliente, int cod_cliente);
 void atualizarClientes(Clientes *clientes);
 void removerClientes(Clientes *clientes);
 void listarClientes(Clientes clientes);
+void imprimirClientes(Clientes clientes);
 
 void GuardarClientesFicheiro(Clientes clientes);
 void LerClientesFicheiro(Clientes *clientes);

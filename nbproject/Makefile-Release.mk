@@ -40,8 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/client_struct.o \
 	${OBJECTDIR}/input.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/menu.o \
-	${OBJECTDIR}/order.o
+	${OBJECTDIR}/menu.o
 
 
 # C Compiler Flags
@@ -97,11 +96,6 @@ ${OBJECTDIR}/menu.o: menu.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/menu.o menu.c
-
-${OBJECTDIR}/order.o: order.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/order.o order.c
 
 # Subprojects
 .build-subprojects:

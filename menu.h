@@ -24,7 +24,7 @@ int op;
  /**
   * Assinaturas das funções do menu
   */
-void menu();
+void menu_principal();
 void sub_menu_clientes();
 void sub_menu_artigos();
 void sub_menu_encomendas();
